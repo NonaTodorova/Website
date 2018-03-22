@@ -33,3 +33,11 @@ $("#Contribution").click(function() {
         scrollTop: $("#contributionBlock").offset().top},
         'slow');
 });
+
+$("#loginBtn").click(function() {
+    location.href="profilePage.html"
+});
+
+$("#registerBtn").click(function() {
+    location.href="profilePage.html"
+});
