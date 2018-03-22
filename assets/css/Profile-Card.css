@@ -1,0 +1,61 @@
+.profile-back {
+  background-color:#9b1f1f;
+  margin-bottom:-75px;
+}
+
+.profile-pic {
+  width:35%;
+  height:35%;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+
+.profile-card {
+  text-align:center;
+  margin:15px;
+  border:1px solid #91e866;
+  width:50%;
+  height:50%;
+}
+
+.profile-name {
+  background-color:rgba(145,232,102,0.76);
+  color:black;
+  font-family:'Actor', sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  padding:5px 0;
+  border-radius:100px;
+  max-width:300px;
+  margin:0 auto 10px auto;
+  width:80%;
+  height:10%;
+}
+
+.profile-card .social-list {
+  list-style:none;
+  padding:0;
+  margin-bottom:20px;
+}
+
+.profile-card .social-list li {
+  display:inline;
+  margin:0 5px;
+  /*background-color:#9b1f1f;*/
+  /*color:#fff;*/
+  /*padding:10px;*/
+  /*border-radius:100%;*/
+}
+
+.profile-bio {
+  margin-bottom:10px;
+  padding:10px;
+}
+
+.profile-card .social-list li i {
+  background-color:#9b1f1f;
+  color:#fff;
+  padding:10px 11px;
+  border-radius:100%;
+}
+

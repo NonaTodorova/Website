@@ -1,0 +1,182 @@
+.article-dual-column {
+  color:#56585b;
+  background-color:#fff;
+  font-family:'Lora', serif;
+  font-size:14px;
+}
+
+.article-dual-column .intro {
+  font-size:16px;
+  margin:0 auto 30px;
+}
+
+.article-dual-column .intro h1 {
+  font-size:32px;
+  margin-bottom:15px;
+  padding-top:20px;
+  line-height:1.5;
+  color:inherit;
+  margin-top:25px;
+}
+
+.article-dual-column .intro p {
+  color:#929292;
+  font-size:12px;
+}
+
+.article-dual-column .intro p .by {
+  font-style:italic;
+}
+
+.article-dual-column .intro p .date {
+  text-transform:uppercase;
+  padding:4px 0 4px 10px;
+  margin-left:10px;
+  border-left:1px solid #ddd;
+}
+
+.article-dual-column .intro p a {
+  color:#333;
+  text-transform:uppercase;
+  padding-left:3px;
+}
+
+.article-dual-column .intro img {
+  margin-top:25px;
+}
+
+.article-dual-column .text p {
+  margin-bottom:20px;
+  line-height:1.45;
+}
+
+@media (min-width:768px) {
+  .article-dual-column .text p {
+    font-size:16px;
+  }
+}
+
+.article-dual-column .text h2 {
+  margin-top:28px;
+  margin-bottom:20px;
+  line-height:1.45;
+  font-size:16px;
+  font-weight:bold;
+  color:#333;
+}
+
+@media (min-width:768px) {
+  .article-dual-column .text h2 {
+    font-size:20px;
+  }
+}
+
+.article-dual-column .text figure {
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:20px;
+}
+
+.article-dual-column .text figure img {
+  margin-bottom:12px;
+  max-width:100%;
+}
+
+@media (max-width:767px) {
+  .article-dual-column .toc {
+    border:1px solid #d3d3d3;
+    padding:20px 0 15px;
+    margin-bottom:20px;
+    border-width:1px 0;
+  }
+}
+
+.article-dual-column .toc p {
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.article-dual-column .toc ul {
+  padding-left:20px;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+.article-dual-column .toc li {
+  padding:2px 0;
+}
+
+.article-dual-column .toc a {
+  color:inherit;
+}
+
+@media (min-width: 1200px) {
+  #firstBlock {
+    height:100vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  #teamBlock {
+    height:100vh;
+    padding-bottom:50px;
+  }
+}
+
+head {
+}
+
+#myButton:hover {
+  background-color:#555;
+}
+
+#myButton {
+  display:none;
+  position:fixed;
+  bottom:20px;
+  right:30px;
+  z-index:99;
+  border:none;
+  outline:none;
+  background-color:rgba(22,195,29,0.61);
+  color:white;
+  cursor:pointer;
+  padding:15px;
+  border-radius:10px;
+  font-size:18px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  background-color:#50A1CB;
+  color:white;
+  /* text/arrow color */     display:none;
+  z-index:999;
+  /* float in bottom right corner */    /* 20 pixels from edge */    position:fixed;
+  right:20px;
+  bottom:20px;
+  /* size of button is 50 pixels*/    width:50px;
+  height:50px;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  /* round button */    -webkit-border-radius:50%;
+  border-radius:50%;
+}
+
+.fa.fa-facebook-official {
+}
+
+.text-center :hover border-bottom: 3px solid #green {
+  border-bottom:3px solid #fff;
+}
+
+.rounded-circle {
+  border-style:solid;
+  border-color:#8bcf7b;
+}
+
+#teamBlock {
+  height:auto;
+}
+

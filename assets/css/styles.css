@@ -1,0 +1,40 @@
+.nav.navbar-nav.d-inline.ml-auto {
+  font-size:45px;
+}
+
+@media (max-width: 768px) {
+  #mainScreen {
+    padding:30px;
+    height:40vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  #mainScreen {
+    height:100vh;
+  }
+}
+
+
+#scrollDowns {
+  /* padding-top:25px; */
+  height:20vh;
+  margin-left:0;
+  margin-right:0px;
+}
+
+@media (max-width: 768px) {
+  #carousel-1 {
+    display:none;
+  }
+}
+
+#left-sidebar .logo .nav {
+  display:none;
+}
+
+
+
+body{
+  padding-top: 67px;
+}
