@@ -16,4 +16,8 @@ $( document ).ready(function() {
       // add class to the one we clicked
       $("#fridgeTab").addClass("active");
 })
+
+$(#scanbtn).click(function(){
+  Quagga.start();
+}
 });
