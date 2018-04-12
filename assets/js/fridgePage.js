@@ -16,7 +16,7 @@ $( document ).ready(function() {
       // add class to the one we clicked
       $("#fridgeTab").addClass("active");
 })
-
+});
 
 Quagga.init({
     inputStream : {
@@ -35,6 +35,3 @@ Quagga.init({
       console.log("Initialization finished. Ready to start");
       Quagga.start();
   });
-
-
-});
