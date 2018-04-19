@@ -102,7 +102,7 @@ app.post('/loggingIn', function(req,res){
     if (err) throw err;
     if (!result){res.redirect('/register');return}
     if(result.password == passw) {
-      req.session.loggedIn = true;
+      req.session.loggedin = true;
       req.session.currentUser = userName;
       res.redirect('/profilePage')
   }
