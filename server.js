@@ -49,7 +49,9 @@ app.post('/addUser', function (req, res) {
 var user = {
   "email" : req.body.email,
   "password": req.body.password,
-  "name" : {"first":req.body.first, "last":req.body.last}
+  "name" : {"first":req.body.first, "last":req.body.last,
+  "items":{}
+}
 
 };
 
