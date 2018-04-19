@@ -3,17 +3,14 @@
 
 
 
-const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb://localhost:27017/users";
-const express = require('express');
+const MongoClient = require('mongodb').MongoClient; //npm install mongodb@2.2.32
+const url = "mongodb://localhost:27017/profiles";
+const express = require('express'); //npm install express
+const session = require('express-session'); //npm install express-session
+const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
 
-// app.get('/add', function(req,res){
-//   var x = req.query.x;
-//   var y = req.query.y;
-//   app.use(express.static('public'))
-//
-// })
+
 
 app.use(bodyParser.urlencoded({extended:true}))
 // set the view engine to ejs
