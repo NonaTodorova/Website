@@ -65,20 +65,20 @@ const app = express();
 
 
 
-// app.post('/addUser', function (req, res) {
-//
-// var user = {
-//   "email" : req.body.email,
-//   "password": req.body.password,
-//   "name" : {"first":req.body.first, "last":req.body.last,
-//   "items":{}
-// }
-//
-// };
-//
-//  db.collection('users').save(user, function(err, result) {
-//  if (err) throw err;
-//  console.log('saved to database')
-//  res.redirect('/loginPage')
-//  })
-// })
+app.post('/addUser', function (req, res) {
+
+var user = {
+  "email" : req.body.email,
+  "password": req.body.password,
+  "name" : {"first":req.body.first, "last":req.body.last,
+  "items":{}
+}
+
+};
+
+ db.collection('users').save(user, function(err, result) {
+ if (err) throw err;
+ console.log('saved to database')
+ res.redirect('/loginPage')
+ })
+})
