@@ -27,7 +27,7 @@ const app = express();
   })
 
   app.get('/login',function(req,res){
-    res.render('pages/login ');
+    res.render('pages/login');
 
   })
 
