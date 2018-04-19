@@ -44,9 +44,6 @@ app.get('/all', function(req, res) {
 });
 
 
-const bodyParser = require ('body-parser')
-
-
 app.post('/addUser', function (req, res) {
 
 var user = {
