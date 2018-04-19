@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light" id="navbar" style="font-size:16px;height:67px;">
+        <div class="container-fluid"><a class="navbar-brand" href="home.html" style="font-size:40px;"><strong><em>Fridge</em></strong><em>Advisor</em></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto" style="margin:-12px;">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="login.html" style="font-size:20px;">Login</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-success active" href="register.html" style="font-size:20px;">Register</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="register-photo">
+        <div class="form-container">
+            <div class="image-holder"></div>
+            <form method="post" action="/addUser">
+                <h2 class="text-center"><strong>Create</strong> an account.</h2>
+
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" required></div>
+                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required></div>
+                <div class="form-group"><input class="form-control" type="text" name="name" action="/getName" placeholder="Name"  required></div>
+                <div class="form-group">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" required>I agree to the license terms.</label></div>
+                </div>
+
+                <div class="form-group"><button class="btn btn-primary btn-block" id="registerBtn" type="submit" style="background-color:#60c52f;">Sign Up</button></div>
+              <a href="login.html" class="already">You already have an account? Login here.</a>
+
+
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="home.html">Home</a></li>
+              <li class="list-inline-item"><a href="home.html#howToUseBlock">How to Use</a></li>
+              <li class="list-inline-item"><a href="home.html#teamBlock">Team</a></li>
+              <li class="list-inline-item"><a href="home.html#contributionBlock">Contribution</a></li>
+            </ul>
+            <p class="copyright">Fridge Advisor © 2018</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
