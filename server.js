@@ -17,6 +17,8 @@ const app = express();
   app.use(express.static('public'));
 
 
+//renders
+
   app.get('/', function(req,res){
     res.render('pages/home');
   } )
@@ -39,7 +41,7 @@ const app = express();
     res.render('pages/register');
   })
 
-
+// declaring database
   var db;
 
   MongoClient.connect(url, function(err, database){
@@ -48,6 +50,8 @@ const app = express();
     app.listen(8080);
     console.log("listeneing");
   });
+
+
 
   app.get('/all', function(req, res) {
       db.collection('users').find().toArray(function(err, result) {
@@ -64,6 +68,7 @@ const app = express();
                         });
 
 
+//adding a user to the database
 
 app.post('/addUser', function (req, res) {
 
@@ -83,3 +88,18 @@ var user = {
  res.redirect('/login')
  })
 })
+
+//login
+
+app.post('/loggingIn', function(req,res){
+  console.log(JSON.stringify(req.body))
+  var userName = req.body.email;
+  var passw = req.body.password;
+
+  db.collection('people').findOne({"email":userName},function(err,result){
+    if (err) throw err;
+    if (!result){res.redirect('/register');return}
+    if(result.login.password == passw) {req.session.loggedin = true; req.session.currentUser = userName;
+    res.redirect(/profilePage)}
+  });
+});
