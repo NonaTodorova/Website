@@ -80,14 +80,6 @@ var person = {
 
 };
 
- db.collection('people').save(person, function(err, result) {
- if (err) throw err;
- console.log(result);
- console.log('saved to database')
- res.redirect('/login')
- })
-})
-
 //login
 //sessions
 app.use(session({ secret: 'example'}));
