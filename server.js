@@ -17,7 +17,9 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended:true}))
+
 var db;
+
 MongoClient.connect(url, function(err, database){
  if(err) throw err;
  db = database;
@@ -38,10 +40,20 @@ app.get('/all', function(req, res) {
  });
 });
 
+
 const bodyParser = require ('body-parser')
 
-app.post('/users', function (req, res) {
- db.collection('users').save(req.body, function(err, result) {
+
+app.post('/addUser', function (req, res) {
+
+var user = {
+  "email" : req.body.email,
+  "password": req.body.password,
+  "name" : {"first":req.body.first, "last":req.body.last}
+
+};
+
+ db.collection('users').save(user, function(err, result) {
  if (err) throw err;
  console.log('saved to database')
  res.redirect('/')
