@@ -23,21 +23,21 @@ const app = express();
 
   app.get('/fridge',function(req,res){
     res.render('pages/fridge');
-  }
+  })
 
   app.get('/login',function(req,res){
     res.render('pages/login ');
 
-  }
+  })
 
   app.get('/profilePage',function(req,res){
     res.render('pages/profilePage');
 
-  }
+  })
 
   app.get('register',function(req,res){
     res.render('pages/register');
-  }
+  })
 
 
   var db;
