@@ -79,6 +79,6 @@ var user = {
  db.collection('users').save(user, function(err, result) {
  if (err) throw err;
  console.log('saved to database')
- res.redirect('/loginPage')
+ res.redirect('/login')
  })
 })
