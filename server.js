@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 //var express = require('express');
 //var app = express();
+=======
+// var express = require('express');
+// var app = express();
+>>>>>>> c6c3f032e0ef50d82224daccc50a19411268bc93
 
 
 
@@ -7,6 +12,7 @@ const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/users";
 const express = require('express');
 const app = express();
+
 // app.get('/add', function(req,res){
 //   var x = req.query.x;
 //   var y = req.query.y;
