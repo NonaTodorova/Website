@@ -6,7 +6,7 @@
 .register-photo .image-holder {
   display:table-cell;
   width:auto;
-  background:url('public/assets/img/cup.jpg');
+  background-image:url('public/assets/img/cup.jpg');
   background-size:cover;
 }
 
