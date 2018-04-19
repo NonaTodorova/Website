@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 
 
 app.get('/', function(req,res){
-  res.render('views/pages/home');
+  res.render('pages/home');
 })
 var db;
 
