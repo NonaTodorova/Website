@@ -46,6 +46,7 @@ app.get('/all', function(req, res) {
  });
 });
 
+app.
 
 app.post('/addUser', function (req, res) {
 
