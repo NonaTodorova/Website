@@ -17,7 +17,7 @@ const app = express();
   app.use(express.static('public'));
 
 
-  app.get('/home', function(req,res){
+  app.get('/', function(req,res){
     res.render('pages/home');
   } )
 
@@ -26,7 +26,7 @@ const app = express();
   })
 
   app.get('/login',function(req,res){
-    res.render('pages/login ');
+    res.render('pages/login');
 
   })
 
@@ -35,7 +35,7 @@ const app = express();
 
   })
 
-  app.get('register',function(req,res){
+  app.get('/register',function(req,res){
     res.render('pages/register');
   })
 
