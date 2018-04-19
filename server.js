@@ -2,21 +2,29 @@ var express = require('express');
 var app = express();
 
 
-app.get('/add', function(req,res){
-  var x = req.query.x;
-  var y = req.query.y;
-  app.use(express.static('public'))
-
-})
-app.listen(8080);
-
 
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/users";
 const express = require('express');
 const app = express();
-app.use(express.static('public'))
+// app.get('/add', function(req,res){
+//   var x = req.query.x;
+//   var y = req.query.y;
+//   app.use(express.static('public'))
+//
+// })
+
 app.use(bodyParser.urlencoded({extended:true}))
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+
+// app.listen(8080);
+
+
+
+app.use(express.static('public'))
+
 
 var db;
 
