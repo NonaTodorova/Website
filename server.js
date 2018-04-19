@@ -12,9 +12,12 @@ app.use(bodyParser.urlencoded({extended:true}))
 // set the view engine to ejs
 
 
-app.set('view engine', 'ejs');
+// app.listen(8080);
+
+
 
 app.use(express.static('public'));
+app.set('view engine', 'ejs');
 
 
 app.get('/', function(req,res){
@@ -43,22 +46,22 @@ app.get('/all', function(req, res) {
  });
 });
 
+app.
 
+app.post('/addUser', function (req, res) {
 
-// app.post('/addUser', function (req, res) {
-//
-// var user = {
-//   "email" : req.body.email,
-//   "password": req.body.password,
-//   "name" : {"first":req.body.first, "last":req.body.last,
-//   "items":{}
-// }
-//
-// };
-//
-//  db.collection('users').save(user, function(err, result) {
-//  if (err) throw err;
-//  console.log('saved to database')
-//  res.redirect('/loginPage')
-//  })
-// })
+var user = {
+  "email" : req.body.email,
+  "password": req.body.password,
+  "name" : {"first":req.body.first, "last":req.body.last,
+  "items":{}
+}
+
+};
+
+ db.collection('users').save(user, function(err, result) {
+ if (err) throw err;
+ console.log('saved to database')
+ res.redirect('/loginPage')
+ })
+})
