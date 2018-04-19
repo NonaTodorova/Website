@@ -32,6 +32,7 @@ const app = express();
 
   app.get('/profilePage',function(req,res){
     res.render('pages/profilePage');
+    
   }
 
   app.get('register',function(req,res){
