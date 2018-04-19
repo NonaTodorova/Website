@@ -99,7 +99,7 @@ app.post('/loggingIn', function(req,res){
   db.collection('people').findOne({"email":userName},function(err,result){
     if (err) throw err;
     if (!result){res.redirect('/register');return}
-    if(result.login.password == passw) {req.session.loggedin = true; req.session.currentUser = userName;
+    if(result.password == passw) {req.session.loggedin = true; req.session.currentUser = userName;
     res.redirect('/profilePage')}
   });
 });
