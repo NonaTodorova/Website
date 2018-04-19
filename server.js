@@ -10,16 +10,19 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}))
 // set the view engine to ejs
-app.set('view engine', 'ejs');
 
 
 // app.listen(8080);
 
 
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+app.set('view engine', 'ejs');
 
 
+app.get('/', function(req,res){
+  res.render('pages/home');
+})
 var db;
 
 MongoClient.connect(url, function(err, database){
@@ -43,9 +46,7 @@ app.get('/all', function(req, res) {
  });
 });
 
-
-const bodyParser = require ('body-parser')
-
+app.
 
 app.post('/addUser', function (req, res) {
 
