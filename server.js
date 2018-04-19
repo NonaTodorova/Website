@@ -26,6 +26,7 @@ MongoClient.connect(url, function(err, database){
  if(err) throw err;
  db = database;
  app.listen(8080);
+ console.log("listeneing");
 });
 
 app.get('/all', function(req, res) {
@@ -41,6 +42,9 @@ app.get('/all', function(req, res) {
  res.send(output);
  });
 });
+
+
+const bodyParser = require ('body-parser')
 
 
 app.post('/addUser', function (req, res) {
