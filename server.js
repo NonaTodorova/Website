@@ -76,7 +76,7 @@ var user = {
 
 };
 
- db.collection('users').save(user, function(err, result) {
+ db.collection('people').save(user, function(err, result) {
  if (err) throw err;
  console.log(result);
  console.log('saved to database')
