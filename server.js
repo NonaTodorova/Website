@@ -5,6 +5,7 @@ const express = require('express'); //npm install express
 const session = require('express-session'); //npm install express-session
 const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
+const session = require('express-session');
 
 
 
@@ -90,6 +91,9 @@ var user = {
 })
 
 //login
+//sessions
+app.use(session({ secret: 'example'}));
+
 
 app.post('/loggingIn', function(req,res){
   console.log(JSON.stringify(req.body))
@@ -99,7 +103,11 @@ app.post('/loggingIn', function(req,res){
   db.collection('people').findOne({"email":userName},function(err,result){
     if (err) throw err;
     if (!result){res.redirect('/register');return}
-    if(result.password == passw) {req.session.loggedIn = true; req.session.currentUser = userName;
-    res.redirect('/profilePage')}
+    if(result.password == passw) {
+      req.session.loggedIn = true;
+      req.session.currentUser = userName;
+      res.redirect('/profilePage')
+  }
+
   });
 });
