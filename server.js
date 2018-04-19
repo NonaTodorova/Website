@@ -71,7 +71,7 @@ const app = express();
 
 app.post('/addUser', function (req, res) {
 
-var user = {
+var person = {
   "email" : req.body.email,
   "password": req.body.password,
   "name" : {"first":req.body.first, "last":req.body.last,
@@ -80,7 +80,7 @@ var user = {
 
 };
 
- db.collection('people').save(user, function(err, result) {
+ db.collection('people').save(person, function(err, result) {
  if (err) throw err;
  console.log(result);
  console.log('saved to database')
