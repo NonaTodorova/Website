@@ -17,6 +17,10 @@ const app = express();
   app.use(express.static('public'));
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c659e512845d33828de71065507859700cd7b720
   app.get('/', function(req,res){
     res.render('pages/home');
   } )
