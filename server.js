@@ -20,7 +20,7 @@ const app = express();
 
   app.get('/', function(req,res){
     if(!req.session.loggedin){res.redirect('/');return;}
-    
+
     res.render('pages/');
   } )
 
@@ -119,6 +119,6 @@ app.post('/loggingIn', function(req,res){
       req.session.currentUser = userName;
       res.redirect('/profilePage')
   }
-
+    else{res.redirect('/login')}
   });
 });
