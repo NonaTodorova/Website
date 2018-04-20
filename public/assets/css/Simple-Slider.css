@@ -24,7 +24,7 @@
 }
 
 .parallax {
-    background-image: url("1.png");
+    background-image: url("/assets/img/1.png");
 
     /* Set a specific height */
     height: 500px;
