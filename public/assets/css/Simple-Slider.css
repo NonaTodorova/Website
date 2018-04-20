@@ -23,15 +23,11 @@
   }
 }
 
-.parallax {
-    background-image: url("/assets/img/1.png");
-
-    /* Set a specific height */
+.parallax1 {
+    background-image: url("/assets/img/vegetables1.png");
     height: 500px;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
