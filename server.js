@@ -40,7 +40,7 @@ app.use(session({secret : "example"}));
       //var uname = req.query.username;
 
       db.collection('people').findOne({
-        "login.username": req.session.user.email
+        "email": req.session.user.email
       }, function(err, result) {
         if (err) throw err;
 
