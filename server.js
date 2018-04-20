@@ -36,10 +36,10 @@ const app = express();
   app.get('/profilePage',function(req,res){
     if(!req.session.loggedin){res.redirect('/login');return;}
 
-      var uname = req.query.username;
+      //var uname = req.query.username;
 
       db.collection('people').findOne({
-        "login.username": uname
+        "login.username": req.session.user.email
       }, function(err, result) {
         if (err) throw err;
 
@@ -85,6 +85,8 @@ const app = express();
 
 app.post('/addUser', function (req, res) {
 
+if(!req.session.loggedin){res.redirect('/login');return;}
+
 var person = {
   "email" : req.body.email,
   "password": req.body.password,
@@ -117,7 +119,7 @@ app.post('/loggingIn', function(req,res){
     if (!result){res.redirect('/login');return}
     if(result.password == passw) {
       req.session.loggedin = true;
-      req.session.currentUser = userName;
+      req.session.user = result;
       res.redirect('/profilePage')
   }
     else{res.redirect('/login')}
