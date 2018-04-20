@@ -24,7 +24,9 @@
 }
 
 .parallax {
-    background-image: url("/assets/img/1.png");
+    background-image: url("/assets/img/vegetables1.png");
+    background-image: url("/assets/img/vegetables2.png");
+    background-image: url("/assets/img/reci.jpg");
 
     /* Set a specific height */
     height: 500px;
