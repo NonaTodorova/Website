@@ -21,7 +21,7 @@ const app = express();
   app.get('/', function(req,res){
     //if(!req.session.loggedin){res.redirect('/');return;}
 
-    res.render('pages/');
+    res.render('pages/home');
   } )
 
   app.get('/fridge',function(req,res){
