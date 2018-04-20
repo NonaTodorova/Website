@@ -96,6 +96,11 @@ var person = {
   "items":{}
 }
 
+db.collection("people").save(person, function(err,result){
+  if(err) throw err;
+  res.redirect("/login")
+})
+
 });
 
 //log out
