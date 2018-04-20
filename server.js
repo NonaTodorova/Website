@@ -7,6 +7,7 @@ const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
 const Quagga = require('quagga').default;
 
+
 app.use(session({secret : "example"}));
 
 
