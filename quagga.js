@@ -19,4 +19,4 @@ Quagga.init({
       Quagga.start();
   });
 
-  document.getElementById("scanbtn").onclick = Quagga.init();
+  document.getElementById("scanbtn").onclick = Quagga.start();
