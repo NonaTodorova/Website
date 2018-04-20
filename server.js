@@ -106,6 +106,7 @@ app.get('/logout', function(req, res) {
 //sessions
 
 
+
 app.post('/loggingIn', function(req,res){
   console.log(JSON.stringify(req.body))
   var userName = req.body.email;
