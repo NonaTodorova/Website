@@ -6,7 +6,7 @@
 .register-photo .image-holder {
   display:table-cell;
   width:auto;
-  background:url("cup.jpg");
+  background-image:url("cup.jpg");
   background-size:cover;
 }
 
@@ -16,11 +16,10 @@
   width:90%;
   margin:0 auto;
   box-shadow:1px 1px 5px rgba(0,0,0,0.1);
-z}
+}
 
 .register-photo form {
   display:table-cell;
-
   width:400px;
   background-color:#ffffff;
   padding:40px 60px;
