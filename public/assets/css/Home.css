@@ -84,10 +84,10 @@ h2 {
   color:rgb(49, 52, 55);
   font-weight:bold;
   margin-bottom:20px;
-  padding-top:20px;
+  padding-top:30px;
   font-family:sans-serif;
   }
-}
+
 
 @media (max-width:767px) {
    h2 {

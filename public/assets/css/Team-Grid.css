@@ -7,21 +7,6 @@
   color:#7d8285;
 }
 
-.team-grid h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
-}
-
-@media (max-width:767px) {
-  .team-grid h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
-  }
-}
-
 .team-grid .intro {
   font-size:16px;
   max-width:500px;
@@ -96,4 +81,3 @@
 .team-grid .social a:hover {
   opacity:1;
 }
-
