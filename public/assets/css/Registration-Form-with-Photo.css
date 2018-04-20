@@ -23,6 +23,16 @@
 
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img{
+  width: 50%;
+
+}
+
 .register-photo form {
   display: table-cell;
   width: 400px;
