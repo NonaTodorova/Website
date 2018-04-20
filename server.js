@@ -12,12 +12,15 @@ app.use(session({secret : "example"}));
 
 
     app.use(bodyParser.urlencoded({extended:true}))
+
+
 // set the view engine to ejs
 
 
   app.set('view engine', 'ejs');
 
   app.use(express.static('public'));
+
 
 //renders
 
@@ -64,7 +67,7 @@ app.use(session({secret : "example"}));
     if(err) throw err;
     db = database;
     app.listen(8080);
-    console.log("listeneing");
+    console.log("listening");
   });
 
 
