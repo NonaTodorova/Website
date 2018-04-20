@@ -1,6 +1,6 @@
-$(document).ready(function(){
-
-alert("hello");
-
-
-});
+// $(document).ready(function(){
+//
+// alert("hello");
+//
+//
+// });
