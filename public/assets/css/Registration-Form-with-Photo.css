@@ -6,7 +6,7 @@
 .register-photo .image-holder {
   display:table-cell;
   width:auto;
-  background:url("https://images-na.ssl-images-amazon.com/images/G/01/error/33._TTD_.jpg");
+  background-image:url("cup.jpg");
   background-size:cover;
 }
 
