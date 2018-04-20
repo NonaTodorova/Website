@@ -44,7 +44,7 @@ app.use(session({secret : "example"}));
       }, function(err, result) {
         if (err) throw err;
 
-        res.render('pages/profile', {
+        res.render('pages/profilePage', {
           user: result
         })
       });
