@@ -81,5 +81,9 @@
 /* TEXT CSS ----------------------------------------------------------------*/
 
 h2 {
-  color:rgb(102,153,0);
+  color:rgb(49, 52, 55);
+  font-weight:bold;
+  margin-bottom:30px;
+  padding-top:30px;
+  }
 }
