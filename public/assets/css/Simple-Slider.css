@@ -25,7 +25,16 @@
 
 .parallax1 {
     background-image: url("/assets/img/vegetables1.jpg");
-    height: 80%;
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("/assets/img/vegetables2.jpg");
+    height: 80vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
