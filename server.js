@@ -19,7 +19,7 @@ const app = express();
 //renders
 
   app.get('/', function(req,res){
-    if(!req.session.loggedin){res.redirect('/');return;}
+    //if(!req.session.loggedin){res.redirect('/');return;}
 
     res.render('pages/');
   } )
