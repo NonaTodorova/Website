@@ -19,7 +19,9 @@ const app = express();
 //renders
 
   app.get('/', function(req,res){
-    res.render('pages/home');
+    if(!req.session.loggedin){res.redirect('/');return;}
+    
+    res.render('pages/');
   } )
 
   app.get('/fridge',function(req,res){
@@ -92,9 +94,16 @@ var person = {
 
 });
 
+//log out
+
+app.get('/logout', function(req, res) {
+  req.session.loggedin = false;
+  req.session.destroy();
+  res.redirect('/');
+});
+
 //login
 //sessions
-app.use(session({ secret: 'example'}));
 
 
 app.post('/loggingIn', function(req,res){
