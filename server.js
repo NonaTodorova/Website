@@ -17,7 +17,7 @@ const app = express();
 
   app.use(express.static('public'));
 
-req.session.loggedin = false;
+session.loggedin = false;
 //renders
 
   app.get('/', function(req,res){
