@@ -16,14 +16,7 @@ $( document ).ready(function() {
       $("#fridgeTab").addClass("active");
 })
 
-$(function().ready(function()) {
 
-  $("#scanbtn").click(function() {
-      quagga.start();
-
-  })
-
-});
 
 
 
