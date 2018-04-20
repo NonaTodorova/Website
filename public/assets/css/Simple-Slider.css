@@ -1,3 +1,5 @@
+/* Simple Slider CSS  ---------------------------------------------------------------- */
+
 .simple-slider .swiper-slide {
   height:500px;
   background-repeat:no-repeat;
@@ -22,6 +24,26 @@
     height:360px;
   }
 }
+
+
+/* 3 Bottom Buttons CSS ----------------------------------------------------------------*/
+
+#scrollDowns {
+  /* padding-top:25px; */
+  height:10vh;
+  margin-left:0;
+  margin-right:0px;
+}
+
+@media (max-width:767px) {
+  #scrollDowns {
+    height:auto;
+    margin-left:0px;
+    margin-right:0px;
+  }
+}
+
+/* Parallax CSS ----------------------------------------------------------------*/
 
 .parallax1 {
     background-image: url("/assets/img/breakfast.jpg");

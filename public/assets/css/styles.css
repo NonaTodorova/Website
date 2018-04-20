@@ -16,13 +16,6 @@
 }
 
 
-#scrollDowns {
-  /* padding-top:25px; */
-  height:10vh;
-  margin-left:0;
-  margin-right:0px;
-}
-
 @media (max-width: 768px) {
   #carousel-1 {
     display:none;
