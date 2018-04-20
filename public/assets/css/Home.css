@@ -88,3 +88,11 @@ h2 {
   font-family:sans-serif;
   }
 }
+
+@media (max-width:767px) {
+   h2 {
+    margin-bottom:10px;
+    padding-top:10px;
+    font-size:24px;
+  }
+}
