@@ -32,7 +32,19 @@ const app = express();
   })
 
   app.get('/profilePage',function(req,res){
-    res.render('pages/profilePage');
+    if(!req.session.loggedin){res.redirect('/login');return;}
+
+      var uname = req.query.username;
+
+      db.collection('people').findOne({
+        "login.username": uname
+      }, function(err, result) {
+        if (err) throw err;
+
+        res.render('pages/profile', {
+          user: result
+        })
+      });
 
   })
 
