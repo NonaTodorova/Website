@@ -77,3 +77,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* TEXT CSS ----------------------------------------------------------------*/
+
+h2 {
+  color:rgb(102,153,0);
+}

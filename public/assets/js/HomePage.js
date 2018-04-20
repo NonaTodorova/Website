@@ -1,3 +1,4 @@
+//BRING BACK TO TOP BUTTON
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -14,8 +15,8 @@ function topFunction() {
      $('html, body').animate({scrollTop:0}, 'slow');
 }
 
-
-//3 buttons
+//............................................................................
+//3 BOTTOM BUTTONS
 $("#AboutUs").click(function() {
     $('html,body').animate({
         scrollTop: $("#teamBlock").offset().top},
@@ -34,6 +35,8 @@ $("#Contribution").click(function() {
         'slow');
 });
 
+
+// LOGIN AND REGISTER BUTTON FUNCTIONALITY
 $("#loginBtn").click(function() {
     location.href="profilePage.html"
 });
