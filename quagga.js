@@ -18,3 +18,5 @@ Quagga.init({
       console.log("Initialization finished. Ready to start");
       Quagga.start();
   });
+
+  document.getElementById("scanbtn").onclick = Quagga.init();
