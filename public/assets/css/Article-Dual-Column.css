@@ -124,9 +124,6 @@
   }
 }
 
-head {
-}
-
 #myButton:hover {
   background-color:#555;
 }
@@ -163,10 +160,7 @@ head {
   /* round button */    -webkit-border-radius:50%;
   border-radius:50%;
 }
-
-.fa.fa-facebook-official {
-}
-
+]
 .text-center :hover border-bottom: 3px solid #green {
   border-bottom:3px solid #fff;
 }
@@ -179,4 +173,3 @@ head {
 #teamBlock {
   height:auto;
 }
-

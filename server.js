@@ -5,6 +5,7 @@ const express = require('express'); //npm install express
 const session = require('express-session'); //npm install express-session
 const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
+const Quagga = require('quagga').default;
 
 app.use(session({secret : "example"}));
 
