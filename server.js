@@ -6,7 +6,7 @@ const session = require('express-session'); //npm install express-session
 const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
 
-
+app.use(session{secret : "example"}));
 
 
     app.use(bodyParser.urlencoded({extended:true}))
@@ -17,7 +17,6 @@ const app = express();
 
   app.use(express.static('public'));
 
-session.loggedin = false;
 //renders
 
   app.get('/', function(req,res){
