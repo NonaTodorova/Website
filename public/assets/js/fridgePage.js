@@ -1,4 +1,4 @@
-
+import Quagga from 'quagga';
 
 $(function() {
 //    $("#fridgeTab").onload(function() {
