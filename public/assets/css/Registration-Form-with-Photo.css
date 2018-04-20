@@ -3,14 +3,14 @@
   padding: 80px 0;
 }
 
-.register-photo .image-holder {
+.image-holder {
   display: table-cell;
   width: auto;
   /* background:url("cup.jpg"); */
   background-size: cover;
 }
 
-.register-photo .form-container {
+.form-container {
   display: table;
   max-width: 90px;
   width: 90%;
@@ -18,12 +18,15 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-#cupFruits {
+
+
+.img{
   width: 50%;
 
 }
 
-.register-photo form {
+
+ form {
   display: table-cell;
   width: 400px;
   background-color: #ffffff;
@@ -37,13 +40,13 @@
   }
 }
 
-.register-photo form h2 {
+form h2 {
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 
-.register-photo form .form-control {
+form .form-control {
   background: #f7f9fc;
   border: none;
   border-bottom: 1px solid #dfe7f1;
@@ -55,12 +58,12 @@
   height: 40px;
 }
 
-.register-photo form .form-check {
+ form .form-check {
   font-size: 13px;
   line-height: 20px;
 }
 
-.register-photo form .btn-primary {
+ form .btn-primary {
   background: #f4476b;
   border: none;
   border-radius: 4px;
