@@ -98,17 +98,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .simple-slider {
-    display:none;
-  }
-}
-
-@media (max-width: 768px) {
-  #scrollDowns {
-    height:35vh;
-  }
-}
 
 @media (min-width: 1200px) {
   .navbar-light .navbar-brand {
@@ -127,4 +116,3 @@
     height:100vh;
   }
 }
-

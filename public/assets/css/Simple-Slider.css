@@ -26,6 +26,7 @@
 }
 
 
+
 /* 3 Bottom Buttons CSS ----------------------------------------------------------------*/
 
 #scrollDowns {
@@ -37,11 +38,21 @@
 
 @media (max-width:767px) {
   #scrollDowns {
-    height:auto;
-    margin-left:0px;
-    margin-right:0px;
+    position: sticky;
+    bottom: 0px;
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: ghostwhite;
   }
 }
+
+@media (max-width: 768px) {
+  #scrollDowns {
+    height:35vh;
+  }
+}
+
 
 /* Parallax CSS ----------------------------------------------------------------*/
 
