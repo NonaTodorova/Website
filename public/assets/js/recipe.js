@@ -1,6 +1,6 @@
-$(function().ready(function()) {
 
-console.log("hello");
+$(function(){
 
+alert("hello");
 
 });
