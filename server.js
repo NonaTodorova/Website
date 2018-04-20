@@ -7,6 +7,8 @@ const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
 
 
+
+
     app.use(bodyParser.urlencoded({extended:true}))
 // set the view engine to ejs
 
@@ -15,7 +17,7 @@ const app = express();
 
   app.use(express.static('public'));
 
-
+req.session.loggedin = false;
 //renders
 
   app.get('/', function(req,res){
