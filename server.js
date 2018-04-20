@@ -87,7 +87,7 @@ session.loggedin = false;
 
 app.post('/addUser', function (req, res) {
 
-if(!req.session.loggedin){res.redirect('/login');return;}
+//if(!req.session.loggedin){res.redirect('/login');return;}
 
 var person = {
   "email" : req.body.email,
