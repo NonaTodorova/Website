@@ -1,5 +1,4 @@
-import Quagga from 'quagga';
-const Quagga = require('quagga').default;
+
 
 Quagga.init({
     inputStream : {
@@ -19,4 +18,4 @@ Quagga.init({
       Quagga.start();
   });
 
-  document.getElementById("scanbtn").onclick = Quagga.init();
+  document.getElementById("scanbtn").onclick = Quagga.start();
