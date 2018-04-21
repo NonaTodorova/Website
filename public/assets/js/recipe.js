@@ -9,8 +9,8 @@ $(function(){
 
   $.getJSON(url,function(jsondata){
 //   var myjson = JSON.stringify(jsondata);
- var myJSON = JSON.stringify(jsondata);
-    console.log(myJSON);
+ // var myJSON = JSON.stringify(jsondata);
+    console.log(jsondata.hits);
 
 });
 });
