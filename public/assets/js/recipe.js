@@ -11,7 +11,7 @@ $(function(){
 
   $.getJSON(url,function(jsondata){
 
- //var myjson =  JSON.stringify(jsondata.hits[0].recipe.totalNutrients,null,4);
+ // var value = jsondata.hits[0].recipe.totalNutrients.FAT.label;
 
  var value = jsondata.hits[0].recipe.totalNutrients.FAT.label;
 
