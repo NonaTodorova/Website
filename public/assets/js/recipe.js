@@ -15,7 +15,9 @@ $(function(){
 
  var value = jsondata.hits[0].recipe.totalNutrients.FAT.label;
 
-    console.log(value);
+
+
+
 
 });
 });
