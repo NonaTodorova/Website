@@ -1,104 +1,81 @@
-var _scannerIsRunning = false;
+var Quagga = window.Quagga;
+var App = {
+    _scanner: null,
+    init: function() {
+        this.attachListeners();
+    },
+    activateScanner: function() {
+        var scanner = this.configureScanner('.overlay__content'),
+            onDetected = function (result) {
+                document.querySelector('input.isbn').value = result.codeResult.code;
+                stop();
+            }.bind(this),
+            stop = function() {
+                scanner.stop();  // should also clear all event-listeners?
+                scanner.removeEventListener('detected', onDetected);
+                this.hideOverlay();
+                this.attachListeners();
+            }.bind(this);
 
-$(document).ready(function () {
+        this.showOverlay(stop);
+        scanner.addEventListener('detected', onDetected).start();
+    },
+    attachListeners: function() {
+        var self = this,
+            button = document.querySelector('.input-field input + button.scan');
 
-    $("#btnScan").click(function () {
-        //alert("try to scan");
-        if (_scannerIsRunning) {
-            _scannerIsRunning = false;
-            Quagga.stop();
-            $("#btnScan").text("Start");
-            $("#scanner-container").hide();
+        button.addEventListener("click", function onClick(e) {
+            e.preventDefault();
+            button.removeEventListener("click", onClick);
+            self.activateScanner();
+        });
+    },
+    showOverlay: function(cancelCb) {
+        if (!this._overlay) {
+            var content = document.createElement('div'),
+                closeButton = document.createElement('div');
+
+            closeButton.appendChild(document.createTextNode('X'));
+            content.className = 'overlay__content';
+            closeButton.className = 'overlay__close';
+            this._overlay = document.createElement('div');
+            this._overlay.className = 'overlay';
+            this._overlay.appendChild(content);
+            content.appendChild(closeButton);
+            closeButton.addEventListener('click', function closeClick() {
+                closeButton.removeEventListener('click', closeClick);
+                cancelCb();
+            });
+            document.body.appendChild(this._overlay);
         } else {
-            startScanner();
-            $("video").attr("width", "100%");
-            $("#btnScan").text("Stop");
-            $("#scanner-container").show();
+            var closeButton = document.querySelector('.overlay__close');
+            closeButton.addEventListener('click', function closeClick() {
+                closeButton.removeEventListener('click', closeClick);
+                cancelCb();
+            });
         }
-    });
-    LoadPage();
-});
-
-function closeModal() {
-    $('.modal').hide();
-    // more cleanup here
-}
-
-function startScanner() {
-    Quagga.init({
-        inputStream: {
-            name: "Live",
-            type: "LiveStream",
-            target: document.querySelector('#scanner-container'),
-            constraints: {
-                facingMode: "environment",
-                //"width":{"min":1200,},
-                //"height":{"min":300},
-                "aspectRatio": { "min": 1, "max": 100 }
-            },
-        },
-        "locator": { "patchSize": "medium", "halfSample": false },
-        "numOfWorkers": 1,
-        "frequency": 10,
-        "decoder": { "readers": [{ "format": "code_39_reader", "config": {} }] },
-        "locate": true
-    }, function (err) {
-        if (err) {
-            console.log(err);
-            return
+        this._overlay.style.display = "block";
+    },
+    hideOverlay: function() {
+        if (this._overlay) {
+            this._overlay.style.display = "none";
         }
-
-        console.log("Initialization finished. Ready to start");
-        Quagga.start();
-
-        // Set flag to is running
-        _scannerIsRunning = true;
-    });
-
-    Quagga.onProcessed(function (result) {
-        var drawingCtx = Quagga.canvas.ctx.overlay,
-        drawingCanvas = Quagga.canvas.dom.overlay;
-
-        if (result) {
-            if (result.boxes) {
-                drawingCtx.clearRect(0, 0, parseInt(drawingCanvas.getAttribute("width")), parseInt(drawingCanvas.getAttribute("height")));
-                result.boxes.filter(function (box) {
-                    return box !== result.box;
-                }).forEach(function (box) {
-                    Quagga.ImageDebug.drawPath(box, { x: 0, y: 1 }, drawingCtx, { color: "green", lineWidth: 2 });
+    },
+    configureScanner: function(selector) {
+        if (!this._scanner) {
+            this._scanner = Quagga
+                .decoder({readers: ['ean_reader']})
+                .locator({patchSize: 'medium'})
+                .fromVideo({
+                    target: selector,
+                    constraints: {
+                        width: 800,
+                        height: 600,
+                        facingMode: "environment"
+                    }
                 });
-            }
-
-            if (result.box) {
-                Quagga.ImageDebug.drawPath(result.box, { x: 0, y: 1 }, drawingCtx, { color: "#00F", lineWidth: 2 });
-            }
-
-            if (result.codeResult && result.codeResult.code) {
-                Quagga.ImageDebug.drawPath(result.line, { x: 'x', y: 'y' }, drawingCtx, { color: 'red', lineWidth: 3 });
-            }
         }
-    });
-
-
-    Quagga.onDetected(function (result) {
-        console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
-        $("#hdnBarcode").val(result.codeResult.code);
-
-        LoadPage();
-        $("#btnScan").click();
-    });
-}
-
-function LoadPage()
-{
-    if ($("#hdnBarcode").val() == "")
-        $("#hdnBarcode").val("1900067611"); //default barcode
-
-    $.ajax({
-        type: 'Get',
-        url: 'Home/GetData/' + $("#hdnBarcode").val(),
-        success: function (json) {
-            //...
-        }
-    });
-}
+        return this._scanner;
+    }
+};
+App.init();
