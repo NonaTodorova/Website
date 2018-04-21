@@ -71,22 +71,6 @@ app.use(session({secret : "example"}));
   });
 
 
-
-  app.get('/all', function(req, res) {
-      db.collection('users').find().toArray(function(err, result) {
-          if (err) throw err;
-            var output = "<h1>All the users</h1>";
-              for (var i = 0; i < result.length; i++) {
-                  output += "<div>"
-                    output += "<h3>" + result[i].name + "</h3>"
-                      output += "<p>" + result[i].quote + "</p>"
-                        output += "</div>"
-                        }
-                          res.send(output);
-                          });
-                        });
-
-
 //adding a user to the database
 
 app.post('/addUser', function (req, res) {
@@ -140,24 +124,7 @@ app.post('/loggingIn', function(req,res){
 
 
 
-  //
-  // var db;
-  //
-  //
-  //
-  // app.get('/all', function(req, res) {
-  //     db.collection('users').find().toArray(function(err, result) {
-  //         if (err) throw err;
-  //           var output = "<h1>All the users</h1>";
-  //             for (var i = 0; i < result.length; i++) {
-  //                 output += "<div>"
-  //                   output += "<h3>" + result[i].name + "</h3>"
-  //                     output += "<p>" + result[i].quote + "</p>"
-  //                       output += "</div>"
-  //                       }
-  //                         res.send(output);
-  //                         });
-  //                       });
+
 
 
 
