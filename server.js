@@ -224,4 +224,3 @@ const app = express();
 //  res.redirect('/loginPage')
 //  })
 // })
->>>>>>> before discard
