@@ -9,7 +9,7 @@ $(function(){
 
   $.getJSON(url,function(jsondata){
 
- var myjson =  JSON.stringify(jsondata.hits[0].recipe.dietlabels,null,4);
+ var myjson =  JSON.stringify(jsondata.hits[0].recipe.dietLabels,null,4);
     console.log(myjson);
 
 });
