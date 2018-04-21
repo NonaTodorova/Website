@@ -59,7 +59,7 @@ app.use(session({secret : "example"}));
   })
 
 
-  pp.get('/fridge',function(req,res){
+  app.get('/fridge',function(req,res){
     if(!req.session.loggedin){res.redirect('/login');return;}
 
       //var uname = req.query.username;
