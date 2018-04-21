@@ -20,7 +20,7 @@ $( document ).ready(function() {
 
 
 
-<script type="text/javascript" src="assets/quaggaJS-master/dist/quagga.min.js"></script>
+<script type="text/javascript" src="/quaggaJS-master/dist/quagga.min.js"></script>
 <style>
 	#interactive.viewport {position: relative; width: 100%; height: auto; overflow: hidden; text-align: center;}
 	#interactive.viewport > canvas, #interactive.viewport > video {max-width: 100%;width: 100%;}
