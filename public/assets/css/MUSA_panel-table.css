@@ -1,3 +1,7 @@
+/*
+CSS used in Fridge page
+*/
+
 .panel-table .panel-body {
   padding:0;
 }
@@ -45,4 +49,3 @@
 .panel-table .panel-body .table-bordered > tbody > tr > td {
   line-height:34px;
 }
-
