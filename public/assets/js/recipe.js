@@ -10,7 +10,7 @@ $(function(){
   $.getJSON(url,function(jsondata){
 //   var myjson = JSON.stringify(jsondata);
  // var myJSON = JSON.stringify(jsondata);
-    console.log(jsondata.hits.recipe);
+    console.log(jsondata.hits[0]);
 
 });
 });
