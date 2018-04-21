@@ -1,4 +1,4 @@
-
+<<<<<<< current
 
 const MongoClient = require('mongodb').MongoClient; //npm install mongodb@2.2.32
 const url = "mongodb://localhost:27017/users";
