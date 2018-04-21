@@ -1,3 +1,7 @@
+/*
+login css. dont think this is actually used?
+*/
+
 .login-dark {
   height:1000px;
   background:#475d62 url(../../assets/img/4.jpg);
@@ -69,4 +73,3 @@
 .login-dark form .btn-primary:active {
   transform:translateY(1px);
 }
-
