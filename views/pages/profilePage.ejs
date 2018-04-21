@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- EJS HEAD LINK-->
 <% include ../partials/head %>
 
 
 <body>
+    <!--TOP NAV BAR -->
     <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light" style="font-size:16px;height:67px;">
+        <!-- LOGO -->
         <div class="container-fluid"><a class="navbar-brand" href="/" style="font-size:40px;"><strong><em>Fridge</em></strong><em>Advisor</em></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <!-- Welcome Message and LOGOUT -->
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto" style="margin:-12px;">
-
-
                     <li class="nav-item" role="presentation"><a class="nav-link active" style="font-size:20px;">Hello <%= user.name%></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link text-success active" href="/" action="/logout" style="font-size:20px;">Logout</a></li>
                 </ul>
         </div>
         </div>
     </nav>
+
+    <!-- TAB NAV -->
     <div>
         <ul class="nav nav-tabs nav-fill">
             <li class="nav-item"><a class="nav-link active" href="/profilePage" style="font-size:30px;">Profile</a></li>
             <li class="nav-item"><a class="nav-link" href="/fridge" style="font-size:30px;color:#60c52f;">Fridge</a></li>
         </ul>
     </div>
+
+    <!-- MAIN CONTENT -->
     <div id="topDiv">
 
       <!-- PROFILE CARD -->
@@ -42,6 +49,7 @@
         </div>
     </div>
 
+    <!-- EJS FOOTER LINK -->
       <% include ../partials/footer %>
 
 

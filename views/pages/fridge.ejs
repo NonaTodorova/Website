@@ -1,191 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- HEADER -->
-  <% include ../partials/head %>
+<!-- EJS HEAD LINK -->
+<% include ../partials/head %>
 
-
-<!--NAV BAR  -->
-<body>
+  <body>
+    <!-- TOP NAV BAR -->
     <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light" id="navbar" style="font-size:16px;height:67px;">
-        <div class="container-fluid"><a class="navbar-brand" href="/" style="font-size:40px;"><strong><em>Fridge</em></strong><em>Advisor</em></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto" style="margin:-12px;">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" style="font-size:20px;">Hello Jozi,</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link text-success active"  href="/" action="/logout" style="font-size:20px;">Logout</a></li>
-                </ul>
+      <!-- LOGO -->
+      <div class="container-fluid"><a class="navbar-brand" href="/" style="font-size:40px;"><strong><em>Fridge</em></strong><em>Advisor</em></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <!-- Welcome Message and LOGOUT -->
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav ml-auto" style="margin:-12px;">
+            <li class="nav-item" role="presentation"><a class="nav-link active" style="font-size:20px;">Hello <%= user.name%></a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link text-success active" href="/" action="/logout" style="font-size:20px;">Logout</a></li>
+          </ul>
         </div>
-        </div>
+      </div>
     </nav>
 
-    <!--BAR  -->
+    <!-- TAB BAR -->
     <ul class="nav nav-tabs nav-fill" id="tabbedNav">
-        <li class="nav-item"><a class="nav-link active" href="/profilePage" id="profileTab" style="font-size:30px;color:#60c52f;">Profile</a></li>
-        <li class="nav-item"><a class="nav-link" href="/fridge" id="fridgeTab" style="font-size:30px;">Fridge</a></li>
-    </ul><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+      <li class="nav-item"><a class="nav-link active" href="/profilePage" id="profileTab" style="font-size:30px;color:#60c52f;">Profile</a></li>
+      <li class="nav-item"><a class="nav-link" href="/fridge" id="fridgeTab" style="font-size:30px;">Fridge</a></li>
+    </ul>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
 
+<!-- Add Item via Barcode Scanner -->
     <div class="row">
-    	<div class="col-lg-6">
-    		<div class="input-group">
-    			<input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
-    			<span class="input-group-btn">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
+          <span class="input-group-btn">
     				<button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
     					<i class="fa fa-barcode"></i>
     				</button>
     			</span>
-    		</div><!-- /input-group -->
-    	</div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
+        </div>
+        <!-- /input-group -->
+      </div>
+      <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
     <div class="modal" id="livestream_scanner">
-    	<div class="modal-dialog">
-    		<div class="modal-content">
-    			<div class="modal-header">
-    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
     					<span aria-hidden="true">&times;</span>
     				</button>
-    				<h4 class="modal-title">Barcode Scanner</h4>
-    			</div>
-    			<div class="modal-body" style="position: static">
-    				<div id="interactive" class="viewport"></div>
-    				<div class="error"></div>
-    			</div>
-    			<div class="modal-footer">
-    				<label class="btn btn-default pull-left">
+            <h4 class="modal-title">Barcode Scanner</h4>
+          </div>
+          <div class="modal-body" style="position: static">
+            <div id="interactive" class="viewport"></div>
+            <div class="error"></div>
+          </div>
+          <div class="modal-footer">
+            <label class="btn btn-default pull-left">
     					<i class="fa fa-camera">Use camera app</i>
     					<input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
     				</label>
-    				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-    			</div>
-    		</div><!-- /.modal-content -->
-    	</div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
 
-
-<div class="container">
-    <div class="row">
-
-
-
+    <!-- Fridge Items Table -->
+    <div class="container">
+      <div class="row">
 
         <div class="col-md-10 col-md-offset-1">
 
-            <div class="panel panel-default panel-table">
-              <div class="panel-heading">
-                <div class="row">
-                  <div class="col col-xs-6">
-                    <h3 class="panel-title">My Fridge Items</h3>
-                  </div>
-                  <div class="col col-xs-6 text-right">
-                    <button type="button" id="scanbtn" class="btn btn-sm btn-primary btn-create">Scan Item</button>
-                  </div>
+          <div class="panel panel-default panel-table">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col col-xs-6">
+                  <h3 class="panel-title">My Fridge Items</h3>
                 </div>
-              </div>
-              <div class="panel-body">
-                <table class="table table-striped table-bordered table-list">
-                  <thead>
-                    <tr>
-                        <th><em class="fa fa-cog"></em></th>
-                        <th class="hidden-xs">ID</th>
-                        <th>Product Name</th>
-                        <th>Expiry Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                          <tr>
-                            <td align="center">
-                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Asda Milk</td>
-                            <td>02/03/2019</td>
-                          </tr>
-                        </tbody>
-                     <tbody>
-                          <tr>
-                            <td align="center">
-                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Peanuts</td>
-                            <td>02/03/201</td>
-                          </tr>
-                        </tbody>
-                     <tbody>
-                          <tr>
-                            <td align="center">
-                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Cheese</td>
-                            <td>02/03/201</td>
-                          </tr>
-                        </tbody>
-                     <tbody>
-                          <tr>
-                            <td align="center">
-                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Milk</td>
-                            <td>02/03/201</td>
-                          </tr>
-                        </tbody>
-                     <tbody>
-                          <tr>
-                            <td align="center">
-                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Stir Fry</td>
-                            <td>02/03/201</td>
-                          </tr>
-                        </tbody>
-                </table>
-
-              </div>
-              <div class="panel-footer">
-                <div class="row">
-                  <div class="col col-xs-4">Page 1 of 5
-                  </div>
-                  <div class="col col-xs-8">
-                    <ul class="pagination hidden-xs pull-right">
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                    </ul>
-                    <ul class="pagination visible-xs pull-right">
-                        <li><a href="#">«</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
-                  </div>
+                <div class="col col-xs-6 text-right">
+                  <button type="button" id="scanbtn" class="btn btn-sm btn-primary btn-create">Scan Item</button>
                 </div>
               </div>
             </div>
+            <div class="panel-body">
+              <table class="table table-striped table-bordered table-list">
+                <thead>
+                  <tr>
+                    <th><em class="fa fa-cog"></em></th>
+                    <th class="hidden-xs">ID</th>
+                    <th>Product Name</th>
+                    <th>Expiry Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                      <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                    </td>
+                    <td class="hidden-xs">1</td>
+                    <td>Asda Milk</td>
+                    <td>02/03/2019</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                      <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                    </td>
+                    <td class="hidden-xs">1</td>
+                    <td>Peanuts</td>
+                    <td>02/03/201</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                      <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                    </td>
+                    <td class="hidden-xs">1</td>
+                    <td>Cheese</td>
+                    <td>02/03/201</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                      <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                    </td>
+                    <td class="hidden-xs">1</td>
+                    <td>Milk</td>
+                    <td>02/03/201</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                      <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                    </td>
+                    <td class="hidden-xs">1</td>
+                    <td>Stir Fry</td>
+                    <td>02/03/201</td>
+                  </tr>
+                </tbody>
+              </table>
 
-</div></div></div>
+            </div>
 
+            <!-- Pageination for Table -->
+            <div class="panel-footer">
+              <div class="row">
+                <div class="col col-xs-4">Page 1 of 5
+                </div>
+                <div class="col col-xs-8">
+                  <ul class="pagination hidden-xs pull-right">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                  </ul>
+                  <ul class="pagination visible-xs pull-right">
+                    <li><a href="#">«</a></li>
+                    <li><a href="#">»</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </div>
 
+    <!-- EJS FOOTER LINK -->
+    <% include ../partials/footer %>
 
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/js/fridgePage.js"></script>
 
-
-
-
-  <% include ../partials/footer %>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/fridgePage.js"></script>
-
-</body>
+  </body>
 
 </html>
