@@ -15,20 +15,17 @@ app.use(session({secret : "example"}));
 
 
 // set the view engine to ejs
-
-
   app.set('view engine', 'ejs');
-
+//Tell express where the static files are .
   app.use(express.static('public'));
 
 
-//renders
+// use res.render to load up an ejs view file
 
   app.get('/', function(req,res){
-    //if(!req.session.loggedin){res.redirect('/');return;}
 
     res.render('pages/home');
-  } )
+  })
 
   app.get('/fridge',function(req,res){
     res.render('pages/fridge');
@@ -36,8 +33,13 @@ app.use(session({secret : "example"}));
 
   app.get('/login',function(req,res){
     res.render('pages/login');
-
   })
+
+  app.get('/register',function(req,res){
+    res.render('pages/register');
+  })
+
+
 
   app.get('/profilePage',function(req,res){
     if(!req.session.loggedin){res.redirect('/login');return;}
@@ -56,9 +58,7 @@ app.use(session({secret : "example"}));
 
   })
 
-  app.get('/register',function(req,res){
-    res.render('pages/register');
-  })
+
 
 // declaring database
   var db;
