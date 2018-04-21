@@ -10,6 +10,7 @@ $(function(){
   $.getJSON(url,function(jsondata){
 
  var myjson =  JSON.stringify(jsondata.hits[0].recipe.totalNutrients.label.FAT,null,4);
+ 
     console.log(myjson);
 
 });
