@@ -1,3 +1,7 @@
+/*
+don't think this is used. delete?
+*/
+
 .card-container-imagia {
   -webkit-perspective:1500px;
   -moz-perspective:1500px;
@@ -80,4 +84,3 @@
   bottom:0;
   border-top:1px solid #eeeeee;
 }
-

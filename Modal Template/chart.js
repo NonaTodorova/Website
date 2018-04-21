@@ -16,7 +16,7 @@ google.charts.load('current', {
   var options = {
     //chart title
     title: 'Mini Colin the Caterpillar Cakes',
-    //size of hole in middle of chart
+    //size of hole in middle of chart best between 0.4 and 0.6
     pieHole: 0.45,
   };
 
