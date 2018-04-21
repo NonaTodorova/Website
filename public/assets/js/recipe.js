@@ -8,9 +8,9 @@ $(function(){
 
 
   $.getJSON(url,function(jsondata){
-//   var myjson = JSON.stringify(jsondata);
-var myJSON =  JSON.stringify(jsondata,null,4);
-    console.log(myJSON);
+
+
+    console.log(jsondata.hits[0]);
 
 });
 });
