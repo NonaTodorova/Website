@@ -13,7 +13,7 @@ $(function(){
 
  //var myjson =  JSON.stringify(jsondata.hits[0].recipe.totalNutrients,null,4);
 
- var value = jsondata.hits[0].recipe.totalNutrients;
+ var value = jsondata.hits[0].recipe.totalNutrients.Carbs;
 
     console.log(value);
 
