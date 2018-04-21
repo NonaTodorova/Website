@@ -10,7 +10,7 @@ $(function(){
   $.getJSON(url,function(jsondata){
 
 
-    console.log(jsondata.hits[0]);
+    console.log(jsondata.hits[0].recipe);
 
 });
 });
