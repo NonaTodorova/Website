@@ -7,11 +7,15 @@ $(function(){
 
 
 
+
+
   $.getJSON(url,function(jsondata){
 
- var myjson =  JSON.stringify(jsondata.hits[0].recipe.totalNutrients.TOPCHA,null,4);
+ //var myjson =  JSON.stringify(jsondata.hits[0].recipe.totalNutrients,null,4);
 
-    console.log(myjson);
+ var value = jsondata.hits[0].recipe.totalNutrients;
+
+    console.log(value);
 
 });
 });
