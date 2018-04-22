@@ -24,6 +24,7 @@ function getResultsForRecipes(jsondata){
 
 
 
+  $('#results').empty();
 
   for(var i = 0 ; i<jsondata.hits.length;i++){
 
@@ -53,31 +54,21 @@ var card = "card";
      //  var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
-     output += '<div class= "card" />  '
-     + '<img class = "card-img-top"   src=  "'+image+'"  /> '
-     // + "<div class = 'card-body' > "
-     // + "<p> class = 'card-text' >  "
-     // + label + "</p>"
-     // + "</div>"
-     // + "</div>";
+     output += '<div class= "card" >  '
+     + '<img class = "card-img-top"   src=  "'+image+'"  > '
+      + '<div class = "card-body" > '
+      + '<p> class = "card-text" > '+label+' </p> '
+      +  '</div>'
+      + '</div>';
+
+      console.log(output);
+
+    $('#scroll-bar').append(output);
 
 
-alert(output);
-
-      // $('#scroll-bar').append("<div class= "'card'">"
-      // + '<img src = "'+photos[i].img_src+"' />"
-      // + "<div class= "'card-body'">"
-      // +  "<p class = "'card-body'" > "
-      // + label + "</p>"
-      // + "</div>"
-      // +  "</div>"));
   }
 
+
+
+
 }
-
-
-// <!-- <div class="card" >
-//   <img class="card-img-top" src="assets/img/breakfast.jpg" alt="Card image cap">
-//   <div class="card-body">
-//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//   </div>
