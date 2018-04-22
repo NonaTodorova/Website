@@ -22,13 +22,13 @@ getResultsForRecipes(jsondata);
 
 function getResultsForRecipes(jsondata){
 
-var card = "card";
+
 
 
   for(var i = 0 ; i<jsondata.hits.length;i++){
 
 var output = "";
-
+var card = "card";
     var image = jsondata.hits[i].recipe.image;
      var label = jsondata.hits[i].recipe.label;
      var servings = jsondata.hits[i].recipe.yield;
