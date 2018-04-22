@@ -64,7 +64,7 @@ body{
   text-decoration: none;
 }
 
-#AboutUs,#HowToUse,#Contribution:hover{
+#AboutUs:hover,#HowToUse:hover,#Contribution:hover{
     color: #70da75;
     border-top: 5px solid;
     border-top-color: #70da75;
