@@ -24,11 +24,11 @@ Profile page form
 .profile-card {
   text-align:center;
   margin-bottom:15px;
-  border:1px solid #9b1f1f;
+  border:1px solid #63c73c;
 }
 
 .profile-name {
-  background-color:#9b1f1f;
+  background-color:#61c534;
   color:#fff;
   font-family:'Actor', sans-serif;
   font-size:16px;
@@ -64,4 +64,61 @@ Profile page form
   color:#fff;
   padding:10px 11px;
   border-radius:100%;
+}
+
+/* TBC CSS */
+
+@media (min-width: 768px){
+    .col-md-6 #profileDiv{
+      flex: 0 0 50%;
+      height: auto;
+    }
+}
+
+
+
+#recipes-2 {
+  width:100%;
+}
+
+#recipes {
+  width:100%;
+  /*height:100vh;*/
+}
+
+#profileCard {
+  width:90%;
+  height:auto;
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  #cont {
+    height:auto;
+    padding-top:20px;
+    margin-left:20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    @media (min-width:768px) {  .col-md-6 {    -webkit-box-flex:0;
+    -ms-flex:0 0 50%;
+    flex:0 0 50%;
+    max-width:50%;
+  }
+}
+
+#recipe-pic {
+  text-align:center;
+  margin:15px;
+  border:1px solid #9b1f1f;
+  width:50%;
+  height:50%;
+}
+
+#recipe-pic {
+  .profile-card {  text-align:center;
+  margin-bottom:15px;
+  border:1px solid #9b1f1f;
 }
