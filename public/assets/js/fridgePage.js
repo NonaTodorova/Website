@@ -143,7 +143,7 @@ output += '<tbody>'
 +   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
 + '</td>'
 +  '<td class="hidden-xs">1</td>'
-+    '<td>"'data.products[0].description'"</td>'
++    '<td>'data.products[0].description'</td>'
 + "<td>02/03/2019</td>"
 +"   </tr>"
 + "</tbody>";
