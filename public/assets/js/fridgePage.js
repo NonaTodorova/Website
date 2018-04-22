@@ -96,7 +96,7 @@ function startScanner() {
          _scannerIsRunning=false;
           $("#scanner-container").hide();
 
-getUPC_Code(result.codeResult.code);
+getUPC_Code(result);
 
 
     });
