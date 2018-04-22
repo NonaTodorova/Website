@@ -66,6 +66,7 @@ h3{
 
 h3:hover{
   color:#70da75;
+  border-top-color: #70da75;
 }
 
 h3::before{
