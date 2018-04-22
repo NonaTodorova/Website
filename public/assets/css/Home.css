@@ -59,16 +59,16 @@ body{
 }
 
 
-h3{
+.homeButtons h3{
   color: #444;
   text-decoration: none;
 }
 
-h3:hover{
+.homeButtons h3:hover{
     color: #70da75;
     border-top: 5px solid;
     border-top-color: #70da75;
-    transition: all ease-in-out 250ms;
+    transition: all ease-in-out 500ms;
 }
 
 
