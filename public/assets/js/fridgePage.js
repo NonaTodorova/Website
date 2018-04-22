@@ -90,13 +90,13 @@ function startScanner() {
 
 
     Quagga.onDetected(function (result) {
-    //  getUPC_Code(result.codeResult.code);
-
 
 
         Quagga.stop();
          _scannerIsRunning=false;
           $("#scanner-container").hide();
+
+          getUPC_Code(result.codeResult.code);
 
 
     });
