@@ -93,6 +93,7 @@ function startScanner() {
         alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         Quagga.stop();
         _scannerIsRunning=false;
+          $("#scanner-container").hide();
 
 
     });
@@ -107,6 +108,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
         $("#scanner-container").hide();
     } else {
         startScanner();
+        $("#scanner-container").show();
     }
 }, false);
 
