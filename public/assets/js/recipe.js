@@ -58,7 +58,8 @@ var output = "";
      + "<p> class = 'card-text' >  "
      + label + "</p>"
      + "</div>"
-     + "</div>"
+     + "</div>";
+     
 
 alert(output);
 
