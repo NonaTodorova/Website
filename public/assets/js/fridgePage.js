@@ -96,7 +96,7 @@ var fuckingCode ="";
          // _scannerIsRunning=false;
          //  $("#scanner-container").hide();
 
-fuckingCOde=result.codeResult.code;
+fuckingCode=result.codeResult.code;
 
 
     });
@@ -123,7 +123,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
 function getUPC_Code(){
 
-  var url_test ="https://dev.tescolabs.com/product/?gtin="+fuckingCOde;
+  var url_test ="https://dev.tescolabs.com/product/?gtin="+fuckingCode;
 
 $.ajax({
            url: url_test,
