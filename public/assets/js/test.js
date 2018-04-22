@@ -93,6 +93,8 @@ fuckingCode=result.codeResult.code;
 
 }
 
+getUPC_Code(fuckingCode);
+
 
 // Start/stop scanner
 document.getElementById("btnScan").addEventListener("click", function () {
@@ -107,6 +109,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
     }
 }, false);
+
 
 
 function getUPC_Code(upc_code){
@@ -161,5 +164,3 @@ output ='<tbody>'
        })
 
 }
-
-getUPC_Code(fuckingCode);
