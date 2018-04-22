@@ -38,9 +38,9 @@ $("#Contribution").click(function() {
 
 // LOGIN AND REGISTER BUTTON FUNCTIONALITY
 $("#loginBtn").click(function() {
-    location.href="profilePage.html"
+    location.href="/login"
 });
 
 $("#registerBtn").click(function() {
-    location.href="profilePage.html"
+    location.href="/register"
 });
