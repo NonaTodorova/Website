@@ -32,8 +32,8 @@ function getResultsForRecipes(jsondata){
      for(var i=0;i<ingr.length;i++){
        ingr_String += ingr[i];
      }
-     var calories = jsondata.hits[i].recipe.yield.calories;
-     // Nutrient info
+     var calories = jsondata.hits[i].recipe.calories;
+
      var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
      var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
 
@@ -45,7 +45,7 @@ function getResultsForRecipes(jsondata){
 
       var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
-      console.log(calories)
+    alert(calories);
 
 
 
