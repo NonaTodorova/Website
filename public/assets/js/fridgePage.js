@@ -91,13 +91,13 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
       getUPC_Code(result.codeResult.code);
-
+    return false; 
 
         // alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         Quagga.stop();
         _scannerIsRunning=false;
           $("#scanner-container").hide();
-    return false; 
+
 
     });
 }
