@@ -93,9 +93,9 @@ function startScanner() {
       getUPC_Code(result.codeResult.code);
 
 
-        // alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
+        
         Quagga.stop();
-        _scannerIsRunning=false;
+        // _scannerIsRunning=false;
           $("#scanner-container").hide();
 
 
@@ -107,7 +107,7 @@ function startScanner() {
 document.getElementById("btnScan").addEventListener("click", function () {
     if (_scannerIsRunning) {
         Quagga.stop();
-        _scannerIsRunning=false;
+        // _scannerIsRunning=false;
         $("#scanner-container").hide();
     } else {
         startScanner();
@@ -155,7 +155,7 @@ output ='<tbody>'
          $('#updated_table').append(output);
 
          alert(data.products[0].description);
-         
+
 
 
 
