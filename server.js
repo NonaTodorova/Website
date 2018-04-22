@@ -7,7 +7,7 @@ const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
 
 //import Quagga from 'quagga';
-const Quagga = require('quagga').default;
+//const Quagga = require('quagga').default;
 
 
 
