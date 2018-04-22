@@ -54,7 +54,7 @@ var card = "card";
 
 
      output += '<div class= "card" />  '
-     + '<img class = "card-img-top+"   src=  "'+image+'"  /> '
+     + '<img class = "card-img-top"   src=  "'+image+'"  /> '
      // + "<div class = 'card-body' > "
      // + "<p> class = 'card-text' >  "
      // + label + "</p>"
