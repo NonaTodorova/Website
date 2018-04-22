@@ -61,8 +61,10 @@ var card = "card";
       +  '</div>'
       + '</div>';
 
+      console.log(output);
+
     $('#scroll-bar').append(output);
-    
+
 
   }
 
