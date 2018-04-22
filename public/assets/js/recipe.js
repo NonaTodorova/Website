@@ -10,7 +10,7 @@ $(function(){
 
 getResultsForRecipes(jsondata);
   var string = JSON.stringify(jsondata,null,4)
-console.log(jsondata);
+console.log(string);
 
  // var value = jsondata.hits[0].recipe.totalNutrients.FAT.label;
 
