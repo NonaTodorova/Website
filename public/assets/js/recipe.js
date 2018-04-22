@@ -24,10 +24,10 @@ function getResultsForRecipes(jsondata){
 
 
 
-  $('#results').empty();
+
 
   for(var i = 0 ; i<jsondata.hits.length;i++){
-
+  $('#scroll-bar').empty();
 var output = "";
 var card = "card";
     var image = jsondata.hits[i].recipe.image;
