@@ -113,7 +113,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
         $("#scanner-container").hide();
     } else {
       $("#scanner-container").show();
-        Quagga.start();
+        startScanner();
 
 
     }
