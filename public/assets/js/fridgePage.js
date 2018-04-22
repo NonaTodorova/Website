@@ -132,7 +132,7 @@ $.ajax({
            data: "{body}",
        })
        .done(function(data) {
-         console.log(data.products[0].description);
+      alert(data.products[0].description);
            alert("success");
        })
        .fail(function() {
