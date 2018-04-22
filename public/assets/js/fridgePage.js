@@ -88,7 +88,7 @@ function startScanner() {
         }
     });
 
-var valueOfUpc = ""
+
     Quagga.onDetected(function (result) {
 
 
@@ -96,8 +96,7 @@ var valueOfUpc = ""
          _scannerIsRunning=false;
           $("#scanner-container").hide();
 
-
-valueOfUpc=result.codeResult.code;
+getUPC_Code(result.codeResult.code);
 
 
     });
@@ -110,21 +109,21 @@ valueOfUpc=result.codeResult.code;
 document.getElementById("btnScan").addEventListener("click", function () {
     if (_scannerIsRunning) {
         Quagga.stop();
-        _scannerIsRunning=false;
+        // _scannerIsRunning=false;
         $("#scanner-container").hide();
     } else {
         startScanner();
-        _scannerIsRunning=true;
-        $("#scanner-container").show();
+        // _scannerIsRunning=true;
+        // $("#scanner-container").show();
     }
 }, false);
 
 });
 
 
-function getUPC_Code(valueOfUpc){
+function getUPC_Code(upc_code){
 
-  var url_test ="https://dev.tescolabs.com/product/?gtin="+valueOfUpc;
+  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
 
 $.ajax({
            url: url_test,
