@@ -24,25 +24,25 @@ function getResultsForRecipes(jsondata){
 
     var image = jsondata.hits[i].recipe.image;
      var label = jsondata.hits[i].recipe.label;
-     var servings = json.hits[i].recipe.yield;
-     var adv = json.hits[i].recipe.dietLables[0];
-     var ingr = json.hits[i].ingridientLines;
+     var servings = jsondata.hits[i].recipe.yield;
+     var adv = jsondata.hits[i].recipe.dietLables[0];
+     var ingr = jsondata.hits[i].ingridientLines;
      var ingr_String = "";
      for(var i=0;i<ingr.length;i++){
        ingr_String += ingr[i];
      }
-     var calories = json.hits[i].recipe.yield.calories;
+     var calories = jsondata.hits[i].recipe.yield.calories;
      // Nutrient info
-     var fatLabel = json.hits[i].recipe.totalNutrients.FAT.label;
-     var fat_quant = json.hits[i].recipe.totalNutrients.FAT.quantity;
+     var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
+     var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
 
-     var carbLabel = json.hits[i].recipe.totalNutrients.CHOCDF.label;
+     var carbLabel = jsondata.hits[i].recipe.totalNutrients.CHOCDF.label;
 
-      var carb_quant = json.hits[i].recipe.totalNutrients.CHOCDF.quantity;
+      var carb_quant = jsondata.hits[i].recipe.totalNutrients.CHOCDF.quantity;
 
-      var prot = json.hits[i].recipe.totalNutrients.PROCNT.label;
+      var prot = jsondata.hits[i].recipe.totalNutrients.PROCNT.label;
 
-      var prot_quant = json.hits[i].recipe.totalNutrients.PROCNT.quantity;
+      var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
       console.log(image + label + servings + adv + ingr_String+ calories + fatLabel + fat_quant );
