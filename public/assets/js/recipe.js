@@ -22,51 +22,54 @@ getResultsForRecipes(jsondata);
 
 function getResultsForRecipes(jsondata){
 
-
+var output = "";
 
   for(var i = 0 ; i<jsondata.hits.length;i++){
 
     var image = jsondata.hits[i].recipe.image;
      var label = jsondata.hits[i].recipe.label;
      var servings = jsondata.hits[i].recipe.yield;
-     var adv = jsondata.hits[i].recipe.dietLabels[0];
-     var ingr = jsondata.hits[i].recipe.ingredientLines;
-
-     var ingr_String = "";
-     for(var i=0;i<ingr.length;i++){
-       ingr_String += ingr[i];
-     }
+     // var adv = jsondata.hits[i].recipe.dietLabels[0];
+     // var ingr = jsondata.hits[i].recipe.ingredientLines;
+     //
+     // var ingr_String = "";
+     // for(var i=0;i<ingr.length;i++){
+     //   ingr_String += ingr[i];
+     // }
      var calories = jsondata.hits[i].recipe.calories;
-
-     var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
-     var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
-
-     var carbLabel = jsondata.hits[i].recipe.totalNutrients.CHOCDF.label;
-
-      var carb_quant = jsondata.hits[i].recipe.totalNutrients.CHOCDF.quantity;
-
-      var prot = jsondata.hits[i].recipe.totalNutrients.PROCNT.label;
-
-      var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
-
-
-      $('#scroll-bar').append("<div class= "'card'">"
-      + '<img src = "'+photos[i].img_src+"' />"
-      + "<div class= "'card-body'">"
-      +  "<p class = "'card-body'" > "
-      + label + "</p>"
-      + "</div>"
-      +  "</div>"))=;
+     //
+     // var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
+     // var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
+     //
+     // var carbLabel = jsondata.hits[i].recipe.totalNutrients.CHOCDF.label;
+     //
+     //  var carb_quant = jsondata.hits[i].recipe.totalNutrients.CHOCDF.quantity;
+     //
+     //  var prot = jsondata.hits[i].recipe.totalNutrients.PROCNT.label;
+     //
+     //  var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
+output += "<div class = "'card'" >"
++ '<img  clas = "card-img-top+"   src=  "'+image+'"  /> '
++ "<div class = "'card-body'" > "
++ "<p> class = "'card-text'" >  "
++ label + "</p>"
++ "</div>"
++ "</div>"
+
+alert(output);
+
+      // $('#scroll-bar').append("<div class= "'card'">"
+      // + '<img src = "'+photos[i].img_src+"' />"
+      // + "<div class= "'card-body'">"
+      // +  "<p class = "'card-body'" > "
+      // + label + "</p>"
+      // + "</div>"
+      // +  "</div>"));
   }
 
 }
-
-
-
-
-
 
 
 // <!-- <div class="card" >
