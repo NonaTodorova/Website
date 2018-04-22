@@ -27,10 +27,10 @@ function getResultsForRecipes(jsondata){
      var servings = jsondata.hits[i].recipe.yield;
      var adv = jsondata.hits[i].recipe.dietLabels[0];
      var ingr = jsondata.hits[i].ingredientLines;
-     var ingr_String = "";
-     for(var i=0;i<ingr.length;i++){
-       ingr_String += ingr[i];
-     }
+     // var ingr_String = "";
+     // for(var i=0;i<ingr.length;i++){
+     //   ingr_String += ingr[i];
+     // }
      var calories = jsondata.hits[i].recipe.yield.calories;
      // Nutrient info
      var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
@@ -45,7 +45,7 @@ function getResultsForRecipes(jsondata){
       var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
-      console.log(image + label + servings + adv + ingr_String+ calories + fatLabel + fat_quant);
+      console.log(image + label + servings + adv + ingr + calories + fatLabel + fat_quant);
 
 
 
