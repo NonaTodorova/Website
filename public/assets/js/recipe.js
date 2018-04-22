@@ -18,7 +18,11 @@ getResultsForRecipes(jsondata);
 });
 
 
+
+
 function getResultsForRecipes(jsondata){
+
+  
 
   for(var i = 0 ; i<jsondata.hits.length;i++){
 
@@ -45,7 +49,7 @@ function getResultsForRecipes(jsondata){
 
       var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
-    alert(calories);
+
 
 
 
