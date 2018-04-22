@@ -88,15 +88,15 @@ function startScanner() {
         }
     });
 
-var fuckingCode ="";
+
     Quagga.onDetected(function (result) {
 
 
         // Quagga.stop();
-         // _scannerIsRunning=false;
-         //  $("#scanner-container").hide();
+        //  _scannerIsRunning=false;
+        //   $("#scanner-container").hide();
 
-fuckingCode=result.codeResult.code;
+getUPC_Code(result.codeResult.code);
 
 
     });
@@ -121,9 +121,9 @@ document.getElementById("btnScan").addEventListener("click", function () {
 });
 
 
-function getUPC_Code(){
+function getUPC_Code(upc_code){
 
-  var url_test ="https://dev.tescolabs.com/product/?gtin="+fuckingCode;
+  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
 
 $.ajax({
            url: url_test,
@@ -173,3 +173,16 @@ output ='<tbody>'
        })
 
 }
+
+
+     // <tbody>
+     //   <tr>
+     //     <td align="center">
+     //       <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+     //       <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+     //     </td>
+     //     <td class="hidden-xs">1</td>
+     //     <td>Asda Milk</td>
+     //     <td>02/03/2019</td>
+     //   </tr>
+     // </tbody>
