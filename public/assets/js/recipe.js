@@ -21,7 +21,7 @@ $.ajax({
            url: url,
            beforeSend: function(xhrObj){
                // Request headers
-               xhrObj.setRequestHeader("f4b09768d9a04ed198d32676e660526c","{subscription key}");
+               xhrObj.setRequestHeader("f4b09768d9a04ed198d32676e660526c");
            },
            type: "GET",
            // Request body
