@@ -51,6 +51,11 @@ CSS USED FOR HOME PAGE
   }
 }
 
+.verticalMiddle{
+  vertical-align: middle;
+
+}
+
 /* TEAM BLOCK ----------------------------------------------------------------  */
 
 @media (min-width: 1200px) {
