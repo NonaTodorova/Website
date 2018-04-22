@@ -52,6 +52,10 @@ CSS used in Fridge page
 
 canvas.drawing, canvas.drawingBuffer {
     position: absolute;
-    left: 0;
-    top: 130px;
+    left: 35%;
+    top: 133px;
+}
+
+#scanner-container{
+  margin-left: 35%;
 }
