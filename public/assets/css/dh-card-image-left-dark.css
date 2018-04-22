@@ -2,7 +2,7 @@
 Assuming this is CSS for the Profile page
 Not all of this code seems to link back to html?
 */
-
+/* 
 .photo-card {
   background-color:#2d3638;
   border-radius:10px;
@@ -92,7 +92,7 @@ Not all of this code seems to link back to html?
 
 .photo-details p {
   color:white;
-}
+} */
 
 #leftDiv {
   width:50%;
@@ -114,9 +114,6 @@ Not all of this code seems to link back to html?
   margin:15px;
 }
 
-#twitterColumn {
-  padding-left:300px;
-}
 
 #stars {
   width:60%;
