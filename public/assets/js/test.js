@@ -90,7 +90,8 @@ getUPC_Code(result.codeResult.code);
 
     });
 
-
+QUagga.stop();
+_scannerIsRunning=false;
 }
 
 
