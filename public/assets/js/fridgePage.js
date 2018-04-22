@@ -96,7 +96,7 @@ function startScanner() {
          _scannerIsRunning=false;
           $("#scanner-container").hide();
 
-getUPC_Code(result);
+getUPC_Code(result.codeResult.code);
 
 
     });
@@ -160,6 +160,9 @@ output ='<tbody>'
          $('#updated_table').append(output);
 
          alert(desc);
+
+         Quagga.stop();
+         
 
 
 
