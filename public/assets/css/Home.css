@@ -71,21 +71,6 @@ h3:hover{
     transition: all ease-in-out 250ms;
 }
 
-h3::before{
-  content: '';
-  display: block;
-  height: 5px;
-  width: 0%
-  background-color: #444;
-  position: absolute;
-  top: 20px;
-  transition: all ease-in-out 250ms;
-}
-
-h3:hover::before{
-  width: 100%;
-}
-
 
 /* TEAM BLOCK ----------------------------------------------------------------  */
 
