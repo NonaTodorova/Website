@@ -384,19 +384,19 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
 }
 
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax1{
     height: 85vh;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax2{
     height: 85vh;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax3{
     height: 85vh;
   }
