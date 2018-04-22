@@ -23,7 +23,33 @@ function getResultsForRecipes(jsondata){
   for(var i = 0 ; i<jsondata.hits.length;i++){
 
     var image = jsondata.hits[i].recipe.image;
-    console.log(image);
+     var label = jsondata.hits[i].recipe.label;
+     var servings = json.hits[i].recipe.yield;
+     var adv = json.hits[i].recipe.dietLables[0];
+     var ingr = json.hits[i].ingridientLines;
+     var ingr_String = "";
+     for(int i=0;i<ingr.length;i++){
+       ingr_String += ingr[i];
+     }
+     var calories = json.hits[i].recipe.yield.calories;
+     // Nutrient info
+     var fatLabel = json.hits[i].recipe.totalNutrients.FAT.label;
+     var fat_quant = json.hits[i].recipe.totalNutrients.FAT.quantity;
+
+     var carbLabel = json.hits[i].recipe.totalNutrients.CHOCDF.label;
+
+      var carb_quant = json.hits[i].recipe.totalNutrients.CHOCDF.quantity;
+
+      var prot = json.hits[i].recipe.totalNutrients.PROCNT.label;
+
+      var prot_quant = json.hits[i].recipe.totalNutrients.PROCNT.quantity;
+
+
+      console.log(image + label + servings + adv + ingr_String+ calories + fatLabel + fat_quant );
+
+
+
+
 
   }
 
