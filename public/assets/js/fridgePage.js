@@ -1,20 +1,19 @@
 
 
-$(function() {
-//    $("#fridgeTab").onload(function() {
-//       // remove classes from all
-
-//       $("#profileTab").removeClass("active");
+// $(function() {
+//
+//
+// $( document ).ready(function() {
+//     $("#profileTab").removeClass("active");
 //       // add class to the one we clicked
 //       $("#fridgeTab").addClass("active");
-//    });
+// })
+//
+//
 // });
 
-$( document ).ready(function() {
-    $("#profileTab").removeClass("active");
-      // add class to the one we clicked
-      $("#fridgeTab").addClass("active");
-})
+
+
 
 $(function() {
 	// Create the QuaggaJS config object for the live stream
@@ -117,14 +116,4 @@ $(function() {
 			Quagga.decodeSingle($.extend({}, fileConfig, {src: URL.createObjectURL(e.target.files[0])}), function(result) {alert(result.codeResult.code);});
 		}
 	});
-});
-
-
-
-
-
-
-
-
-
 });
