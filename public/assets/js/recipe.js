@@ -63,10 +63,12 @@ var card = "card";
 
       console.log(output);
 
-    $('.scroll-bar').append(output);
+
 
 
   }
+
+    $('.scroll-bar').html(output);
 
 
 
