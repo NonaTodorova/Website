@@ -120,7 +120,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
 function getUPC_Code(upc_code){
 
-  var url_test ="https://dev.tescolabs.com/product/?gtin=5010459005216";
+  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
 
 $.ajax({
            url: url_test,
@@ -155,6 +155,7 @@ output ='<tbody>'
          $('#updated_table').append(output);
 
          alert(data.products[0].description);
+         
 
 
 
