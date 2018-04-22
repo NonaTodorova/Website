@@ -135,6 +135,7 @@ $.ajax({
        .done(function(data) {
 
 var output = "";
+var desc = data.products[0].description;
 
 output += '<tbody>'
 + '<tr>'
@@ -143,7 +144,7 @@ output += '<tbody>'
 +   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
 + '</td>'
 +  '<td class="hidden-xs">1</td>'
-+    '<td>'data.products[0].description'</td>'
++    '<td> '+desc+' </td>'
 + "<td>02/03/2019</td>"
 +"   </tr>"
 + "</tbody>";
