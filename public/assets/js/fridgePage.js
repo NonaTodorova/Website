@@ -155,6 +155,7 @@ output ='<tbody>'
          $('#updated_table').append(output);
 
          alert(data.products[0].description);
+         
 
 
 
