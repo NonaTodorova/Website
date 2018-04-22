@@ -214,11 +214,11 @@ h2 {
 /* GO TO TOP BUTTON ----------------------------------------------------------------*/
 
 
-#topButton:hover {
+#myButton:hover {
   background-color:#555;
 }
 
-#topButton {
+#myButton {
   display:none;
   position:fixed;
   bottom:20px;
