@@ -2,11 +2,13 @@
 Assuming this is CSS for the Profile page
 Not all of this code seems to link back to html?
 */
-
-#profileDiv{
-  width: 30%;
-  height: auto;
+@media (min-width: 768px)
+    .col-md-6 #profileDiv{
+      flex: 0 0 50%;
+      height: auto;
+    }
 }
+
 
 
 #recipes-2 {
