@@ -119,7 +119,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 function getDescription(upc_code){
 
 
-  var url_test ="https://dev.tescolabs.com/product/?gtin=5010459005216";
+  var url_test ="https://dev.tescolabs.com/product/?gtin=" + upc_code;
 
 $.ajax({
            url: url_test,
@@ -132,10 +132,10 @@ $.ajax({
            data: "{body}",
        })
        .done(function(data) {
-         console.log(data.products[0].description);
+      alert(data.products[0].description);
            alert("success");
        })
        .fail(function() {
            alert("error");
        });
-   });
+   };
