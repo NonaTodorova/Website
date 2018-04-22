@@ -53,11 +53,12 @@ var card = "card";
      //  var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
-     output += '<div class= "card" />  '
-     + '<img class = "card-img-top"   src=  "'+image+'"  /> '
-     // + "<div class = 'card-body' > "
-     // + "<p> class = 'card-text' >  "
-     // + label + "</p>"
+     output += '<div class= "card" >  '
+     + '<img class = "card-img-top"   src=  "'+image+'"  > '
+      + '<div class = "card-body" > '
+      + '<p> class = "card-text" > 'label' </p> '
+      +  '</div>'
+      + '</div>';
      // + "</div>"
      // + "</div>";
 
@@ -81,3 +82,4 @@ alert(output);
 //   <div class="card-body">
 //     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 //   </div>
+//</div>
