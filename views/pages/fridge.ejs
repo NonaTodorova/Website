@@ -4,9 +4,8 @@
 <!-- EJS HEAD LINK -->
 <% include ../partials/head %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <style>
         /* In order to place the tracking correctly */
         canvas.drawing, canvas.drawingBuffer {
@@ -15,21 +14,9 @@
             top: 0;
         }
     </style>
-  </head>
 
 
-        <!-- TEST -->
-        <div id="scanner-container"></div>
-        <input type="button" id="btn" value="Start/Stop the scanner" />
 
-        <!-- Include the image-diff library -->
-        <!-- <script src="assets/js/quagga.min.js"></script>
-
-        <script>
-
-        </script> -->
-
-        <!-- END TEST -->
 
 
   <body>
@@ -56,8 +43,10 @@
 
 
 
+            <!-- TEST -->
+            <div id="scanner-container"></div>
 
-
+            <!-- END TEST -->
 
 
 
@@ -74,7 +63,7 @@
                   <h3 class="panel-title">My Fridge Items</h3>
                 </div>
                 <div class="col col-xs-6 text-right">
-                  <button type="button" id="btnScan" class="btn btn-sm btn-primary btn-create">Scan Item</button>
+                  <button type="button" id="btnScan" value="Start/Stop the scanner" class="btn btn-sm btn-primary btn-create">Scan Item</button>
                 </div>
               </div>
             </div>
