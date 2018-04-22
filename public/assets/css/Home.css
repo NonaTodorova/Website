@@ -61,11 +61,10 @@ body{
 #AboutUs{
   color: #444;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 #AboutUs:hover{
-  color:#000;
+  color:#444;
 }
 
 #AboutUs::before{
