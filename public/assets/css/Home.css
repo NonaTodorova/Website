@@ -58,6 +58,38 @@ body{
   }
 }
 
+#AboutUs{
+  color: #444;
+  text-decoration: none;
+}
+
+#AboutUs:hover{
+  color:#444;
+}
+
+#AboutUs::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 250ms;
+}
+
+#AboutUs:hover::before{
+  width: 100%;
+}
+
+#HowToUse{
+
+}
+
+#Contribution{
+
+}
+
 /* TEAM BLOCK ----------------------------------------------------------------  */
 
 @media (min-width: 1200px) {
@@ -351,19 +383,19 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
 }
 
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax1{
     height: 85vh;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax2{
     height: 85vh;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax3{
     height: 85vh;
   }
