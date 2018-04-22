@@ -28,6 +28,7 @@ $.ajax({
            data: "{body}",
        })
        .done(function(data) {
+         console.log(data);
            alert("success");
        })
        .fail(function() {
