@@ -88,7 +88,7 @@ function startScanner() {
         }
     });
 
-
+var fuckingCode ="";
     Quagga.onDetected(function (result) {
 
 
@@ -96,7 +96,7 @@ function startScanner() {
          // _scannerIsRunning=false;
          //  $("#scanner-container").hide();
 
-getUPC_Code(result.codeResult.code);
+fuckingCOde=result.codeResult.code;
 
 
     });
@@ -121,9 +121,9 @@ document.getElementById("btnScan").addEventListener("click", function () {
 });
 
 
-function getUPC_Code(upc_code){
+function getUPC_Code(){
 
-  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
+  var url_test ="https://dev.tescolabs.com/product/?gtin="+fuckingCOde;
 
 $.ajax({
            url: url_test,
@@ -173,6 +173,3 @@ output ='<tbody>'
        })
 
 }
-
-
-    
