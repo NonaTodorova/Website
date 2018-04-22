@@ -111,6 +111,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
         $("#scanner-container").hide();
     } else {
         startScanner();
+        _scannerIsRunning=true;
         $("#scanner-container").show();
     }
 }, false);
