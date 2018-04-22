@@ -56,7 +56,7 @@ function getResultsForRecipes(jsondata){
       +  "<p class = "'card-body'" > "
       + label + "</p>"
       + "</div>"
-      +  "</div>");
+      +  "</div>"))=;
 
 
   }
