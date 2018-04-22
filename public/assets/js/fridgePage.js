@@ -91,7 +91,7 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
       getUPC_Code(result.codeResult.code);
-    return false;
+  
 
         // alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         Quagga.stop();
@@ -149,12 +149,12 @@ output ='<tbody>'
 +"   </tr>"
 + "</tbody>";
 
-// alert(output);
+ alert(output);
 
 
          $('.table table-striped table-bordered table-list').html(output);
 
-         // alert(data.products[0].description);
+         alert(data.products[0].description);
 
 
 
