@@ -26,6 +26,7 @@ function getResultsForRecipes(jsondata){
 
 
 var output = "";
+
   for(var i = 0 ; i<jsondata.hits.length;i++){
   $('#scroll-bar').empty();
 
@@ -57,7 +58,7 @@ var card = "card";
      output += '<div class= "card" >  '
      + '<img class = "card-img-top"   src=  "'+image+'"  > '
       + '<div class = "card-body" > '
-      + '<p> class = "card-text" > '+label+' </p> '
+      + '<p class = "card-text" > '+label+' </p> '
       +  '</div>'
       + '</div>';
 
@@ -68,7 +69,7 @@ var card = "card";
 
   }
 
-  $('#scroll-bar').html(output);
+    $('.scroll-bar').html(output);
 
 
 
