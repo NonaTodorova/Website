@@ -20,7 +20,7 @@
 
         <!-- TEST -->
         <div id="scanner-container"></div>
-        <input type="button" id="btnScan" value="Start/Stop the scanner" />
+        <input type="button" id="btn" value="Start/Stop the scanner" />
 
         <!-- Include the image-diff library -->
         <script src="assets/js/quagga.min.js"></script>
@@ -113,7 +113,7 @@
 
 
             // Start/stop scanner
-            document.getElementById("btn").addEventListener("click", function () {
+            document.getElementById("btnScan").addEventListener("click", function () {
                 if (_scannerIsRunning) {
                     Quagga.stop();
                 } else {
