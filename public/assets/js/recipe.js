@@ -68,7 +68,7 @@ var card = "card";
 
   }
 
-    $('#col-md-12').html(output);
+    $('#recipes').html(output);
 
 
 
