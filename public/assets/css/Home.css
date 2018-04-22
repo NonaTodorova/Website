@@ -47,7 +47,7 @@ body{
   margin-right:0px;
 }
 
-@media (min-height:1000px) {
+@media (min-width:1500px) {
   #scrollDowns {
     position: sticky;
     bottom: 0px;
