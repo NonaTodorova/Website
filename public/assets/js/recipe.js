@@ -28,8 +28,7 @@ $.ajax({
            data: "{body}",
        })
        .done(function(data) {
-      var nice_Json =  JSON.stringify(data,null,4);
-      console.log(nice_Json);
+         console.log(data.products[0].description);
            alert("success");
        })
        .fail(function() {
