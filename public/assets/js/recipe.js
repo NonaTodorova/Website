@@ -1,7 +1,7 @@
 
 $(function(){
 
-;
+
 
 
 
@@ -22,13 +22,9 @@ function getResultsForRecipes(jsondata){
 
   for(var i = 0 ; i<jsondata.hits.length;i++){
 
-
-
-
+    var image = jsondata.hits[i].recipe.image; 
 
   }
-
-
 
 }
 
