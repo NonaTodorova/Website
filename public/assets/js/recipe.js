@@ -54,7 +54,7 @@ var output = "";
 
      output += "<div class = 'card' +  >"
      + '<img  clas = "card-img-top+"   src=  "'+image+'"  /> '
-     + "<div class = "'card-body'" > "
+     + "<div class = 'card-body' > "
      + "<p> class = "'card-text'" >  "
      + label + "</p>"
      + "</div>"
