@@ -15,7 +15,7 @@ $(function(){
 
 
 
-  var url ="https://dev.tescolabs.com/product/?"+"gtin=5010459005216";
+  var url ="https://dev.tescolabs.com/product/?+gtin=5010459005216";
 
 $.ajax({
            url: url,
