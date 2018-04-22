@@ -15,13 +15,13 @@ $(function(){
 
 
 
-  var url ="https://dev.tescolabs.com/product/?+gtin=5010459005216";
+  var url ="https://dev.tescolabs.com/product/?"+gtin=5010459005216;
 
 $.ajax({
            url: url,
            beforeSend: function(xhrObj){
                // Request headers
-               xhrObj.setRequestHeader("f4b09768d9a04ed198d32676e660526c");
+               xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","f4b09768d9a04ed198d32676e660526c");
            },
            type: "GET",
            // Request body
@@ -34,6 +34,10 @@ $.ajax({
            alert("error");
        });
    });
+
+
+
+
 
 //   var url = "https://api.edamam.com/search?q=Chicken&app_id=107bd766&app_key=3bd0d97e2ed7c692c9cd9fef319ee6a4&from=0&to=5";
 //   $.getJSON(url,function(jsondata){
