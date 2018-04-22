@@ -120,7 +120,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
 function getUPC_Code(upc_code){
 
-  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
+  var url_test ="https://dev.tescolabs.com/product/?gtin=5010459005216";
 
 $.ajax({
            url: url_test,
@@ -149,12 +149,12 @@ output ='<tbody>'
 +"   </tr>"
 + "</tbody>";
 
-alert(output);
+// alert(output);
 
 
-         $('.table table-striped table-bordered table-list').append(output);
+         $('.table table-striped table-bordered table-list').html(output);
 
-         alert(data.products[0].description);
+         // alert(data.products[0].description);
 
 
 
