@@ -91,7 +91,7 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
       getUPC_Code(result.codeResult.code);
-    return false; 
+    return false;
 
         // alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         Quagga.stop();
@@ -133,7 +133,27 @@ $.ajax({
            data: "{body}",
        })
        .done(function(data) {
+
+var output = "";
+
+output += '<tbody>'
++ '<tr>'
++ '<td align="center">'
++ '<a class="btn btn-default"><em class="fa fa-pencil"></em></a>'
++   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
++ '</td>'
++  '<td class="hidden-xs">1</td>'
++    '<td>'data.products[0].description'</td>'
++ "<td>02/03/2019</td>"
++"   </tr>"
++ "</tbody>";
+
+
+         $('.table table-striped table-bordered table-list').append(output);
+
          alert(data.products[0].description);
+
+
 
            // alert("success");
        })
@@ -142,3 +162,16 @@ $.ajax({
        })
 
      }
+
+
+     // <tbody>
+     //   <tr>
+     //     <td align="center">
+     //       <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+     //       <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+     //     </td>
+     //     <td class="hidden-xs">1</td>
+     //     <td>Asda Milk</td>
+     //     <td>02/03/2019</td>
+     //   </tr>
+     // </tbody>
