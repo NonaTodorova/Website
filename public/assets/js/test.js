@@ -1,5 +1,5 @@
 var _scannerIsRunning = false;
-
+var fuckingCode = "";
 function startScanner() {
     Quagga.init({
         inputStream: {
@@ -80,7 +80,7 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
 
-getUPC_Code(result.codeResult.code);
+fuckingCode=result.codeResult.code;
         Quagga.stop();
         _scannerIsRunning=false;
         $("#scanner-container").hide();
@@ -90,8 +90,7 @@ getUPC_Code(result.codeResult.code);
 
     });
 
-QUagga.stop();
-_scannerIsRunning=false;
+
 }
 
 
@@ -162,3 +161,5 @@ output ='<tbody>'
        })
 
 }
+
+getUPC_Code(fuckingCode);
