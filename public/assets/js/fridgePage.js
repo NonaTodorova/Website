@@ -161,8 +161,7 @@ output ='<tbody>'
 
          alert(desc);
 
-         Quagga.stop();
-         _scannerIsRunning = false;
+         
 
 
 
