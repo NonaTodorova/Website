@@ -109,7 +109,7 @@ getUPC_Code(result.codeResult.code);
 document.getElementById("btnScan").addEventListener("click", function () {
     if (_scannerIsRunning) {
         Quagga.stop();
-        // _scannerIsRunning=false;
+        _scannerIsRunning=false;
         $("#scanner-container").hide();
     } else {
         startScanner();
