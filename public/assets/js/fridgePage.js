@@ -25,15 +25,15 @@ function startScanner() {
         },
         decoder: {
             readers: [
-                // "code_128_reader",
-                "ean_reader"
-                // "ean_8_reader",
-                // "code_39_reader",
-                // "code_39_vin_reader",
-                // "codabar_reader",
-                // "upc_reader",
-                // "upc_e_reader",
-                // "i2of5_reader"
+                "code_128_reader",
+                "ean_reader",
+                "ean_8_reader",
+                "code_39_reader",
+                "code_39_vin_reader",
+                "codabar_reader",
+                "upc_reader",
+                "upc_e_reader",
+                "i2of5_reader"
             ],
             debug: {
                 showCanvas: true,
@@ -90,7 +90,7 @@ function startScanner() {
 
 
     Quagga.onDetected(function (result) {
-      getUPC_Code(result.codeResult.code);
+    //  getUPC_Code(result.codeResult.code);
 
 
 
@@ -156,9 +156,7 @@ output ='<tbody>'
 
          $('#updated_table').append(output);
 
-         if(alert(data.products[0].description)){
-           return "cool"
-         };
+         alert(desc);
 
 
 
