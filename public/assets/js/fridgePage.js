@@ -118,9 +118,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
 function getUPC_Code(upc_code){
 
-
-
-  var url_test ="https://dev.tescolabs.com/product/?gitn=" + upc_code;
+  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
 
 $.ajax({
            url: url_test,
