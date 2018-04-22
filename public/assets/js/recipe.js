@@ -6,7 +6,7 @@ $(function() {
 
   $('#searchform').submit(function(){
     var searchTerms = $("#searchterms").val();
-    getResultsFromOMDB(searchTerms);
+    getRecipesResults(searchTerms);
     return false;
   });
   });
