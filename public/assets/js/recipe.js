@@ -5,7 +5,7 @@ $(function(){
 
 
 
-        $.ajax({
+        $.getJSON({
             url: "https://dev.tescolabs.com/product/?" +5010459005216,
             beforeSend: function(xhrObj){
                 // Request headers
