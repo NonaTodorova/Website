@@ -47,7 +47,7 @@ body{
   margin-right:0px;
 }
 
-@media (min-height:1000px) {
+@media (min-width:1500px) {
   #scrollDowns {
     position: sticky;
     bottom: 0px;
@@ -74,7 +74,7 @@ h3::before{
   width: 0%
   background-color: #444;
   position: absolute;
-  top: 0;
+  top: 20;
   transition: all ease-in-out 250ms;
 }
 
