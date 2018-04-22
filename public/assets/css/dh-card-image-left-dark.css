@@ -2,7 +2,7 @@
 Assuming this is CSS for the Profile page
 Not all of this code seems to link back to html?
 */
-@media (min-width: 768px)
+@media (min-width: 768px){
     .col-md-6 #profileDiv{
       flex: 0 0 50%;
       height: auto;
