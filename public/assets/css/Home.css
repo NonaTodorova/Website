@@ -51,9 +51,14 @@ CSS USED FOR HOME PAGE
   }
 }
 
-.vertical-middle{
+#AboutUs{
   vertical-align: middle;
-
+}
+#HowToUse{
+  vertical-align: middle;
+}
+#Contribution{
+  vertical-align: middle;
 }
 
 /* TEAM BLOCK ----------------------------------------------------------------  */
