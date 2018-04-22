@@ -91,13 +91,13 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
         alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
-        
+
     });
 }
 
 
 // Start/stop scanner
-document.getElementById("btn").addEventListener("click", function () {
+document.getElementById("btnScan").addEventListener("click", function () {
     if (_scannerIsRunning) {
         Quagga.stop();
         _scannerIsRunning=false;
