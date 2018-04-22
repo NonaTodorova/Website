@@ -3,7 +3,10 @@ Assuming this is CSS for the Profile page
 Not all of this code seems to link back to html?
 */
 
-
+#profileDiv{
+  width: 50%
+  height: auto;
+}
 
 
 #recipes-2 {
