@@ -90,7 +90,7 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
 
-
+        _scannerIsRunning=false;
         Quagga.stop();
 
         $("#scanner-container").hide();
