@@ -28,13 +28,21 @@
 
 
     <!-- TEST -->
-    <form>
-        <div class="input-field">
-            <label for="isbn_input">EAN:</label>
-            <input id="isbn_input" class="isbn" type="text" />
-            <button type="button" class="icon-barcode button scan"> </button>
-        </div>
-    </form>
+    <button type="button"
+      name="btnScanBarcode"
+      id="btnScanBarcode"
+      style="height:56px;border-width:0px;"
+      onclick="javascript:startBarcodeScanner();">
+  <img src="http://berrywing.com/images/barcode_2d.png" style="height: 50px; width: 50px">
+  </button>
+
+  <script>
+  function startBarcodeScanner()
+  {
+  	alert("Using client JavaScript to start scanner.");
+  	window.location.href = 'bwstw://startscanner?field=txtField2';
+  }
+  </script> 
     <!-- END TEST -->
 
 
@@ -159,6 +167,7 @@
       <script src="assets/bootstrap/js/bootstrap.min.js"></script>
       <script src="assets/js/fridgePage.js"></script>
       <script src="assets/js/quaggaTest.js"></script>
+
 
 
   </body>
