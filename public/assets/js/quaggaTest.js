@@ -1,3 +1,4 @@
+$(function(){
 var Quagga = window.Quagga;
 var App = {
     _scanner: null,
@@ -79,3 +80,4 @@ var App = {
     }
 };
 App.init();
+});
