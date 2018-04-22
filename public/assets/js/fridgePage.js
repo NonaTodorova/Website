@@ -91,11 +91,13 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
       getUPC_Code(result.codeResult.code);
+
+
         // alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         Quagga.stop();
         _scannerIsRunning=false;
           $("#scanner-container").hide();
-
+    return false; 
 
     });
 }
@@ -132,7 +134,7 @@ $.ajax({
        })
        .done(function(data) {
          alert(data.products[0].description);
-         break; 
+
            // alert("success");
        })
        .fail(function() {
