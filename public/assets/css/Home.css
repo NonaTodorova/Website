@@ -350,6 +350,25 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
     background-size: cover;
 }
 
+
+@media (min-width:768px) {
+  .parallax1{
+    height: 85vh;
+  }
+}
+
+@media (min-width:768px) {
+  .parallax2{
+    height: 85vh;
+  }
+}
+
+@media (min-width:768px) {
+  .parallax3{
+    height: 85vh;
+  }
+}
+
 /* TEXT CSS ----------------------------------------------------------------*/
 
 h2 {
