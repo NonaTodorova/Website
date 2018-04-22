@@ -59,12 +59,12 @@ body{
 }
 
 
-.homeButtons h3{
+#AboutUs,#HowToUse,#Contribution{
   color: #444;
   text-decoration: none;
 }
 
-.homeButtons h3:hover{
+#AboutUs,#HowToUse,#Contribution:hover{
     color: #70da75;
     border-top: 5px solid;
     border-top-color: #70da75;
