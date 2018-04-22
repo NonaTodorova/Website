@@ -28,7 +28,7 @@ function getResultsForRecipes(jsondata){
      var adv = json.hits[i].recipe.dietLables[0];
      var ingr = json.hits[i].ingridientLines;
      var ingr_String = "";
-     for(int i=0;i<ingr.length;i++){
+     for(var i=0;i<ingr.length;i++){
        ingr_String += ingr[i];
      }
      var calories = json.hits[i].recipe.yield.calories;
