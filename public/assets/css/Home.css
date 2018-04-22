@@ -64,6 +64,102 @@ CSS USED FOR HOME PAGE
   height:auto;
 }
 
+/*YOUR CONTRIBUTION BLOCK ----------------------------------------------------------------  */
+
+/*
+CSS for Your Contribution Article on Home Page
+*/
+
+.article-dual-column {
+  color:#56585b;
+  background-color:#fff;
+  font-family:'Lora', serif;
+  font-size:14px;
+}
+
+.article-dual-column .intro {
+  font-size:16px;
+  margin:0 auto 30px;
+}
+
+/* PARAGRAPH TEXT */
+.article-dual-column .intro p {
+  font-size:12px;
+}
+
+/* BY */
+.article-dual-column .intro p .by {
+  font-style:italic;
+}
+
+/* GROUP 21 */
+.article-dual-column .intro p a {
+  color:#333;
+  text-transform:uppercase;
+  padding-left:3px;
+}
+
+/* DATE */
+.article-dual-column .intro p .date {
+  text-transform:uppercase;
+  padding:4px 0 4px 10px;
+  margin-left:10px;
+  border-left:1px solid #00000040;
+}
+
+/* INTRO IMAGE */
+.article-dual-column .intro img {
+  margin-top:25px;
+}
+
+/* TABLE OF CONTENTS */
+
+
+@media (max-width:767px) {
+  .article-dual-column .toc {
+    border:1px solid #d3d3d3;
+    padding:20px 0 15px;
+    margin-bottom:20px;
+    border-width:1px 0;
+  }
+}
+
+.article-dual-column .toc p {
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.article-dual-column .toc ul {
+  padding-left:20px;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+.article-dual-column .toc li {
+  padding:2px 0;
+}
+
+.article-dual-column .toc a {
+  color:inherit;
+}
+
+/* YOUR CONTRIBUTION TEXT */
+
+.article-dual-column .text p {
+  padding-top:15px
+  margin-bottom:20px;
+  line-height:1.45;
+  font-family:'Open Sans', sans-serif;
+}
+
+@media (min-width:768px) {
+  .article-dual-column .text p {
+    font-size:16px;
+  }
+}
+
+
 
 /* Parallax CSS ----------------------------------------------------------------*/
 
