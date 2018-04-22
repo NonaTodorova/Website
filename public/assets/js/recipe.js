@@ -9,7 +9,7 @@ $(function(){
             url: "https://dev.tescolabs.com/product/?" +5010459005216,
             beforeSend: function(xhrObj){
                 // Request headers
-                xhrObj.setRequestHeader("f4b09768d9a04ed198d32676e660526c","{subscription key}");
+                xhrObj.setRequestHeader("f4b09768d9a04ed198d32676e660526c","{Primary key}");
 
             },
             type: "GET",
