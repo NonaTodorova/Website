@@ -22,9 +22,8 @@ getResultsForRecipes(jsondata);
 
 function getResultsForRecipes(jsondata){
 
-var card  = "card";
-var img = "card-img-top";
-var p = "card-text";
+var card = "card";
+
 
   for(var i = 0 ; i<jsondata.hits.length;i++){
 
@@ -54,8 +53,8 @@ var output = "";
      //  var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
-     output += '<div class = "'card'" + > ';
-     //+ '<img  clas = "card-img-top+"   src=  "'+image+'"  /> '
+     output += "<div class = '"card"' +  > ";
+     // + '<img  clas = "card-img-top+"   src=  "'+image+'"  /> '
      // + "<div class = 'card-body' > "
      // + "<p> class = 'card-text' >  "
      // + label + "</p>"
