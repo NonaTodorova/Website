@@ -108,6 +108,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
         $("#scanner-container").hide();
     } else {
         startScanner();
+        $("#scanner-container").show();
     }
 }, false);
 
