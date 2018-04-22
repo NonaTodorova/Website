@@ -24,7 +24,6 @@ CSS for Your Contribution Article on Home Page
 }
 
 .article-dual-column .intro p {
-  color:#929292;
   font-size:12px;
 }
 
@@ -36,7 +35,7 @@ CSS for Your Contribution Article on Home Page
   text-transform:uppercase;
   padding:4px 0 4px 10px;
   margin-left:10px;
-  border-left:1px solid #ddd;
+  border-left:1px solid #00000040;
 }
 
 .article-dual-column .intro p a {
