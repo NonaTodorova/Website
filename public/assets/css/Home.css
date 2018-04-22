@@ -51,11 +51,6 @@ CSS USED FOR HOME PAGE
   }
 }
 
-.vertical-middle{
-  vertical-align: middle;
-
-}
-
 /* TEAM BLOCK ----------------------------------------------------------------  */
 
 @media (min-width: 1200px) {
@@ -208,9 +203,8 @@ h2 {
 
 @media (max-width:767px) {
    h2 {
-     margin-top: 67px;
+    padding-top: 67px;
     margin-bottom:10px;
-    padding-top:25px;
     font-size:24px;
   }
 }
