@@ -5,7 +5,7 @@ $(function(){
 
 
 
-      var url = "https://api.edamam.com/api/food-database/parser?upc=5010459005216&app_id=9afe1548&app_key=39eb2d15eef33f342a935717411d7bec";
+      var url = "https://api.edamam.com/api/food-database/parser?UPC=5010459005216&app_id=9afe1548&app_key=39eb2d15eef33f342a935717411d7bec";
 
         $.getJSON(url,function(jsondata){
 
