@@ -93,7 +93,7 @@ function startScanner() {
 
 
         Quagga.stop();
-         _scannerIsRunning=false;
+
         $("#scanner-container").hide();
 
 getUPC_Code(result.codeResult.code);
@@ -113,8 +113,8 @@ document.getElementById("btnScan").addEventListener("click", function () {
         $("#scanner-container").hide();
     } else {
       $("#scanner-container").show();
-        startScanner();
-        // _scannerIsRunning=true;
+        Quagga.start();
+
 
     }
 }, false);
