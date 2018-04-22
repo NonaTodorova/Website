@@ -9,6 +9,7 @@ $(function(){
   $.getJSON(url,function(jsondata){
 
 getResultsForRecipes(jsondata)
+console.log(jsondata);
 
  // var value = jsondata.hits[0].recipe.totalNutrients.FAT.label;
 
@@ -18,8 +19,15 @@ getResultsForRecipes(jsondata)
 
 function getResultsForRecipes(jsondata){
 
-  var recipes = jsondata.hits.length;
-  console.log(recipes);
+  for(var i = 0 ; i<jsondata.hits.length;i++){
+
+
+
+
+
+  }
+
+
 
 }
 
