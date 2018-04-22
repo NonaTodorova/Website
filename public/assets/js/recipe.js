@@ -25,10 +25,10 @@ function getResultsForRecipes(jsondata){
 
 
 
-var output = "";
+
   for(var i = 0 ; i<jsondata.hits.length;i++){
   $('#scroll-bar').empty();
-
+var output = "";
 var card = "card";
     var image = jsondata.hits[i].recipe.image;
      var label = jsondata.hits[i].recipe.label;
@@ -68,7 +68,7 @@ var card = "card";
 
   }
 
-  $('#scroll-bar').html(output);
+  $('#scroll-bar').append("<li>hello</li>");
 
 
 
