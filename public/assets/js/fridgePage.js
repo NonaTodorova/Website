@@ -1,27 +1,20 @@
 
 
-$(function() {
-//    $("#fridgeTab").onload(function() {
-//       // remove classes from all
-
-//       $("#profileTab").removeClass("active");
+// $(function() {
+//
+//
+// $( document ).ready(function() {
+//     $("#profileTab").removeClass("active");
 //       // add class to the one we clicked
 //       $("#fridgeTab").addClass("active");
-//    });
+// })
+//
+//
 // });
 
-$( document ).ready(function() {
-    $("#profileTab").removeClass("active");
-      // add class to the one we clicked
-      $("#fridgeTab").addClass("active");
-})
 
-<style>
-	#interactive.viewport {position: relative; width: 100%; height: auto; overflow: hidden; text-align: center;}
-	#interactive.viewport > canvas, #interactive.viewport > video {max-width: 100%;width: 100%;}
-	canvas.drawing, canvas.drawingBuffer {position: absolute; left: 0; top: 0;}
-</style>
-<script type="text/javascript">
+
+
 $(function() {
 	// Create the QuaggaJS config object for the live stream
 	var liveStreamConfig = {
@@ -123,15 +116,4 @@ $(function() {
 			Quagga.decodeSingle($.extend({}, fileConfig, {src: URL.createObjectURL(e.target.files[0])}), function(result) {alert(result.codeResult.code);});
 		}
 	});
-});
-</script>
-
-
-
-
-
-
-
-
-
 });
