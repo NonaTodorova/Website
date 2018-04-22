@@ -58,6 +58,39 @@ body{
   }
 }
 
+#AboutUs{
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#AboutUs:hover{
+  color:#000;
+}
+
+#AboutUs::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 250ms;
+}
+
+#AboutUs:hover::before{
+  width: 100%;
+}
+
+#HowToUse{
+
+}
+
+#Contribution{
+
+}
+
 /* TEAM BLOCK ----------------------------------------------------------------  */
 
 @media (min-width: 1200px) {
