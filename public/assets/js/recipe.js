@@ -27,6 +27,7 @@ function getResultsForRecipes(jsondata){
      var servings = jsondata.hits[i].recipe.yield;
      var adv = jsondata.hits[i].recipe.dietLabels[0];
      var ingr = jsondata.hits[i].recipe.ingredientLines;
+     
      // var ingr_String = "";
      // for(var i=0;i<ingr.length;i++){
      //   ingr_String += ingr[i];
