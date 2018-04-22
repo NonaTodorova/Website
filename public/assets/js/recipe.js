@@ -22,7 +22,7 @@ getResultsForRecipes(jsondata);
 
 function getResultsForRecipes(jsondata){
 
-  
+
 
   for(var i = 0 ; i<jsondata.hits.length;i++){
 
@@ -50,10 +50,13 @@ function getResultsForRecipes(jsondata){
       var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
-
-
-
-
+      $('#scroll-bar').append("<div class= "'card'">"
+      + '<img src = "'+photos[i].img_src+"' />"
+      + "<div class= "'card-body'">"
+      +  "<p class = "'card-body'" > "
+      + label + "</p>"
+      + "</div>"
+      +  "</div>");
 
 
   }
