@@ -107,7 +107,7 @@ function startScanner() {
 document.getElementById("btnScan").addEventListener("click", function () {
     if (_scannerIsRunning) {
         Quagga.stop();
-        $("#scanner-container").hide();
+        // $("#scanner-container").hide();
     } else {
         startScanner();
         // $("#scanner-container").show();
