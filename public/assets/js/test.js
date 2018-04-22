@@ -1,14 +1,3 @@
-
-
-$(function() {
-
-
-$( document ).ready(function() {
-    $("#profileTab").removeClass("active");
-      // add class to the one we clicked
-      $("#fridgeTab").addClass("active");
-})
-
 var _scannerIsRunning = false;
 
 function startScanner() {
@@ -91,17 +80,18 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
 
-
+getUPC_Code(result.codeResult.code);
         Quagga.stop();
-
+        _scannerIsRunning=false;
         $("#scanner-container").hide();
 
-getUPC_Code(result.codeResult.code);
+
 
 
     });
 
-
+QUagga.stop();
+_scannerIsRunning=false;
 }
 
 
@@ -118,8 +108,6 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
     }
 }, false);
-
-});
 
 
 function getUPC_Code(upc_code){
@@ -174,16 +162,3 @@ output ='<tbody>'
        })
 
 }
-
-
-     // <tbody>
-     //   <tr>
-     //     <td align="center">
-     //       <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-     //       <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-     //     </td>
-     //     <td class="hidden-xs">1</td>
-     //     <td>Asda Milk</td>
-     //     <td>02/03/2019</td>
-     //   </tr>
-     // </tbody>
