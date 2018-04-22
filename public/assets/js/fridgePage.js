@@ -137,7 +137,7 @@ $.ajax({
 var output = "";
 var desc = data.products[0].description;
 
-output += '<tbody>'
+output ='<tbody>'
 + '<tr>'
 + '<td align="center">'
 + '<a class="btn btn-default"><em class="fa fa-pencil"></em></a>'
@@ -148,6 +148,8 @@ output += '<tbody>'
 + "<td>02/03/2019</td>"
 +"   </tr>"
 + "</tbody>";
+
+alert(output);
 
 
          $('.table table-striped table-bordered table-list').append(output);
