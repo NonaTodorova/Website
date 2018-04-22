@@ -46,7 +46,7 @@ function getResultsForRecipes(jsondata){
       var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
-      console.log(ingr_String);
+      alert(ingr_String)
 
 
 
