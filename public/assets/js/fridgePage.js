@@ -132,6 +132,7 @@ $.ajax({
        })
        .done(function(data) {
          alert(data.products[0].description);
+         break; 
            // alert("success");
        })
        .fail(function() {
