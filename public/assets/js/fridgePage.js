@@ -115,7 +115,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
     }
 }, false);
 
-});
+
 
 
 function getUPC_Code(upc_code){
@@ -165,7 +165,7 @@ output ='<tbody>'
            // alert("error");
        })
 
-     }
+    });
 
 
      // <tbody>
