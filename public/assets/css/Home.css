@@ -454,3 +454,36 @@ h2 {
     height:100vh;
   }
 }
+
+
+
+
+/* UNUSED CSS Carousel and Slider ----------------------------------------------------------------*/
+/*
+.nav.navbar-nav.d-inline.ml-auto {
+  font-size:45px;
+}
+
+@media (max-width: 768px) {
+  #mainScreen {
+    padding:30px;
+    height:40vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  #mainScreen {
+    height:100vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #carousel-1 {
+    display:none;
+  }
+}
+
+#left-sidebar .logo .nav {
+  display:none;
+} */
