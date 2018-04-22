@@ -38,6 +38,8 @@ CSS USED FOR HOME PAGE
   height:10vh;
   margin-left:0;
   margin-right:0px;
+  vertical-align:middle; 
+
 }
 
 @media (max-width:767px) {
