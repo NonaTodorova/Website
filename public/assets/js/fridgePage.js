@@ -90,6 +90,7 @@ function startScanner() {
 
 
     Quagga.onDetected(function (result) {
+      getDescription(result.codeResult.code);
         alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         Quagga.stop();
         _scannerIsRunning=false;
@@ -113,3 +114,28 @@ document.getElementById("btnScan").addEventListener("click", function () {
 }, false);
 
 });
+
+
+function getDescription(upc_code){
+
+
+  var url_test ="https://dev.tescolabs.com/product/?gtin=5010459005216";
+
+$.ajax({
+           url: url_test,
+           beforeSend: function(xhrObj){
+               // Request headers
+               xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","f4b09768d9a04ed198d32676e660526c");
+           },
+           type: "GET",
+           // Request body
+           data: "{body}",
+       })
+       .done(function(data) {
+         console.log(data.products[0].description);
+           alert("success");
+       })
+       .fail(function() {
+           alert("error");
+       });
+   });

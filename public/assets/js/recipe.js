@@ -1,40 +1,5 @@
 
-$(function(){
 
-
-
-
-
-//       var url = "https://api.edamam.com/api/food-database/parser?UPC=5010459005216&app_id=9afe1548&app_key=39eb2d15eef33f342a935717411d7bec";
-//
-//         $.getJSON(url,function(jsondata){
-//
-// console.log(jsondata);
-//
-// })
-
-
-
-  var url_test ="https://dev.tescolabs.com/product/?gtin=5010459005216";
-
-$.ajax({
-           url: url_test,
-           beforeSend: function(xhrObj){
-               // Request headers
-               xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","f4b09768d9a04ed198d32676e660526c");
-           },
-           type: "GET",
-           // Request body
-           data: "{body}",
-       })
-       .done(function(data) {
-         console.log(data.products[0].description);
-           alert("success");
-       })
-       .fail(function() {
-           alert("error");
-       });
-   });
 
 
 
