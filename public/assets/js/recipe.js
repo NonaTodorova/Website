@@ -5,24 +5,18 @@ $(function(){
 
 
 
-        $.getJSON({
-            url: "https://dev.tescolabs.com/product/?" +5010459005216,
-            beforeSend: function(xhrObj){
-                // Request headers
-                xhrObj.setRequestHeader("f4b09768d9a04ed198d32676e660526c","{Primary key}");
+      var url = "https://api.edamam.com/api/food-database/parser?UPC=5010459005216&app_id=9afe1548&app_key=39eb2d15eef33f342a935717411d7bec";
 
-            },
-            type: "GET",
-            // Request body
-            data: "{body}",
-        })
-        .done(function(data) {
-            console.log(data);
-        })
-        .fail(function() {
-            alert("error");
-        });
-    });
+        $.getJSON(url,function(jsondata){
+
+console.log(jsondata);
+
+})
+
+});
+
+
+
 
   // var url ="https://dev.tescolabs.com/product/?"+5010459005216;
   //
