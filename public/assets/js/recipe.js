@@ -53,7 +53,7 @@ var card = "card";
      //  var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
 
 
-     output += "<div class = 'card' +  > ";
+     output += "<div class = "'card'" +  > ";
      // + '<img  clas = "card-img-top+"   src=  "'+image+'"  /> '
      // + "<div class = 'card-body' > "
      // + "<p> class = 'card-text' >  "
