@@ -15,10 +15,10 @@ $(function(){
 
 
 
-  var url ="https://dev.tescolabs.com/product/?"+gtin=5010459005216;
+  var url_test ="https://dev.tescolabs.com/product/?gitn=5010459005216";
 
 $.ajax({
-           url: url,
+           url: url_test,
            beforeSend: function(xhrObj){
                // Request headers
                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","f4b09768d9a04ed198d32676e660526c");
