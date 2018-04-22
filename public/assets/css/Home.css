@@ -47,7 +47,7 @@ body{
   margin-right:0px;
 }
 
-@media (max-width:767px) {
+@media (min-height:1000px) {
   #scrollDowns {
     position: sticky;
     bottom: 0px;
@@ -56,6 +56,30 @@ body{
     margin-right: 0px;
     background-color: ghostwhite;
   }
+}
+
+h3{
+  color: #444;
+  text-decoration: none;
+}
+
+h3:hover{
+  color:#70da75;
+}
+
+h3::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%
+  background-color: #444;
+  position: absolute;
+  top: 20;
+  transition: all ease-in-out 250ms;
+}
+
+h3:hover::before{
+  width: 100%;
 }
 
 /* TEAM BLOCK ----------------------------------------------------------------  */
@@ -351,19 +375,19 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
 }
 
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax1{
     height: 85vh;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax2{
     height: 85vh;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1000px) {
   .parallax3{
     height: 85vh;
   }

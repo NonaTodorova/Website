@@ -91,6 +91,8 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
       getUPC_Code(result.codeResult.code);
+    return false;
+
         // alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         Quagga.stop();
         _scannerIsRunning=false;
@@ -118,9 +120,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
 function getUPC_Code(upc_code){
 
-
-
-  var url_test ="https://dev.tescolabs.com/product/?gitn=" + upc_code;
+  var url_test ="https://dev.tescolabs.com/product/?gtin=5010459005216";
 
 $.ajax({
            url: url_test,
@@ -133,10 +133,48 @@ $.ajax({
            data: "{body}",
        })
        .done(function(data) {
-         alert(data.products[0].description);
+
+var output = "";
+var desc = data.products[0].description;
+
+output ='<tbody>'
++ '<tr>'
++ '<td align="center">'
++ '<a class="btn btn-default"><em class="fa fa-pencil"></em></a>'
++   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
++ '</td>'
++  '<td class="hidden-xs">1</td>'
++    '<td> '+desc+' </td>'
++ "<td>02/03/2019</td>"
++"   </tr>"
++ "</tbody>";
+
+// alert(output);
+
+
+         $('.table table-striped table-bordered table-list').html(output);
+
+         // alert(data.products[0].description);
+
+
+
            // alert("success");
        })
        .fail(function() {
            // alert("error");
-       });
-   });
+       })
+
+     }
+
+
+     // <tbody>
+     //   <tr>
+     //     <td align="center">
+     //       <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+     //       <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+     //     </td>
+     //     <td class="hidden-xs">1</td>
+     //     <td>Asda Milk</td>
+     //     <td>02/03/2019</td>
+     //   </tr>
+     // </tbody>
