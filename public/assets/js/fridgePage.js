@@ -149,7 +149,7 @@ output ='<tbody>'
 +"   </tr>"
 + "</tbody>";
 
-// alert(output);
+ alert(output);
 
 
          $('.table table-striped table-bordered table-list').html(output);
