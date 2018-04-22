@@ -154,7 +154,7 @@ output ='<tbody>'
 
          $('.table table-striped table-bordered table-list').html(output);
 
-         // alert(data.products[0].description);
+         alert(data.products[0].description);
 
 
 
