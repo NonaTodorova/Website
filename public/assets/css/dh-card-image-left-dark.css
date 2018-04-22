@@ -4,7 +4,7 @@ Not all of this code seems to link back to html?
 */
 
 #profileDiv{
-  width: 50%
+  width: 30%;
   height: auto;
 }
 
@@ -21,13 +21,6 @@ Not all of this code seems to link back to html?
 #profileCard {
   width:90%;
   height:auto;
-}
-
-#twitterImg {
-  display:block;
-  margin-left:auto;
-  margin-right:10%;
-  width:100%;
 }
 
 @media (min-width: 1200px) {
