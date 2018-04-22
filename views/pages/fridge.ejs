@@ -113,9 +113,10 @@
 
 
             // Start/stop scanner
-            document.getElementById("Scan").addEventListener("click", function () {
+            document.getElementById("btn").addEventListener("click", function () {
                 if (_scannerIsRunning) {
                     Quagga.stop();
+                    _scannerIsRunning=false;
                 } else {
                     startScanner();
                 }
