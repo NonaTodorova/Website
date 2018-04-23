@@ -4,6 +4,7 @@ CSS used in Fridge page
 
 .panel-table .panel-body {
   padding:0;
+  margin-bottom: 30px;
 }
 
 .panel-table .panel-body .table-bordered {
