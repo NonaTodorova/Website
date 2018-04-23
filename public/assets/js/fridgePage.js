@@ -143,6 +143,7 @@ $.ajax({
 var output = "";
 var desc = data.products[0].description;
 
+
 output ='<tbody>'
 + '<tr>'
 + '<td align="center">'
