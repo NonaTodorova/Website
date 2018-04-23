@@ -85,8 +85,7 @@ app.use(session({secret : "example"}));
 
 
 
-          // db.collection('people').save(req.session.productName, function(err,result){
-          // if(err) throw err;
+
 
 
 
@@ -115,7 +114,7 @@ var person = {
   "email" : req.body.email,
   "password": req.body.password,
   "name" : req.body.name,
-  "items":{}
+  "items":[]
 }
 
 db.collection("people").save(person, function(err,result){
@@ -159,7 +158,11 @@ app.post('/loggingIn', function(req,res){
 app.get('/addItem',function(req,res){
  var pull_Item = req.query.desc;
 // console.log(pull_Item);
+<<<<<<< HEAD
   db.collection('people').findOne({"email":req.session.email},function(err,result){
+=======
+db.collection('people').findOne(req.session.user).update({"items":pull_Item},function(err,result){
+>>>>>>> 8efc42ec9c774ea0f034c964681fc592aea50625
 
 db.collection('people').insert({"items":[pull_Item]},function(err,result){
 console.log("Hello");
