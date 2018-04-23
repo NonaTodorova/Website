@@ -9,14 +9,14 @@
 //   }
 //
 //   }
-
+function(){
 
     $('#searchform').submit(function(){
       var searchTerms = $("#searchterms").val();
       getRecipesResults(searchTerms);
       return false;
     });
-
+}
 
 
 
