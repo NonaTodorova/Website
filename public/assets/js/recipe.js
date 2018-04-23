@@ -8,7 +8,7 @@ $(function() {
 
 var default_Values = ["Wings","Trifle","Cheese"];
 
-console.log(default_Values);
+alert(default_Values[0]);
 
 
   $('#searchform').submit(function(){
