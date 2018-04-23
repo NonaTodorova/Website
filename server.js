@@ -29,9 +29,9 @@ app.use(session({secret : "example"}));
     res.render('pages/home');
   })
 
-  app.get('/fridge',function(req,res){
-    res.render('pages/fridge');
-  })
+  // app.get('/fridge',function(req,res){
+  //   res.render('pages/fridge');
+  // })
 
   app.get('/login',function(req,res){
     res.render('pages/login');
