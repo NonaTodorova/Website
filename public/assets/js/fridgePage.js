@@ -154,6 +154,14 @@ output ='<tbody>'
 +"   </tr>"
 + "</tbody>";
 
+var url_test ="/addItem?desc="+desc;
+
+$.ajax({
+         url: url_test,
+         type: "GET",
+     })
+
+
  alert(output);
 
 
