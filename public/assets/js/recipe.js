@@ -23,7 +23,7 @@ for(var i = 0 ; i<default_Values.legnth;i++){
     getRecipesResults(searchTerms);
     return false;
   });
-  });
+
 
 
 
