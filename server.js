@@ -79,6 +79,26 @@ app.use(session({secret : "example"}));
   })
 
 
+  // TEST
+  // app.get('/fridge',function(req,res){
+  //   if(!req.session.loggedin){res.redirect('/login');return;}
+  //
+  //     //var uname = req.query.username;
+  //
+  //     db.collection('people').findOne({
+  //       "email": req.session.user.email
+  //     }, function(err, result) {
+  //       if (err) throw err;
+  //
+  //       res.render('pages/fridge', {
+  //         user: result
+  //       })
+  //     });
+  //
+  // })
+  // END TEST
+
+
 
 // declaring database
   var db;
