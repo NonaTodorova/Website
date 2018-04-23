@@ -159,9 +159,7 @@ app.get('/addItem',function(req,res){
  var pull_Item = req.query.desc;
 // console.log(pull_Item);
 
-  db.collection('people').findOne({"email":req.session.email},function(err,result){
-
-db.collection('people').findOne(req.session.user).update({"items":pull_Item},function(err,result){
+  db.collection('people').findOne({req.session.email},function(err,result){
 
 
 db.collection('people').insert({"items":[pull_Item]},function(err,result){
