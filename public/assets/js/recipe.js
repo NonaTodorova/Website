@@ -8,7 +8,13 @@ $(function() {
 
 var default_Values = ["Wings","Trifle","Cheese"];
 
-alert(default_Values[0]);
+for(var i = 0 ; i<default_Values.legnth;i++){
+
+  getRecipesResults(default_Values[i]);
+
+}
+
+//alert(default_Values[0]);
 
 
   $('#searchform').submit(function(){
@@ -93,7 +99,7 @@ var card = "card";
 
   }
 
-    $('#recipes').html(output);
+    $('#recipes').append(output);
 
 
 
