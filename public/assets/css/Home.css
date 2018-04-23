@@ -444,7 +444,7 @@ h2 {
   -moz-box-sizing:border-box;
   box-sizing:border-box;
   /* round button */
-    -webkit-border-radius:50%;
+    -webkit-border-radius:20%;
   border-radius:20%;
 }
 ]
