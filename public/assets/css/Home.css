@@ -445,7 +445,7 @@ h2 {
   box-sizing:border-box;
   /* round button */
     -webkit-border-radius:50%;
-  border-radius:50%;
+  border-radius:20%;
 }
 ]
 .text-center :hover border-bottom: 3px solid #green {
