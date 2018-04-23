@@ -163,10 +163,10 @@ $.ajax({
      })
 
 
- alert(output);
+ // alert(output);
 
 
-         // $('#updated_table').append(output);
+         $('#updated_table').append(output);
 
          // alert(desc);
 
