@@ -673,3 +673,30 @@ h2 {
 #left-sidebar .logo .nav {
   display:none;
 } */
+
+
+/* SEARCH BOX */
+input#searchterms {
+    width: 79%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #e9ecef4d;
+}
+
+input#SearchBtn {
+    WIDTH: 19%;
+    height:100%;
+    margin-left:2px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    transition-duration: 0.2s;
+    background-color: #61c534;
+    color:white;
+    border-radius: 8px;
+}
+
+form#searchform {
+    WIDTH: 90%;
+    height:40px;
+
+}
