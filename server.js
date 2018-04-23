@@ -79,23 +79,17 @@ app.use(session({secret : "example"}));
   })
 
 
+
+
   // TEST
-  // app.get('/fridge',function(req,res){
-  //   if(!req.session.loggedin){res.redirect('/login');return;}
-  //
-  //     //var uname = req.query.username;
-  //
-  //     db.collection('people').findOne({
-  //       "email": req.session.user.email
-  //     }, function(err, result) {
-  //       if (err) throw err;
-  //
-  //       res.render('pages/fridge', {
-  //         user: result
-  //       })
-  //     });
-  //
-  // })
+
+
+
+          // db.collection('people').save(req.session.productName, function(err,result){
+          // if(err) throw err;
+
+
+
   // END TEST
 
 
@@ -161,10 +155,15 @@ app.post('/loggingIn', function(req,res){
   });
 });
 
+
 app.get('/addItem',function(req,res){
  var pull_Item = req.query.desc;
- console.log(pull_Item);
-}
+// console.log(pull_Item);
+db.collection('people').findOne(req.session.user).insert({"items":pull_Item},function(err,result){
+
+})
+})
+
 
 
 
