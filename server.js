@@ -162,7 +162,7 @@ app.get('/addItem',function(req,res){
   db.collection('people').findOne({"email":req.session.user.email},function(err,result){
 if (err) throw err;
 
-db.collection('people').insert({"items":[pull_Item]},function(err,result){
+db.collection('people').update({"items":[pull_Item]},function(err,result){
 console.log("Hello");
 if (err) throw err;
 })
