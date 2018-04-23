@@ -88,7 +88,7 @@ app.use(session({secret : "example"}));
           // db.collection('people').save(req.session.productName, function(err,result){
           // if(err) throw err;
 
-        
+
 
   // END TEST
 
@@ -155,14 +155,13 @@ app.post('/loggingIn', function(req,res){
   });
 });
 
-<<<<<<< HEAD
+
 app.get('/addItem',function(req,res){
  var pull_Item = req.query.desc;
  console.log(pull_Item);
 })
 
-=======
->>>>>>> a9cc8914a6f81c3d79de731d9be84d763ac2cb3f
+
 
 
 
