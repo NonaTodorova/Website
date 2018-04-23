@@ -6,15 +6,16 @@ $(function() {
 
 
 
-// var default_Values = ["Wings","Trifle","Cheese"];
-//
-// for(var i = 0 ; i<default_Values.legnth;i++){
-//
-//   getRecipesResults(default_Values[i]);
-//
-// }
+var default_Values = ["Wings","Trifle","Cheese"];
 
-//alert(default_Values[0]);
+for(var i = 0 ; i<default_Values.legnth;i++){
+
+  getRecipesResults(default_Values[i]);
+
+}
+
+})
+
 
 
   $('#searchform').submit(function(){
