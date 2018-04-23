@@ -8,26 +8,16 @@ function myFunction(){
 
   }
 
-}
+  }
 
 
-$(function() {
+    $('#searchform').submit(function(){
+      var searchTerms = $("#searchterms").val();
+      getRecipesResults(searchTerms);
+      return false;
+    });
 
 
-
-
-
-
-
-
-
-  $('#searchform').submit(function(){
-    var searchTerms = $("#searchterms").val();
-    getRecipesResults(searchTerms);
-    return false;
-  });
-
-})
 
 
 
