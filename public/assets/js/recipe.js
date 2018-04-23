@@ -18,8 +18,6 @@ console.log(default_Values);
   });
   });
 
-})
-
 
 
 
