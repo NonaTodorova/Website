@@ -122,3 +122,10 @@ Profile page form
   margin-bottom:15px;
   border:1px solid #9b1f1f;
 }
+
+
+/* SEARCH BOX */
+
+#searchBox{
+  width: 100%;
+}
