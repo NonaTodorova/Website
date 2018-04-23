@@ -17,11 +17,11 @@ for(var i = 0 ; i<default_Values.legnth;i++){
 //alert(default_Values[0]);
 
 
-  $('#searchform').submit(function(){
-    var searchTerms = $("#searchterms").val();
-    getRecipesResults(searchTerms);
-    return false;
-  });
+  // $('#searchform').submit(function(){
+  //   var searchTerms = $("#searchterms").val();
+  //   getRecipesResults(searchTerms);
+  //   return false;
+  // });
   });
 
 
