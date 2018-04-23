@@ -162,6 +162,7 @@ app.get('/addItem',function(req,res){
 db.collection('people').findOne(req.session.user).insert({"items":pull_Item},function(err,result){
 
 })
+})
 
 
 
