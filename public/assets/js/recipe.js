@@ -14,7 +14,7 @@ $(function(){
       getRecipesResults(default_Values[i]);
 
     }
-  })
+  });
 
     $('#searchform').submit(function(){
       var searchTerms = $("#searchterms").val();
