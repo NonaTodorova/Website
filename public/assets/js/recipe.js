@@ -6,9 +6,9 @@ $(function() {
 
 
 
-var default = ["Wings","Trifle","Cheese"];
+var default_Values = ["Wings","Trifle","Cheese"];
 
-alert(default[0]);
+console.log(default_Values);
 
 
   $('#searchform').submit(function(){
