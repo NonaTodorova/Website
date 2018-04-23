@@ -6,22 +6,22 @@ $(function() {
 
 
 
-var default_Values = ["Wings","Trifle","Cheese"];
-
-for(var i = 0 ; i<default_Values.legnth;i++){
-
-  getRecipesResults(default_Values[i]);
-
-}
+// var default_Values = ["Wings","Trifle","Cheese"];
+//
+// for(var i = 0 ; i<default_Values.legnth;i++){
+//
+//   getRecipesResults(default_Values[i]);
+//
+// }
 
 //alert(default_Values[0]);
 
 
-  // $('#searchform').submit(function(){
-  //   var searchTerms = $("#searchterms").val();
-  //   getRecipesResults(searchTerms);
-  //   return false;
-  // });
+  $('#searchform').submit(function(){
+    var searchTerms = $("#searchterms").val();
+    getRecipesResults(searchTerms);
+    return false;
+  });
   });
 
 
