@@ -128,4 +128,14 @@ Profile page form
 
 #searchBox{
   width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+#searchterms{
+  width: 70%;
+  background-color: #e9ecef4d;
+}
+
+#SearchBtn{
+  width: 19%;
 }
