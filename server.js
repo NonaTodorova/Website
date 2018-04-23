@@ -85,8 +85,7 @@ app.use(session({secret : "example"}));
 
 
 
-          // db.collection('people').save(req.session.productName, function(err,result){
-          // if(err) throw err;
+
 
 
 
@@ -115,7 +114,7 @@ var person = {
   "email" : req.body.email,
   "password": req.body.password,
   "name" : req.body.name,
-  "items":{}
+  "items":[]
 }
 
 db.collection("people").save(person, function(err,result){
@@ -159,6 +158,7 @@ app.post('/loggingIn', function(req,res){
 app.get('/addItem',function(req,res){
  var pull_Item = req.query.desc;
  console.log(pull_Item);
+
 })
 
 
