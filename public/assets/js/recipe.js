@@ -14,6 +14,7 @@ getResultsForRecipes(jsondata);
 //   var string = JSON.stringify(jsondata,null,4)
 // console.log(string);
 });
+});
 
 
 $(function(){
