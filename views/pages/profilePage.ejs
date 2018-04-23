@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <!-- EJS HEAD LINK-->
 <% include ../partials/head %>
-    <script src = "assets/js/recipe.js"> </script>
+<script src = "assets/js/recipe.js"> </script>
 
 
 <body>
@@ -43,6 +44,14 @@
                         <p>Email: <b> <%= user.email%></b></p>
 
 <p>Total Items: <b> </b></p></div>
+
+
+
+<form id="searchform">
+  <input id="searchterms" placeholder="Enter an ingredient ..." type ="text">
+  <input id="SearchBtn"type ="submit" value="Search">
+ </form>
+
                 </div>
 
                 <!-- RECIPES -->
