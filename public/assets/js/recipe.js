@@ -4,12 +4,30 @@
 
 $(function() {
 
+
+
+var default = ["Wings","Trifle","Cheese"];
+
+alert(default[0]);
+
+
   $('#searchform').submit(function(){
     var searchTerms = $("#searchterms").val();
     getRecipesResults(searchTerms);
     return false;
   });
   });
+
+})
+
+
+
+
+
+
+
+
+
 
   function getRecipesResults(searchTerms){
 
