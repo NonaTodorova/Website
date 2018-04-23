@@ -704,3 +704,27 @@ form#searchform {
     height:40px;
 
 }
+
+img.card-img-top {
+    width: 50%;
+}
+
+p.card-text {
+}
+
+.card {
+    display:  flex;
+    flex-direction:  row;
+    margin: 20px;
+}
+
+p.card-text {
+    font-size: 30px;
+    border-color: #61c534;
+}
+
+
+
+div#recipes {
+    margin-top:  20px;
+}
