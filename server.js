@@ -164,7 +164,7 @@ app.post('/loggingIn', function(req,res){
 app.get('/addItem',function(req,res){
  var pull_Item = req.query.desc;
  console.log(pull_Item);
-}
+})
 
 
 
