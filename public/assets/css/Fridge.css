@@ -2,6 +2,10 @@
 CSS used in Fridge page
 */
 
+#fridgeRow{
+  margin-top: 30px;
+}
+
 .panel-table .panel-body {
   padding:0;
   margin-bottom: 30px;

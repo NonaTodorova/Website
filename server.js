@@ -159,11 +159,12 @@ app.get('/addItem',function(req,res){
  var pull_Item = req.query.desc;
 // console.log(pull_Item);
 
-  db.collection('people').findOne({req.session.email},function(err,result){
-
+  db.collection('people').findOne({req.session.user.email},function(err,result){
+if (err) throw err;
 
 db.collection('people').insert({"items":[pull_Item]},function(err,result){
 console.log("Hello");
+if (err) throw err;
 })
 
 })
