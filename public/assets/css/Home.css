@@ -694,6 +694,10 @@ input#SearchBtn {
     color:white;
     border-radius: 8px;
 }
+input#SearchBtn:hover{
+  color: #dee2e6;
+  transition: all ease-in-out
+}
 
 form#searchform {
     WIDTH: 90%;
