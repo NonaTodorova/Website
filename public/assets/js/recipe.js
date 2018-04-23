@@ -90,7 +90,7 @@ var card = "card";
 
   }
 
-    $('#recipes').html(output);
+    $('#recipes').append(output);
 
 
 
