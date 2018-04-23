@@ -131,6 +131,10 @@ Profile page form
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
+#searchform{
+  width: 90%;
+}
+
 #searchterms{
   width: 70%;
   background-color: #e9ecef4d;
