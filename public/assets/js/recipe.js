@@ -6,15 +6,15 @@ $(function() {
 
 
 
-var default_Values = ["Wings","Trifle","Cheese"];
+// var default_Values = ["Wings","Trifle","Cheese"];
+//
+// for(var i = 0 ; i<default_Values.legnth;i++){
+//
+//   getRecipesResults(default_Values[i]);
+//
+// }
 
-for(var i = 0 ; i<default_Values.legnth;i++){
 
-  getRecipesResults(default_Values[i]);
-
-}
-
-})
 
 
 
@@ -24,7 +24,7 @@ for(var i = 0 ; i<default_Values.legnth;i++){
     return false;
   });
 
-
+})
 
 
 
