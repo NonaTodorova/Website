@@ -149,9 +149,9 @@ output ='<tbody>'
 + '<a class="btn btn-default"><em class="fa fa-pencil"></em></a>'
 +   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
 + '</td>'
-+  '<td class="hidden-xs">1</td>'
++  '<td class="hidden-xs">4</td>'
 +    '<td> '+desc+' </td>'
-+ "<td>02/03/2019</td>"
++ "<td>12/12/2022</td>"
 +"   </tr>"
 + "</tbody>";
 
@@ -163,10 +163,10 @@ $.ajax({
      })
 
 
- alert(output);
+ // alert(output);
 
 
-         // $('#updated_table').append(output);
+         $('#updated_table').append(output);
 
          // alert(desc);
 

@@ -68,7 +68,7 @@ body{
     color: #70da75;
     border-top: 5px solid;
     border-top-color: #70da75;
-    transition: all ease-in-out 500ms;
+    transition: all ease-in-out 250ms;
 }
 
 
@@ -444,7 +444,7 @@ h2 {
   -moz-box-sizing:border-box;
   box-sizing:border-box;
   /* round button */
-    -webkit-border-radius:50%;
+    -webkit-border-radius:20%;
   border-radius:50%;
 }
 ]
