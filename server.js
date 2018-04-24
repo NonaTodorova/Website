@@ -1,4 +1,3 @@
-
 const MongoClient = require('mongodb').MongoClient; //npm install mongodb@2.2.32
 const url = "mongodb://localhost:27017/users";
 const express = require('express'); //npm install express
@@ -77,21 +76,6 @@ app.use(session({secret : "example"}));
       });
 
   })
-
-
-
-
-  // TEST
-
-
-
-
-
-
-
-  // END TEST
-
-
 
 // declaring database
   var db;
