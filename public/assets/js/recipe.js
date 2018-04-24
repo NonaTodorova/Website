@@ -59,12 +59,12 @@ var card = "card";
      var servings = jsondata.hits[i].recipe.yield;
      // var adv = jsondata.hits[i].recipe.dietLabels[0];
       var ingr = jsondata.hits[i].recipe.ingredientLines;
-      console.log(ingr);
-     //
-     // var ingr_String = "";
-     // for(var i=0;i<ingr.length;i++){
-     //   ingr_String += ingr[i];
-     // }
+    //  console.log(ingr);
+
+      var ingr_String = "";
+      for(var i=0;i<ingr.length;i++){
+        ingr_String += ingr[i] + " ";
+     }
      var calories = jsondata.hits[i].recipe.calories;
      //
      // var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
@@ -83,6 +83,7 @@ var card = "card";
       + '<img class = "card-img-top"   src=  "'+image+'"  > '
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
+      + '<p class = "card-text" > '+ingr_String+' </p> '
       +  '</div>'
       + '</div>';
 
