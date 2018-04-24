@@ -749,5 +749,10 @@ text-align: center;
 
 .card-body{
   background-color:#E0E0E0;
-  
+
+}
+
+
+p.card-text{
+  color:#212020;
 }
