@@ -163,8 +163,6 @@ $.ajax({
      })
 
 
- // alert(output);
-
 
          $('#updated_table').append(output);
 
