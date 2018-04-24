@@ -32,6 +32,7 @@ $(function(){
   $.getJSON(url,function(jsondata){
 //console.log(jsondata);
 getResultsForRecipes(jsondata);
+console.log(jsondata);
   // var string = JSON.stringify(jsondata,null,4)
 
 
