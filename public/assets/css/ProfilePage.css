@@ -1,4 +1,4 @@
-/* 
+/*
 .scroll-bar{
   overflow-y: scroll;
   width:100%;
@@ -68,12 +68,12 @@ Profile page form
 
 /* TBC CSS */
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .col-md-6 #profileDiv{
       flex: 0 0 50%;
       height: auto;
     }
-}
+} */
 
 
 
