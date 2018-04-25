@@ -188,7 +188,7 @@ $.ajax({
            // alert("success");
        })
        .fail(function() {
-           // alert("error");
+           alert("error");
        })
 
 }
