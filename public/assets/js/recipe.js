@@ -66,7 +66,7 @@ var card = "card";
      //  for(var i=0;i<ingr.length;i++){
      //    ingr_String += ingr[i] + " ";
      // }
-     // var calories = jsondata.hits[i].recipe.calories;
+     var calories = jsondata.hits[i].recipe.calories;
      //
      // var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
      // var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
@@ -84,7 +84,9 @@ var card = "card";
       + '<img class = "card-img-top"   src=  "'+image+'"  > '
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
-
+      + '<br>'
+      + '<br>'
+      + '<p class = "card-text" > '+calories+' </p> '
       +  '</div>'
       + '</div>';
 
