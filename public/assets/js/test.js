@@ -8,6 +8,22 @@ $( document ).ready(function() {
       $("#fridgeTab").addClass("active");
 })
 
+
+// Start/stop scanner
+document.getElementById("btnScan").addEventListener("click", function () {
+    if (_scannerIsRunning) {
+        Quagga.stop();
+        _scannerIsRunning=false;
+        $("#scanner-container").hide();
+    } else {
+      $("#scanner-container").show();
+        startScanner();
+        _scannerIsRunning=true;
+
+
+    }
+}, false);
+
 });
 
 var _scannerIsRunning = false;
@@ -110,20 +126,7 @@ getUPC_Code(result.codeResult.code);
 }
 
 
-// Start/stop scanner
-document.getElementById("btnScan").addEventListener("click", function () {
-    if (_scannerIsRunning) {
-        Quagga.stop();
-        _scannerIsRunning=false;
-        $("#scanner-container").hide();
-    } else {
-      $("#scanner-container").show();
-        startScanner();
-        _scannerIsRunning=true;
 
-
-    }
-}, false);
 
 
 
