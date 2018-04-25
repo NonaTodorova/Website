@@ -27,6 +27,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 });
 
 var _scannerIsRunning = false;
+var code = "";
 
 function startScanner() {
     Quagga.init({
@@ -107,7 +108,7 @@ function startScanner() {
 
 
     Quagga.onDetected(function (result) {
-getUPC_Code(result.codeResult.code);
+code=result.codeResult.code;
 
 
 
@@ -122,6 +123,8 @@ getUPC_Code(result.codeResult.code);
 
     });
 
+    getUPC_Code(code);
+
 
 }
 
@@ -131,9 +134,9 @@ getUPC_Code(result.codeResult.code);
 
 
 
-function getUPC_Code(upc_code){
+function getUPC_Code(code){
 
-  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
+  var url_test ="https://dev.tescolabs.com/product/?gtin="+code;
 
 $.ajax({
            url: url_test,
