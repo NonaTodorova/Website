@@ -8,6 +8,8 @@ $( document ).ready(function() {
       $("#fridgeTab").addClass("active");
 })
 
+});
+
 var _scannerIsRunning = false;
 
 function startScanner() {
@@ -91,21 +93,58 @@ function startScanner() {
     Quagga.onDetected(function (result) {
 getUPC_Code(result.codeResult.code);
 
-var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
+
+
+
+        Quagga.stop();
+        _scannerIsRunning=false;
+
+        $("#scanner-container").hide();
+
+
+
+
+    });
+
+
+}
+
+
+// Start/stop scanner
+document.getElementById("btnScan").addEventListener("click", function () {
+    if (_scannerIsRunning) {
+        Quagga.stop();
+        _scannerIsRunning=false;
+        $("#scanner-container").hide();
+    } else {
+      $("#scanner-container").show();
+        startScanner();
+        _scannerIsRunning=true;
+
+
+    }
+}, false);
+
+
+
+
+function getUPC_Code(upc_code){
+
+  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
 
 $.ajax({
-         url: url_test,
-         beforeSend: function(xhrObj){
-             // Request headers
-             xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","f4b09768d9a04ed198d32676e660526c");
-         },
-         type: "GET",
-         // Request body
-         data: "{body}",
-     })
+           url: url_test,
+           beforeSend: function(xhrObj){
+               // Request headers
+               xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","f4b09768d9a04ed198d32676e660526c");
+           },
+           type: "GET",
+           // Request body
+           data: "{body}",
+       })
 
 
-     .done(function(data) {
+       .done(function(data) {
 
 var output = "";
 var desc = data.products[0].description;
@@ -125,57 +164,25 @@ output ='<tbody>'
 var url_test ="/addItem?desc="+desc;
 
 $.ajax({
-       url: url_test,
-       type: "GET",
-   })
-
-
-
-       $('#updated_table').append(output);
-
-       // alert(desc);
-
-
-
-
-
-
-         // alert("success");
-     })
-     .fail(function() {
-         // alert("error");
+         url: url_test,
+         type: "GET",
      })
 
 
-        Quagga.stop();
-        _scannerIsRunning=false;
 
-        $("#scanner-container").hide();
+         $('#updated_table').append(output);
 
-
+         // alert(desc);
 
 
-    });
 
+
+
+
+           // alert("success");
+       })
+       .fail(function() {
+           // alert("error");
+       })
 
 }
-
-
-
-
-// Start/stop scanner
-document.getElementById("btnScan").addEventListener("click", function () {
-    if (_scannerIsRunning) {
-        Quagga.stop();
-        _scannerIsRunning=false;
-        $("#scanner-container").hide();
-    } else {
-      $("#scanner-container").show();
-        startScanner();
-        _scannerIsRunning=true;
-
-
-    }
-}, false);
-
-});
