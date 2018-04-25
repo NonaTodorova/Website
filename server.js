@@ -152,13 +152,8 @@ db.collection('people').update(
       })
 
 
-   //
-   //    { email: req.session.user.email },
-   //    { $push:
-   //      {
-   //        scores: 89 }
-   //      }
-   // )
+
+
 }
 )
 
