@@ -762,6 +762,6 @@ button{
   display:none;
 }
 
-.card-img-top:hover button {
+.btn btn-primary:hover button {
    display: block; /* On :hover of div show button */
 }
