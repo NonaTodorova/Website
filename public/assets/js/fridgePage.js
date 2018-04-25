@@ -157,7 +157,7 @@ $.ajax({
 
 
 
-location.reload();
+location.reload(true);
 
        })
        .fail(function(){
