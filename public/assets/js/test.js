@@ -1,5 +1,15 @@
+
+$(function() {
+
+
+$( document ).ready(function() {
+    $("#profileTab").removeClass("active");
+      // add class to the one we clicked
+      $("#fridgeTab").addClass("active");
+})
+
 var _scannerIsRunning = false;
-var fuckingCode = "";
+
 function startScanner() {
     Quagga.init({
         inputStream: {
@@ -79,10 +89,67 @@ function startScanner() {
 
 
     Quagga.onDetected(function (result) {
+getUPC_Code(result.codeResult.code);
 
-fuckingCode=result.codeResult.code;
+var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
+
+$.ajax({
+         url: url_test,
+         beforeSend: function(xhrObj){
+             // Request headers
+             xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","f4b09768d9a04ed198d32676e660526c");
+         },
+         type: "GET",
+         // Request body
+         data: "{body}",
+     })
+
+
+     .done(function(data) {
+
+var output = "";
+var desc = data.products[0].description;
+
+output ='<tbody>'
++ '<tr>'
++ '<td align="center">'
++ '<a class="btn btn-default"><em class="fa fa-pencil"></em></a>'
++   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
++ '</td>'
++  '<td class="hidden-xs">4</td>'
++    '<td> '+desc+' </td>'
++ "<td>12/12/2022</td>"
++"   </tr>"
++ "</tbody>";
+
+var url_test ="/addItem?desc="+desc;
+
+$.ajax({
+       url: url_test,
+       type: "GET",
+   })
+
+
+
+       $('#updated_table').append(output);
+
+       // alert(desc);
+
+
+
+
+
+
+         // alert("success");
+     })
+     .fail(function() {
+         // alert("error");
+     })
+
+
         Quagga.stop();
         _scannerIsRunning=false;
+
         $("#scanner-container").hide();
 
 
@@ -92,8 +159,6 @@ fuckingCode=result.codeResult.code;
 
 
 }
-
-getUPC_Code(fuckingCode);
 
 
 // Start/stop scanner
@@ -105,62 +170,10 @@ document.getElementById("btnScan").addEventListener("click", function () {
     } else {
       $("#scanner-container").show();
         startScanner();
+        _scannerIsRunning=true;
 
 
     }
 }, false);
 
-
-
-function getUPC_Code(upc_code){
-
-  var url_test ="https://dev.tescolabs.com/product/?gtin="+upc_code;
-
-$.ajax({
-           url: url_test,
-           beforeSend: function(xhrObj){
-               // Request headers
-               xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","f4b09768d9a04ed198d32676e660526c");
-           },
-           type: "GET",
-           // Request body
-           data: "{body}",
-       })
-
-
-       .done(function(data) {
-
-var output = "";
-var desc = data.products[0].description;
-
-output ='<tbody>'
-+ '<tr>'
-+ '<td align="center">'
-+ '<a class="btn btn-default"><em class="fa fa-pencil"></em></a>'
-+   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
-+ '</td>'
-+  '<td class="hidden-xs">1</td>'
-+    '<td> '+desc+' </td>'
-+ "<td>02/03/2019</td>"
-+"   </tr>"
-+ "</tbody>";
-
- alert(output);
-
-
-         $('#updated_table').append(output);
-
-         alert(desc);
-
-
-
-
-
-
-           // alert("success");
-       })
-       .fail(function() {
-           // alert("error");
-       })
-
-}
+});
