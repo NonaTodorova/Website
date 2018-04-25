@@ -105,7 +105,7 @@ var person = {
   email : req.body.email,
   password: req.body.password,
   name : req.body.name,
-  items:[]
+  items:["Beef", "Chicken", "Fish"]
 }
 
 db.collection("people").save(person, function(err,result){
