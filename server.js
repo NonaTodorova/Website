@@ -157,6 +157,7 @@ db.collection('people').update(
         {items:req.query.desc}
       })
 
+res.redirect('/fridge');
 
 })
 

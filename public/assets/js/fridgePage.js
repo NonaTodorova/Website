@@ -143,17 +143,17 @@ $.ajax({
 var output = "";
 var desc = data.products[0].description;
 
-output ='<tbody>'
-+ '<tr>'
-+ '<td align="center">'
-+ '<a class="btn btn-default"><em class="fa fa-pencil"></em></a>'
-+   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
-+ '</td>'
-+  '<td class="hidden-xs">4</td>'
-+    '<td> '+desc+' </td>'
-+ "<td>12/12/2022</td>"
-+"   </tr>"
-+ "</tbody>";
+// output ='<tbody>'
+// + '<tr>'
+// + '<td align="center">'
+// + '<a class="btn btn-default"><em class="fa fa-pencil"></em></a>'
+// +   '<a class="btn btn-danger"><em class="fa fa-trash"></em></a>'
+// + '</td>'
+// +  '<td class="hidden-xs">4</td>'
+// +    '<td> '+desc+' </td>'
+// + "<td>12/12/2022</td>"
+// +"   </tr>"
+// + "</tbody>";
 
 var url_test ="/addItem?desc="+desc;
 
@@ -164,8 +164,8 @@ $.ajax({
 
 
 
-         $('#updated_table').append(output);
-        
+         // $('#updated_table').append(output);
+
 
          // alert(desc);
 
