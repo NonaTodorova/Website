@@ -99,7 +99,7 @@ var person = {
   email : req.body.email,
   password: req.body.password,
   name : req.body.name,
-  items:[]
+  items:{}
 }
 
 db.collection("people").save(person, function(err,result){
@@ -144,12 +144,22 @@ app.get('/addItem',function(req,res){
 // console.log(pull_Item);
 
 db.collection('people').update(
+
    { email: req.session.user.email },
-   { $set:
+   { $push:
       {
-        items:req.query.desc
+        items:req.query.desc }
       }
    }
+
+   // 
+   //    { email: req.session.user.email },
+   //    { $push:
+   //      {
+   //        scores: 89 }
+   //      }
+   // )
+
 )
 })
 
