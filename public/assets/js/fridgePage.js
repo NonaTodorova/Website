@@ -177,7 +177,7 @@ $.ajax({
           location.reload()
        })
        .fail(function() {
-      location.reload()
+    alert("Please try again");
        })
 
 }
