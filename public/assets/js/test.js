@@ -24,7 +24,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
     }
 }, false);
 
-});
+
 
 var _scannerIsRunning = false;
 var code = "";
@@ -192,3 +192,5 @@ $.ajax({
        })
 
 }
+
+});
