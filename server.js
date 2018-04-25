@@ -99,7 +99,7 @@ var person = {
   email : req.body.email,
   password: req.body.password,
   name : req.body.name,
-  items:{}
+  items:[]
 }
 
 db.collection("people").save(person, function(err,result){
