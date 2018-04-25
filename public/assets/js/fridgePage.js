@@ -174,10 +174,10 @@ $.ajax({
 
 
 
-           // alert("success");
+          location.reload()
        })
        .fail(function() {
-           // alert("error");
+      location.reload()
        })
 
 }
