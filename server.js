@@ -149,10 +149,10 @@ db.collection('people').update(
    { $push:
       {
         items:req.query.desc }
-      }
+      })
    }
 
-   // 
+   //
    //    { email: req.session.user.email },
    //    { $push:
    //      {
