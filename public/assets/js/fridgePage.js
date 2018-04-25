@@ -152,11 +152,6 @@ $.ajax({
      })
 
 
-
-
-
-
-
 location.reload(true);
 
        })
