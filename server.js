@@ -140,17 +140,17 @@ app.post('/loggingIn', function(req,res){
 });
 
 
-app.get('/addItem',function(req,res){
- var pull_Item = req.query.desc;
-// console.log(pull_Item);
-
-db.collection('people').update(
-  {"email":req.session.user.email},
-  {
-    "items":[pull_Item]
-  }
-)
-})
+// app.get('/addItem',function(req,res){
+//  var pull_Item = req.query.desc;
+// // console.log(pull_Item);
+//
+// db.collection('people').update(
+//   {"email":req.session.user.email},
+//   {
+//     "items":[pull_Item]
+//   }
+// )
+// })
 
 //   db.collection('people').findOne({"email":req.session.user.email}.update({"items":[pull_Item]},function(err,result){
 // if (err) throw err;
