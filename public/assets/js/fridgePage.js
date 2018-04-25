@@ -161,7 +161,7 @@ location.reload(true);
 
        })
        .fail(function(){
-alert("Fail");
+
        })
 
 
