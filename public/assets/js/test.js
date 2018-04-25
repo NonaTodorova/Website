@@ -160,7 +160,7 @@ $.ajax({
 
 }
 
-});
+
 
 
 // Start/stop scanner
@@ -177,3 +177,5 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
     }
 }, false);
+
+});
