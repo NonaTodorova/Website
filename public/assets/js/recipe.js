@@ -66,7 +66,7 @@ var card = "card";
      //  for(var i=0;i<ingr.length;i++){
      //    ingr_String += ingr[i] + " ";
      // }
-     var calories = jsondata.hits[i].recipe.calories;
+     var calories = Math.round(jsondata.hits[i].recipe.calories);
      //
      // var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
      // var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
