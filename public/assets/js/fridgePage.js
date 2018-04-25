@@ -102,6 +102,7 @@ code = result.codeResult.code;
     });
 
 getUPC_Code(code);
+code="";
 }
 
 
