@@ -9,7 +9,6 @@ $( document ).ready(function() {
 })
 
 var _scannerIsRunning = false;
-var code = "";
 
 function startScanner() {
     Quagga.init({
@@ -90,7 +89,7 @@ function startScanner() {
 
 
     Quagga.onDetected(function (result) {
-code = result.codeResult.code;
+getUPC_Code(result.codeResult.code);
         Quagga.stop();
         _scannerIsRunning=false;
 
@@ -101,8 +100,7 @@ code = result.codeResult.code;
 
     });
 
-getUPC_Code(code);
-code="";
+
 }
 
 
