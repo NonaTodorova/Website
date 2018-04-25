@@ -89,7 +89,7 @@ function startScanner() {
 
 
     Quagga.onDetected(function (result) {
-
+getUPC_Code(result.codeResult.code);
         Quagga.stop();
         _scannerIsRunning=false;
 
@@ -100,7 +100,7 @@ function startScanner() {
 
     });
 
-getUPC_Code(result.codeResult.code);
+
 }
 
 
@@ -165,6 +165,7 @@ $.ajax({
 
 
          $('#updated_table').append(output);
+        
 
          // alert(desc);
 
