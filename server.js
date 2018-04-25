@@ -81,9 +81,6 @@ app.use(session({secret : "example"}));
   })
 
 
-
-
-
 // declaring database
   var db;
 
@@ -146,6 +143,9 @@ app.post('/loggingIn', function(req,res){
 });
 
 
+
+ /*Adding the Scanned products to the Items array in the database*/
+
 app.get('/addItem',function(req,res){
 // console.log(pull_Item);
 
@@ -162,13 +162,6 @@ db.collection('people').update(
 })
 
 
-//   db.collection('people').findOne({"email":req.session.user.email}.update({"items":[pull_Item]},function(err,result){
-// if (err) throw err;
-//
-// db.collection('people').update({"items":[pull_Item]},function(err,result){
-// console.log("Hello");
-// if (err) throw err;
-// })
 
 
 

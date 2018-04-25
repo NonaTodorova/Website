@@ -153,17 +153,11 @@ $.ajax({
 
 
 
-
-
-
-
-location.reload(true);
-
        })
        .fail(function(){
-
+alert("Fail");
        })
 
-
+location.reload(true);
 
 }
