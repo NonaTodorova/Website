@@ -76,7 +76,13 @@ app.use(session({secret : "example"}));
         })
       });
 
+
+
   })
+
+
+
+
 
 // declaring database
   var db;
@@ -152,10 +158,7 @@ db.collection('people').update(
       })
 
 
-
-
-}
-)
+})
 
 
 //   db.collection('people').findOne({"email":req.session.user.email}.update({"items":[pull_Item]},function(err,result){
