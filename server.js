@@ -147,10 +147,10 @@ db.collection('people').update(
 
    { email: req.session.user.email },
    { $push:
-      {
-        items:req.query.desc }
+
+        items:req.query.desc
       })
-   }
+
 
    //
    //    { email: req.session.user.email },
@@ -159,9 +159,9 @@ db.collection('people').update(
    //        scores: 89 }
    //      }
    // )
-
+}
 )
-})
+
 
 //   db.collection('people').findOne({"email":req.session.user.email}.update({"items":[pull_Item]},function(err,result){
 // if (err) throw err;
