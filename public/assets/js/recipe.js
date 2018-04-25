@@ -99,7 +99,4 @@ var card = "card";
 
     $('#recipes').html(output);
 
-
-
-
 }

@@ -756,3 +756,9 @@ text-align: center;
 p.card-text{
   color:#212020;
 }
+
+
+button{
+  display:none;
+
+}
