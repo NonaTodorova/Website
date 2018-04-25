@@ -143,12 +143,13 @@ app.post('/loggingIn', function(req,res){
 app.get('/addItem',function(req,res){
 // console.log(pull_Item);
 
-db.people.update(
+db.collection('people').update(
    { email: req.session.user.email },
-   {
-      items: req.query.desc
-   },
-   { upsert: true }
+   { $set:
+      {
+        items:req.query.desc
+      }
+   }
 )
 })
 
