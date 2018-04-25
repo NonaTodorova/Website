@@ -158,12 +158,12 @@ $.ajax({
 
 
 
-          location.reload()
+
        })
-       .fail(function() {
+       .fail(function(){
 
        })
 
-         alert("Please try again");
+
 
 }
