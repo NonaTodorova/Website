@@ -164,7 +164,8 @@ $.ajax({
 
 
 
-         $('#updated_table').html(output);
+         $('#updated_table').append(output);
+         output="";
 
          // alert(desc);
 
