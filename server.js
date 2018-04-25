@@ -160,9 +160,7 @@ db.collection('people').update(
 // if (err) throw err;
 // })
 
-})
-)
-})
+
 
 
 
