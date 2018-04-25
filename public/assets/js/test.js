@@ -9,6 +9,7 @@ $( document ).ready(function() {
 })
 
 
+
 // Start/stop scanner
 document.getElementById("btnScan").addEventListener("click", function () {
     if (_scannerIsRunning) {
@@ -24,7 +25,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
     }
 }, false);
 
-
+});
 
 var _scannerIsRunning = false;
 var code = "";
@@ -192,5 +193,3 @@ $.ajax({
        })
 
 }
-
-});
