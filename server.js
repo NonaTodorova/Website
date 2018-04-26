@@ -162,10 +162,10 @@ db.collection('people').update(
           "desc":req.query.desc,
           "date":0
         }
-      })
+      }
     }
 
-})
+)})
 
 // TEST
 app.get('/delete',function(req,res){
