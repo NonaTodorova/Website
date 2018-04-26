@@ -181,7 +181,7 @@ app.get('/addDate',function(req,res){
   db.collection('people').update(
 
      { email: req.session.user.email },
-     { $pull:
+     { $push:
 
           {dates:req.query.date}
         })
