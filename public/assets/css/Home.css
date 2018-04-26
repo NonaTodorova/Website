@@ -758,9 +758,6 @@ p.card-text{
 }
 
 
-button{
-  display:none;
-}
 
 .btn btn-primary:hover button {
    display: block; /* On :hover of div show button */
