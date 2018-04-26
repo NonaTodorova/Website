@@ -65,11 +65,11 @@
                   </tr>
                 </thead>
                  <% for(var i=0; i<user.items.length; i++) { %>
-                   <tbody id=<%=i%>>
+                   <tbody>
                    <tr>
                    <td align="center">
                    <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                     <a class="btn btn-danger" id=<%=i%+Button>><em class="fa fa-trash"></em></a>
+                     <a class="btn btn-danger" id=<%=i%>><em class="fa fa-trash"></em></a>
                    </td>
                    <td class="hidden-xs"> <%=i+1%> </td>
                      <td> <%=user.items[i]%> </td>
