@@ -158,7 +158,7 @@ db.collection('people').update(
    { email: req.session.user.email },
    { $push:
 
-        {items:{desc:req.query.desc},date{"0"}
+        {items:{desc:req.query.desc},{date:'0'}
       })
 
 
