@@ -174,7 +174,7 @@ app.get('/delete',function(req,res){
      { email: req.session.user.email },
      { $pull:
 
-          {items:req.query.item.id}
+          {items:req.query.item[0].id}
         })
 
 })
