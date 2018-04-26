@@ -103,7 +103,7 @@ var person = {
   password: req.body.password,
   name : req.body.name,
   items:["Beef", "Chicken", "Fish"],
-  dates:["114/12/2020","15/7/2020","5/25/2030"]
+  dates:["14/12/2020","15/7/2020","5/25/2030"]
 
 }
 
