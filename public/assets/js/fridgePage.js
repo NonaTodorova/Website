@@ -121,6 +121,7 @@ location.reload(true);
 
 })
 
+
 //Add date button
 $('.btn-info').click(function(e){
 //console.log($(this))
