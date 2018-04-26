@@ -166,29 +166,29 @@ db.collection('people').update(
 })
 
 // TEST
-app.get('/delete',function(req,res){
-  db.collection('people').update(
-
-     { email: req.session.user.email },
-     { $pull:
-
-          {items:req.query.item}
-        })
-
-})
+// app.get('/delete',function(req,res){
+//   db.collection('people').update(
+//
+//      { email: req.session.user.email },
+//      { $pull:
+//
+//           {items:req.query.item}
+//         })
+//
+// })
 // TEST
 
 //add date
-app.get('/addDate',function(req,res){
-  db.collection('people').update(
-
-     { email: req.session.user.email },
-     { $push:
-
-          {dates:req.query.date}
-        })
-
-})
+// app.get('/addDate',function(req,res){
+//   db.collection('people').update(
+//
+//      { email: req.session.user.email },
+//      { $push:
+//
+//           {dates:req.query.date}
+//         })
+//
+// })
 
 
 

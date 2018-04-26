@@ -68,18 +68,13 @@
                    <tbody>
                    <tr>
                    <td align="center">
-                     <a class="btn btn-danger" id="<%=user.items[i]%>"><em class="fa fa-trash"></em></a>
+                     <a class="btn btn-danger" id="<%=user.items[i].desc%>"><em class="fa fa-trash"></em></a>
                    </td>
                    <td class="hidden-xs"> <%=j%> </td>
-                     <td> <%=user.items[i]%> </td>
-                     <% if(user.dates[i] === void 0  ) {%>
-                       <td align="center">
-                         <button type="button" class="btn btn-info" id="<%=user.items[i]%>" >Add Date</button>
-                       </td><% }
-
-                       else{ %>
-                     <td align="center"><%=user.dates[i]%></td>
-                     <% } %>
+                     <td> <%=user.items[i].desc%> </td>
+                     <!-- <% if(user.dates[i] === void 0  ) {%> -->
+                     <td align="center"><%=user.items[i].date%> </td>
+                        <!-- <button type="button" class="btn btn-info" id="<%=user.items[i]%>" >Add Date</button> -->
 
 
                       </tr>

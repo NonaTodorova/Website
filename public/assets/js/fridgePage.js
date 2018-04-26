@@ -188,8 +188,9 @@ $.ajax({
 var output = "";
 var desc = data.products[0].description;
 
+var input = prompt('enter here');
 
-var url_test ="/addItem?desc="+desc;
+var url_test ="/addItem?desc="+desc+"&date="+input;
 
 $.ajax({
          url: url_test,
