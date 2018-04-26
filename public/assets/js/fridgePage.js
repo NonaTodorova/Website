@@ -114,7 +114,7 @@ $.ajax({
          type: "GET",
      })
 
-//WSlocation.reload(true);
+location.reload(true);
 
 })
 
