@@ -170,7 +170,7 @@ app.get('/delete',function(req,res){
           {items:req.query.item}
         })
 
-}
+})
 
 
 
