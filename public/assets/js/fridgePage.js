@@ -102,10 +102,11 @@ getUPC_Code(result.codeResult.code);
 
 
 }
-$('.btn-danger').click(function(e){
+  $('.btn-danger').click(function(e){
   //console.log($(this))
 
   var id = $(this).attr('id');
+
 var url_test ="/delete?item="+id;
 
 $.ajax({
@@ -113,7 +114,7 @@ $.ajax({
          type: "GET",
      })
 
-location.reload(true);
+//WSlocation.reload(true);
 
 })
 
