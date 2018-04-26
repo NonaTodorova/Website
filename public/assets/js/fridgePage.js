@@ -102,7 +102,11 @@ getUPC_Code(result.codeResult.code);
 
 
 }
-
+$('#btn').click(function(e){
+  //console.log($(this))
+  console.log(e.target.attr('id').value);
+  //e.parent.remove
+})
 
 // Start/stop scanner
 document.getElementById("btnScan").addEventListener("click", function () {
@@ -119,9 +123,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
     }
 }, false);
 
-$('.fa fa-trash').click(function() {
-    console.log( this.id );
-})
+
 
 
 });

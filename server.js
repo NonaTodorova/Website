@@ -161,6 +161,17 @@ db.collection('people').update(
 
 })
 
+// app.get('/delete',function(req,res){
+//   db.collection('people').remove(
+//
+//      { email: req.session.user.email },
+//      { $pull:
+//
+//           {items:req.query.desc}
+//         })
+//
+// }
+
 
 
 
