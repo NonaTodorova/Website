@@ -175,8 +175,8 @@ app.get('/delete',function(req,res){
           {"items":{item:req.query.item}
 
         }
-      }
-    }))
+      })
+    })
 
 
 // TEST
