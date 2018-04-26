@@ -64,13 +64,13 @@
                     <th>Expiry Date</th>
                   </tr>
                 </thead>
-                 <% for(var i=0; i<user.items.length; i++) { %>
+                 <% for(var i=0; var j=i+1 i<user.items.length; i++) { %>
                    <tbody>
                    <tr>
                    <td align="center">
                      <a class="btn btn-danger" id="<%=user.items[i]%>"><em class="fa fa-trash"></em></a>
                    </td>
-                   <td class="hidden-xs"> <%=i%+1> </td>
+                   <td class="hidden-xs"> <%=j%> </td>
                      <td> <%=user.items[i]%> </td>
                      <% if(user.dates[i] != null  ) {%>
                        <td align="center">
