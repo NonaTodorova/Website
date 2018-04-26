@@ -119,10 +119,13 @@ document.getElementById("btnScan").addEventListener("click", function () {
     }
 }, false);
 
-
+$('.fa fa-trash').click(function() {
+    console.log( this.id );
+})
 
 
 });
+
 
 
 function getUPC_Code(upc_code){
