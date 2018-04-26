@@ -104,7 +104,10 @@ getUPC_Code(result.codeResult.code);
 }
 $('.btn').click(function(e){
   //console.log($(this))
-  console.log(e.target.attr('id'));
+
+  var id = $(this).attr('id');
+   alert(id);
+//  console.log(e.target.attr('id'));
   //e.parent.remove
 })
 
