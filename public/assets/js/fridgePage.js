@@ -102,11 +102,14 @@ getUPC_Code(result.codeResult.code);
 
 
 }
-$('.btn').click(function(e){
+$(' .btn btn-danger').click(function(e){
   //console.log($(this))
 
   var id = $(this).attr('id');
-   alert(id);
+  alert(id);
+//var url =
+
+
 //  console.log(e.target.attr('id'));
   //e.parent.remove
 })
