@@ -197,7 +197,7 @@ $.ajax({
      })
 
 
-location.reload(true);
+location.reload();
 
        })
        .fail(function(){
