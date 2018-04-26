@@ -168,12 +168,12 @@ db.collection('people').update(
 // TEST
 app.get('/delete',function(req,res){
   console.log(req.query.item)
-  
+
   db.collection('people').update(
 
      { email: req.session.user.email },
      { $pull:
-console.log(req.query.item);
+// console.log(req.query.item);
 
 
           {"items":{item:req.query.item}
