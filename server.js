@@ -102,8 +102,7 @@ var person = {
   email : req.body.email,
   password: req.body.password,
   name : req.body.name,
-  items:["Beef", "Chicken", "Fish"],
-  dates:["14/12/2020","15/7/2020","5/25/2030"]
+  items:[]
 
 }
 
