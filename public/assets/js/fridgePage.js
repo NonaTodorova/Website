@@ -119,6 +119,9 @@ document.getElementById("btnScan").addEventListener("click", function () {
     }
 }, false);
 
+
+
+
 });
 
 
