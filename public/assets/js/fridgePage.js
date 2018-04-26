@@ -108,6 +108,7 @@ getUPC_Code(result.codeResult.code);
   //console.log($(this))
 
 var id = $(this).attr('id');
+alert(id);
 
 var url_test ="/delete?item="+id;
 
