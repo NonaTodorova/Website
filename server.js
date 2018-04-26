@@ -161,7 +161,7 @@ db.collection('people').update(
 
 })
 
-
+// TEST
 app.get('/delete',function(req,res){
   db.collection('people').update(
 
@@ -172,7 +172,7 @@ app.get('/delete',function(req,res){
         })
 
 })
-
+// TEST
 
 
 
