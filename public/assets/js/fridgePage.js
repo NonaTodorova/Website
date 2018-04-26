@@ -118,7 +118,7 @@ $.ajax({
          type: "GET",
      })
 
-location.reload(true);
+location.reload();
 
 })
 
@@ -137,7 +137,7 @@ $.ajax({
        type: "GET",
    })
 
-location.reload(true);
+location.reload();
 
 })
 
