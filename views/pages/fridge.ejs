@@ -73,12 +73,12 @@
                    <td class="hidden-xs"> <%=i+1%> </td>
                      <td> <%=user.items[i]%> </td>
                      <% if(user.dates[i] != null  ) {%>
-                        <%=user.dates[i]%>
+                       <td align="center">
+                         <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
                        </td><% }
 
                        else{ %>
-                         <td align="center">
-                     <td><a class="btn btn-danger"><em class="fa fa-trash"></em></a></td>
+                     <td><%=user.dates[i]%></td>
                      <% } %>
 
 
