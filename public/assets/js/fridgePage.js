@@ -116,9 +116,6 @@ $.ajax({
 
 location.reload(true);
 
-//location.reload(true);
-
-
 })
 
 // TEST
