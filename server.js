@@ -102,10 +102,8 @@ var person = {
   email : req.body.email,
   password: req.body.password,
   name : req.body.name,
-  items:[],
-  dates:[]
-
-
+  items:["Beef", "Chicken", "Fish"],
+  dates:["1", "5"]
 
 }
 
@@ -158,14 +156,12 @@ db.collection('people').update(
    { email: req.session.user.email },
    { $push:
 
-        {items:{
-          "desc":req.query.desc,
-          "date":0
-        }
-      }
-    }
+        {items:req.query.desc}
+      })
 
-)})
+
+
+})
 
 // TEST
 app.get('/delete',function(req,res){
@@ -174,7 +170,7 @@ app.get('/delete',function(req,res){
      { email: req.session.user.email },
      { $pull:
 
-          {items:req.query.item[0].id}
+          {items:req.query.item}
         })
 
 })
