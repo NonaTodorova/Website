@@ -103,7 +103,7 @@ var person = {
   password: req.body.password,
   name : req.body.name,
   items:["Beef", "Chicken", "Fish"],
-  dates:["1", "5"]
+  dates:[]
 
 }
 
@@ -176,6 +176,18 @@ app.get('/delete',function(req,res){
 })
 // TEST
 
+//add date
+db.collection('people').update(
+
+   { email: req.session.user.email },
+   { $push:
+
+        {dates:req.query.date}
+      })
+
+
+
+})
 
 
 

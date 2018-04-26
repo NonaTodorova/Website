@@ -127,7 +127,7 @@ $('.btn-info').click(function(e){
 var date = prompt("Please enter date");
 var id = $(this).attr('id');
 
-var url_test ="/addDate?date="+id;
+var url_test ="/addDate?date="+date;
 
 $.ajax({
        url: url_test,
