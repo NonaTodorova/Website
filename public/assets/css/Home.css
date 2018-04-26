@@ -8,7 +8,6 @@ body{
 }
 
 
-
 /* Simple Slider CSS  ---------------------------------------------------------------- */
 /*
 .simple-slider .swiper-slide {
@@ -37,7 +36,6 @@ body{
 } */
 
 
-
 /* 3 Bottom Buttons CSS ----------------------------------------------------------------*/
 
 #scrollDowns {
@@ -57,7 +55,6 @@ body{
     background-color: ghostwhite;
   }
 }
-
 
 #AboutUs,#HowToUse,#Contribution{
   color: #444;
@@ -93,7 +90,6 @@ body{
 .team-boxed p {
   color:#7d8285;
 }
-
 
 .team-boxed .intro {
   font-size:16px;
@@ -164,11 +160,8 @@ body{
   opacity:1;
 }
 
-/* HOW TO USE ---------------------------------------------------------------- */
 
-/*
-CSS USED ON HOME PAGE FOR HOW TO USE SECTION
-*/
+/* HOW TO USE ---------------------------------------------------------------- */
 
 .team-clean {
   color:#313437;
@@ -178,7 +171,6 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
 .team-clean p {
   color:#7d8285;
 }
-
 
 .team-clean .intro {
   font-size:16px;
@@ -241,7 +233,6 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
 }
 
 
-
 /*YOUR CONTRIBUTION BLOCK ----------------------------------------------------------------  */
 
 .article-dual-column {
@@ -288,7 +279,6 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
 
 /* TABLE OF CONTENTS */
 
-
 @media (max-width:767px) {
   .article-dual-column .toc {
     border:1px solid #d3d3d3;
@@ -334,7 +324,6 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
 }
 
 
-
 /* Parallax CSS ----------------------------------------------------------------*/
 
 .parallax1 {
@@ -364,7 +353,6 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
     background-size: cover;
 }
 
-
 @media (min-width:1500px) {
   .parallax1{
     height: 85vh;
@@ -383,6 +371,7 @@ CSS USED ON HOME PAGE FOR HOW TO USE SECTION
   }
 }
 
+
 /* TEXT CSS ----------------------------------------------------------------*/
 
 h2 {
@@ -392,7 +381,6 @@ h2 {
   padding-top:77px;
   font-family:sans-serif;
   }
-
 
 @media (max-width:767px) {
    h2 {
@@ -404,7 +392,6 @@ h2 {
 
 
 /* GO TO TOP BUTTON ----------------------------------------------------------------*/
-
 
 #myButton:hover {
   background-color:#555;
@@ -456,6 +443,7 @@ h2 {
   border-style:solid;
   border-color:#8bcf7b;
 }
+
 
 /* FOOTER LIGHT ---------------------------------------------------------------- */
 
@@ -519,8 +507,8 @@ h2 {
   margin-bottom:0;
 }
 
-/* FOOTER GREEN ---------------------------------------------------------------- */
 
+/* FOOTER GREEN ---------------------------------------------------------------- */
 
 .footer-dark {
   padding:50px 0;
@@ -642,8 +630,6 @@ h2 {
 }
 
 
-
-
 /* UNUSED CSS Carousel and Slider ----------------------------------------------------------------*/
 /*
 .nav.navbar-nav.d-inline.ml-auto {
@@ -694,6 +680,7 @@ input#SearchBtn {
     color:white;
     border-radius: 8px;
 }
+
 input#SearchBtn:hover{
   color: #dee2e6;
   transition: all ease-in-out
@@ -702,7 +689,6 @@ input#SearchBtn:hover{
 form#searchform {
     WIDTH: 90%;
     height:40px;
-
 }
 
 img.card-img-top {
@@ -725,18 +711,17 @@ p.card-text {
 }
 
 
+/*    RECIPE CARD CSS    */
 
 div#recipes {
     margin-top:  20px;
 }
-
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
      border-radius: 5px;
 }
-
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
@@ -752,13 +737,12 @@ text-align: center;
 
 }
 
-
 p.card-text{
   color:#212020;
 }
 
 
-
+/* Button? */
 .btn btn-primary:hover button {
    display: block; /* On :hover of div show button */
 }
