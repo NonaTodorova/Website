@@ -103,8 +103,8 @@ var person = {
   password: req.body.password,
   name : req.body.name,
   items:["Beef", "Chicken", "Fish"],
-  dates:["1"]
-  
+  dates:["1", "5", "10"]
+
 }
 
 db.collection("people").save(person, function(err,result){
