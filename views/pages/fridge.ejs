@@ -64,16 +64,24 @@
                     <th>Expiry Date</th>
                   </tr>
                 </thead>
-                 <% for(var i=0; i<user.items.length; i++) { %>
+                 <% for(var i=0, j=i+1; i<user.items.length; i++, j++) { %>
                    <tbody>
                    <tr>
                    <td align="center">
-                   <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
                      <a class="btn btn-danger" id="<%=user.items[i]%>"><em class="fa fa-trash"></em></a>
                    </td>
-                   <td class="hidden-xs"> <%=i+1%> </td>
+                   <td class="hidden-xs"> <%=j%> </td>
                      <td> <%=user.items[i]%> </td>
-                   <td>12/12/2022</td>
+                     <% if(user.dates[i] != void 0  ) {%>
+                       <td align="center">
+                         <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                       </td><% }
+
+                       else{ %>
+                     <td><%=user.dates[i]%></td>
+                     <% } %>
+
+
                       </tr>
                   </tbody>
                    <%} %>
@@ -95,7 +103,6 @@
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/bootstrap/js/bootstrap.min.js"></script>
       <script src="assets/js/fridgePage.js"></script>
-      <!-- <script src="assets/js/test.js"></script> -->
       <script src="assets/js/quagga.min.js"></script>
 
   </body>

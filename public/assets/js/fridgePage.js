@@ -105,8 +105,7 @@ getUPC_Code(result.codeResult.code);
   $('.btn-danger').click(function(e){
   //console.log($(this))
 
-  var id = $(this).attr('id');
-  console.log(id);
+var id = $(this).attr('id');
 
 var url_test ="/delete?item="+id;
 
@@ -177,7 +176,7 @@ location.reload(true);
 
        })
        .fail(function(){
-alert("Fail");
+//alert("Fail");
        })
 
 
