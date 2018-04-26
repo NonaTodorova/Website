@@ -168,6 +168,7 @@ db.collection('people').update(
 // TEST
 app.get('/delete',function(req,res){
   console.log(req.query.item)
+  
   db.collection('people').update(
 
      { email: req.session.user.email },
