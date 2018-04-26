@@ -124,10 +124,10 @@ location.reload(true);
 //Add date button
 $('.btn-info').click(function(e){
 //console.log($(this))
-
+var date = prompt("Please enter date");
 var id = $(this).attr('id');
 
-var url_test ="/delete?item="+id;
+var url_test ="/addDate?date="+id;
 
 $.ajax({
        url: url_test,
