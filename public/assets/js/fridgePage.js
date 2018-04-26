@@ -104,7 +104,8 @@ getUPC_Code(result.codeResult.code);
 }
 
 //Delete button
-  $('.btn-danger').click(function(e){
+document.getElementByClassName("btn-danger").addEventListener("click", function (e) {
+  // $('.btn-danger').click(function(e){
   //console.log($(this))
 
 var id = $(this).attr('id');
@@ -123,7 +124,8 @@ location.reload(true);
 
 
 //Add date button
-$('.btn-info').click(function(e){
+document.getElementByClassName("btn-info").addEventListener("click", function (e) {
+// $('.btn-info').click(function(e){
 //console.log($(this))
 var date = prompt("Please enter date");
 var id = $(this).attr('id');
