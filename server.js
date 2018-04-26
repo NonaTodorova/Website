@@ -104,6 +104,7 @@ var person = {
   name : req.body.name,
   items:["Beef", "Chicken", "Fish"],
   dates:["1"]
+  
 }
 
 db.collection("people").save(person, function(err,result){
