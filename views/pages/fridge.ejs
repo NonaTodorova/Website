@@ -72,13 +72,13 @@
                    </td>
                    <td class="hidden-xs"> <%=j%> </td>
                      <td> <%=user.items[i].desc%> </td>
-                     <% if(user.dates[i] === void 0  ) {%>
+                     <% if(user.items[i].date == 0  ) {%>
                        <td align="center">
                          <button type="button" class="btn btn-info" id="<%=user.items[i]%>">Add Date</button>
                        </td><% }
 
                        else{ %>
-                     <td><%=user.dates[i]%></td>
+                     <td><%=user.items[i].date%></td>
                      <% } %>
 
 
