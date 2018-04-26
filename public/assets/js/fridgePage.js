@@ -102,6 +102,8 @@ getUPC_Code(result.codeResult.code);
 
 
 }
+
+// TEST
 $('.btn-danger').click(function(e){
   //console.log($(this))
 
@@ -116,6 +118,8 @@ $.ajax({
 location.reload(true);
 
 })
+
+// TEST
 
 // Start/stop scanner
 document.getElementById("btnScan").addEventListener("click", function () {
