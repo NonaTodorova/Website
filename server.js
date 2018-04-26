@@ -156,9 +156,12 @@ db.collection('people').update(
    { email: req.session.user.email },
    { $push:
 
-        {items:req.query.desc}
-      })
+        {"items":{
 
+          "item":req.query.desc,"date":req.query.date
+        }
+      }
+    })
 
 
 })
