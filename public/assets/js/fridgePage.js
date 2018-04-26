@@ -106,12 +106,15 @@ $('.btn-danger').click(function(e){
   //console.log($(this))
 
   var id = $(this).attr('id');
-  alert(id);
-//var url =
+var url_test ="/delete?item="+id;
 
+$.ajax({
+         url: url_test,
+         type: "GET",
+     })
 
-//  console.log(e.target.attr('id'));
-  //e.parent.remove
+location.reload(true);
+
 })
 
 // Start/stop scanner
