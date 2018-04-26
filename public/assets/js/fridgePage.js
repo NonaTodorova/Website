@@ -118,6 +118,8 @@ $.ajax({
 
 })
 
+// TEST
+
 // Start/stop scanner
 document.getElementById("btnScan").addEventListener("click", function () {
     if (_scannerIsRunning) {
