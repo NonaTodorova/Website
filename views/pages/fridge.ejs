@@ -72,13 +72,13 @@
                    </td>
                    <td class="hidden-xs"> <%=i+1%> </td>
                      <td> <%=user.items[i]%> </td>
-                     <% if(!(user.dates[i] == 10)) {%>
-                       <td align="center">
-                         <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                     <% if(user.dates[i] != null  ) {%>
+                        <%=user.dates[i]%>
                        </td><% }
 
                        else{ %>
-                     <td><%=user.dates[i]%></td>
+                         <td align="center">
+                     <td><a class="btn btn-danger"><em class="fa fa-trash"></em></a></td>
                      <% } %>
 
 
