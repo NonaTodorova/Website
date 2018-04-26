@@ -102,9 +102,10 @@ var person = {
   email : req.body.email,
   password: req.body.password,
   name : req.body.name,
-  items:["Beef", "Chicken", "Fish"],
-  dates:["1", "5"]
-  
+  items:[],
+  dates:[]
+
+
 
 }
 
@@ -157,7 +158,7 @@ db.collection('people').update(
    { email: req.session.user.email },
    { $push:
 
-        {items:req.query.desc}
+        {items:{desc:req.query.desc},date{"0"}
       })
 
 
