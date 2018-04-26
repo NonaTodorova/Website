@@ -120,7 +120,7 @@ document.getElementById("btnScan").addEventListener("click", function () {
 }, false);
 
 $('.fa fa-trash').click(function() {
-    alert( this.id );
+    console.log( this.id );
 })
 
 
