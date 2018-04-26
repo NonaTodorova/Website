@@ -114,11 +114,7 @@ $.ajax({
          type: "GET",
      })
 
-<<<<<<< HEAD
 location.reload(true);
-=======
-//location.reload(true);
->>>>>>> 5f1fe4fe20c6d572e2d89edb9260b26d7a0efbe7
 
 })
 
