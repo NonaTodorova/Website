@@ -94,7 +94,7 @@ var card = "card";
       + '<p class = "card-text" > '+label+' </p> '
       + '<br>'
       + '<br>'
-      + '<p class = "card-text" > '+calories+' </p> '
+      + '<p class = "card-text" > "Calories" '+calories+' </p> '
         + '<p class = "card-text" > '+servings+' </p> '
           + '<p class = "card-text" > '+ingr.length+' </p> '
       +  '</div>'
