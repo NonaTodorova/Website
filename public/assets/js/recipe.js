@@ -103,10 +103,7 @@ var card = "card";
         + '</div>'
       +  '</div>'
       + '</div>';
-      <div class="card" style="width: 18rem;">
-        <div class="card-header">
-          Featured
-        </div>
+
 
 
       // console.log(output);
