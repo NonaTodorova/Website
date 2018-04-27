@@ -386,25 +386,25 @@ h2 {
 }
 
 .btn:not(:disabled):not(.disabled) {
-  background-color:#50A1CB;
-  color:white;
+  /* background-color:#50A1CB; */
+  /* color:white; */
   /* text/arrow color */
-    display:none;
-  z-index:999;
+    /* display:none;
+  z-index:999; */
   /* float in bottom right corner */
     /* 20 pixels from edge */
-    position:fixed;
+    /* position:fixed;
   right:20px;
-  bottom:20px;
+  bottom:20px; */
   /* size of button is 50 pixels*/
-    width:50px;
+    /* width:50px; */
   height:50px;
-  -webkit-box-sizing:border-box;
+  /* -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
   /* round button */
-    -webkit-border-radius:20%;
-  border-radius:50%;
+    /* -webkit-border-radius:20%;
+  border-radius:50%;  */
 }
 ]
 .text-center :hover border-bottom: 3px solid #green {
