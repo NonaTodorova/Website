@@ -94,11 +94,17 @@ var card = "card";
       + '<p class = "card-text" > '+label+' </p> '
       + '<br>'
       + '<br>'
-      + '<p class = "card-text" > Calories: '+calories+' </p> '
-        + '<p class = "card-text" > '+servings+' </p> '
-          + '<p class = "card-text" > '+ingr.length+' </p> '
+      + '  <ul class="list-group list-group-flush">'
+      + '  <li class="list-group-item"> Calories: '+calories+' </li>'
+      + '  <li class="list-group-item"> Servings: '+servings+' </li>'
       +  '</div>'
       + '</div>';
+
+      <ul class="list-group list-group-flush">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
 
       // console.log(output);
 
