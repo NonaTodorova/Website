@@ -29,24 +29,22 @@ app.use(session({secret : "example"}));
     res.render('pages/home');
   })
 
-  // app.get('/fridge',function(req,res){
-  //   res.render('pages/fridge');
-  // })
 
+// getting back to home page
   app.get('/login',function(req,res){
     res.render('pages/login');
   })
 
+// register page function
   app.get('/register',function(req,res){
     res.render('pages/register');
   })
 
 
-
+// function to set the user for profile page
   app.get('/profilePage',function(req,res){
     if(!req.session.loggedin){res.redirect('/login');return;}
 
-      //var uname = req.query.username;
 
       db.collection('people').findOne({
         "email": req.session.user.email
@@ -60,11 +58,10 @@ app.use(session({secret : "example"}));
 
   })
 
-
+// function to sent the user for register page
   app.get('/fridge',function(req,res){
     if(!req.session.loggedin){res.redirect('/login');return;}
 
-      //var uname = req.query.username;
 
       db.collection('people').findOne({
         "email": req.session.user.email
@@ -96,7 +93,6 @@ app.use(session({secret : "example"}));
 
 app.post('/addUser', function (req, res) {
 
-//if(!req.session.loggedin){res.redirect('/login');return;}
 
 var person = {
   email : req.body.email,
@@ -107,6 +103,7 @@ var person = {
 
 }
 
+// redirecting to login page after register
 db.collection("people").save(person, function(err,result){
   if(err) throw err;
   res.redirect("/login")
@@ -163,7 +160,7 @@ db.collection('people').update(
 
 })
 
-// TEST
+// Deleting item from the database for current user
 app.get('/delete',function(req,res){
   db.collection('people').update(
 
@@ -174,7 +171,7 @@ app.get('/delete',function(req,res){
         })
 
 })
-// TEST
+
 
 //add date
 app.get('/addDate',function(req,res){
@@ -187,27 +184,3 @@ app.get('/addDate',function(req,res){
         })
 
 })
-
-
-
-
-
-
-
-// app.post('/addUser', function (req, res)- {
-//
-// var user = {
-//   "email" : req.body.email,
-//   "password": req.body.password,
-//   "name" : {"first":req.body.first, "last":req.body.last,
-//   "items":{}
-// }
-//
-// };
-//
-//  db.collection('users').save(user, function(err, result) {
-//  if (err) throw err;
-//  console.log('saved to database')
-//  res.redirect('/loginPage')
-//  })
-// })

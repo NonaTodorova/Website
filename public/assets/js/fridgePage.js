@@ -1,13 +1,19 @@
 
 $(function() {
 
-
+  /*
+  Function for the 2 tabs status
+  */
 $( document ).ready(function() {
     $("#profileTab").removeClass("active");
       // add class to the one we clicked
       $("#fridgeTab").addClass("active");
 })
 
+
+/*
+Quagga initialization function
+*/
 var _scannerIsRunning = false;
 
 function startScanner() {
@@ -63,6 +69,9 @@ function startScanner() {
         _scannerIsRunning = true;
     });
 
+    /*
+    Drawing the on-screen lines
+    */
     Quagga.onProcessed(function (result) {
         var drawingCtx = Quagga.canvas.ctx.overlay,
         drawingCanvas = Quagga.canvas.dom.overlay;
@@ -103,7 +112,9 @@ getUPC_Code(result.codeResult.code);
 
 }
 
-//Delete button
+/*
+Delete items button function
+*/
 
   $('.btn-danger').click(function(e){
   //console.log($(this))
@@ -123,7 +134,9 @@ location.reload();
 })
 
 
-//Add date button
+/*
+Add date button function
+*/
 
 $('.btn-info').click(function(e){
 //console.log($(this))
@@ -143,9 +156,11 @@ location.reload();
 
 
 
-// TEST
 
-// Start/stop scanner
+
+/*
+Start/stop scanner button function
+*/
 document.getElementById("btnScan").addEventListener("click", function () {
     if (_scannerIsRunning) {
         Quagga.stop();
@@ -165,7 +180,9 @@ document.getElementById("btnScan").addEventListener("click", function () {
 
 });
 
-
+/*
+Function to pass the UPC code to the tesco api and return product name
+*/
 
 function getUPC_Code(upc_code){
 

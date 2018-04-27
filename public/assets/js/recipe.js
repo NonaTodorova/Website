@@ -1,4 +1,6 @@
-
+/*
+Getting the starting recipes function
+*/
 
 $(document).ready(function(){
 
@@ -11,7 +13,9 @@ getResultsForRecipes(jsondata);
 });
 });
 
-
+/*
+Search field function
+*/
 $(function(){
     $('#searchform').submit(function(){
       var searchTerms = $("#searchterms").val();
@@ -23,7 +27,9 @@ $(function(){
 
 
 
-
+/*
+Function to get results from the recipes API
+*/
   function getRecipesResults(searchTerms){
 
 // alert("hello");
@@ -42,7 +48,9 @@ console.log(jsondata);
 };
 
 
-
+/*
+Function to get the results and display them on the screen
+*/
 
 function getResultsForRecipes(jsondata){
 

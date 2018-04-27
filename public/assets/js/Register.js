@@ -1,3 +1,6 @@
+/*
+Register button function
+*/
 $(function().ready(function()) {
 
   $("#registerBtn").click(function() {
