@@ -170,7 +170,7 @@ p.card-text {
 
 div#recipes {
     margin-top:  20px;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .card {
