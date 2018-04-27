@@ -102,7 +102,8 @@ var person = {
   email : req.body.email,
   password: req.body.password,
   name : req.body.name,
-  items:[]
+  items:["Beef", "Chicken", "Fish"],
+  dates:["14/12/2020","15/7/2020","5/25/2030"]
 
 }
 
@@ -155,47 +156,37 @@ db.collection('people').update(
    { email: req.session.user.email },
    { $push:
 
-        {"items":{
+        {items:req.query.desc}
+      })
 
-          "item":req.query.desc,"date":req.query.date
-        }
-      }
-    })
 
 
 })
 
 // TEST
 app.get('/delete',function(req,res){
-  console.log(req.query.item)
-
   db.collection('people').update(
 
      { email: req.session.user.email },
      { $pull:
-// console.log(req.query.item);
 
+          {items:req.query.item}
+        })
 
-          {"items":{item:req.query.item}
-
-        }
-      })
-    })
-
-
+})
 // TEST
 
 //add date
-// app.get('/addDate',function(req,res){
-//   db.collection('people').update(
-//
-//      { email: req.session.user.email },
-//      { $push:
-//
-//           {dates:req.query.date}
-//         })
-//
-// })
+app.get('/addDate',function(req,res){
+  db.collection('people').update(
+
+     { email: req.session.user.email },
+     { $push:
+
+          {dates:req.query.date}
+        })
+
+})
 
 
 

@@ -125,21 +125,21 @@ location.reload();
 
 //Add date button
 
-// $('.btn-info').click(function(e){
-// //console.log($(this))
-// var date = prompt("Please enter date");
-// var id = $(this).attr('id');
-//
-// var url_test ="/addDate?date="+date;
-//
-// $.ajax({
-//        url: url_test,
-//        type: "GET",
-//    })
-//
-// location.reload();
-//
-// })
+$('.btn-info').click(function(e){
+//console.log($(this))
+var date = prompt("Please enter date");
+var id = $(this).attr('id');
+
+var url_test ="/addDate?date="+date;
+
+$.ajax({
+       url: url_test,
+       type: "GET",
+   })
+
+location.reload();
+
+})
 
 
 
@@ -188,9 +188,8 @@ $.ajax({
 var output = "";
 var desc = data.products[0].description;
 
-var input = prompt('enter here');
 
-var url_test ="/addItem?desc="+desc+"&date="+input;
+var url_test ="/addItem?desc="+desc;
 
 $.ajax({
          url: url_test,
