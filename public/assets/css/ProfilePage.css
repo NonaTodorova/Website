@@ -122,7 +122,8 @@ input#searchterms {
     width: 79%;
     height: 100%;
     border-radius: 8px;
-    background-color: #e9ecef4d;
+    background-color: #white;
+
 }
 
 input#SearchBtn {
@@ -170,7 +171,7 @@ p.card-text {
 
 div#recipes {
     margin-top:  20px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 div#topDiv {
