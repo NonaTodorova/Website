@@ -173,6 +173,10 @@ div#recipes {
     overflow: scroll;
 }
 
+div#topDiv {
+  background-image: url("/assets/img/Abalone_Background_skills.jpg");
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
