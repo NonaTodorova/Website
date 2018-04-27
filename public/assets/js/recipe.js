@@ -89,12 +89,7 @@ var card = "card";
 
 
      output += '<div class= "card" >  '
-     + '<div class = "container">'
       + '<img class = "card-img-top"   src=  "'+image+'"  > '
-      + '<div class = "middle" >  '
-      +  '<button type="button" class="btn btn-outline-dark">Dark</button>'
-      + '</div>'
-      + '</div>'
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
       + '<br>'
