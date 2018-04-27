@@ -92,7 +92,7 @@ var card = "card";
 
       + '<div class="container"  width="50">'
       + '<img class = "card-img-top"   src=  "'+image+'"  >'
-      + '   <button class="btn">Button</button>'
+      + '   <button type="button" class="btn btn-outline-primary">Primary</button>'
       + '</div>'
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
