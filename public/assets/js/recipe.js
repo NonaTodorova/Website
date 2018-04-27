@@ -90,10 +90,8 @@ var card = "card";
 
      output += '<div class= "card" >'
 
-      + '<div class="container"  width="50%">'
+
       + '<img class = "card-img-top"   src=  "'+image+'"  >'
-      + '   <button class="btn">Button</button>'
-      + '</div>'
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
       + '<br>'
