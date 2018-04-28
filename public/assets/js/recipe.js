@@ -69,6 +69,8 @@ var card = "card";
      var servings = jsondata.hits[i].recipe.yield;
      // var adv = jsondata.hits[i].recipe.dietLabels[0];
       var ingr = jsondata.hits[i].recipe.ingredientLines;
+
+      var link = jsondata.hits[i].recipe.url;
     //  console.log(ingr);
 
      //  var ingr_String = "";
@@ -99,7 +101,7 @@ var card = "card";
         + '  <li class="list-group-item"> Carbs: '+fat_quant+ 'g </li>'
           + '  <li class="list-group-item"> Fat: '+carb_quant+ 'g  </li>'
           +  '  <li class="list-group-item"> Protien: '+prot_quant+'g </li>'
-          +  '  <li class="list-group-item"> <a href="https://www.bbc.co.uk/sport"> <button type="button"  class="btn btn-outline-secondary">View Recipe</button> </a> </li>'
+          +  '  <li class="list-group-item"> <a href="'link'"> <button type="button"  class="btn btn-outline-secondary">View Recipe</button> </a> </li>'
 
       +  '</div>'
       + '</div>';
