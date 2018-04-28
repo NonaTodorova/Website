@@ -88,7 +88,9 @@ var card = "card";
      var prot_quant = Math.round(jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity);
 
      output += '<div class= "card" >  '
+     + ' <div class = "card-body" > '
       + '<img class = "card-img-top"   src=  "'+image+'"  > '
+      +  '</div>'
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
       + '<br>'
