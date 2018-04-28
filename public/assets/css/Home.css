@@ -572,10 +572,7 @@ h2 {
   margin-bottom:0;
 }
 
-.row {
-  margin-left:0;
-  margin-right:0;
-}
+
 
 @media (min-width: 992px) {
   .navbar.navbar-light.navbar-expand-md.fixed-top.bg-light {

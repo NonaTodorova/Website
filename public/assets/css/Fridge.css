@@ -3,6 +3,11 @@ CSS used in Fridge page
 */
 
 
+.row {
+  margin-left:0;
+  margin-right:0;
+}
+
 #fridgeRow{
   margin-top: 30px;
 }
