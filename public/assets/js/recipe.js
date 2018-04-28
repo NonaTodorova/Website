@@ -113,7 +113,7 @@ var card = "card";
 
 
   }
-
+//output onto the recipes div
     $('#recipes').html(output);
 
 }
