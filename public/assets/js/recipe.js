@@ -96,7 +96,7 @@ var card = "card";
       + '  <ul class="list-group list-group-flush">'
       + '  <li class="list-group-item"> Servings: '+servings+' </li>'
         + '  <li class="list-group-item"> Number of Ingredients: '+ingr.length+' </li>'
-        + '  <li class="list-group-item"> Carbs: '+fat_quant+'  Fat:'+carb_quant+' Protien:'+prot_quant+' </li>'
+        + '  <li class="list-group-item"> Carbs: '+fat_quant+  '  Fat:'+carb_quant+  ' Protien:'+prot_quant+' </li>'
 
 
       +  '</div>'
