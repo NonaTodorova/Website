@@ -92,7 +92,6 @@ var card = "card";
 
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
-      + '<br>'
       + '<div class="card-header">  Calories: '+calories+' </div>'
       + '  <ul class="list-group list-group-flush">'
       + '  <li class="list-group-item"> Servings: '+servings+' </li>'
