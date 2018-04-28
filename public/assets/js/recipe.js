@@ -89,7 +89,7 @@ var card = "card";
 
      output += '<div class= "card" >  '
      + '<img class = "card-img-top"   src=  "'+image+'"  > '
-    
+
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
       + '<br>'
@@ -98,8 +98,8 @@ var card = "card";
       + '  <li class="list-group-item"> Servings: '+servings+' </li>'
         + '  <li class="list-group-item"> Number of Ingredients: '+ingr.length+' </li>'
         + '  <li class="list-group-item"> Carbs: '+fat_quant+  ' </li>'
-          + '  <li class="list-group-item"> Fat:'+carb_quant+ '  </li>'
-          +  '  <li class="list-group-item"> Protien:'+prot_quant+' </li>'
+          + '  <li class="list-group-item"> Fat: '+carb_quant+ '  </li>'
+          +  '  <li class="list-group-item"> Protien: '+prot_quant+' </li>'
 
 
       +  '</div>'
