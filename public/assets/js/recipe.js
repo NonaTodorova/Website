@@ -99,8 +99,8 @@ var card = "card";
         + '  <li class="list-group-item"> Carbs: '+fat_quant+ 'g </li>'
           + '  <li class="list-group-item"> Fat: '+carb_quant+ 'g  </li>'
           +  '  <li class="list-group-item"> Protien: '+prot_quant+'g </li>'
-          +  '  <li class="list-group-item"> Protien: '+prot_quant+'g </li>'
-+ ' <button type="button" class="btn btn-outline-secondary">Secondary</button>'
+          +  '  <li class="list-group-item"> '+<button type="button" class="btn btn-outline-secondary">Secondary</button>+'</li>'
+
       +  '</div>'
       + '</div>';
 
