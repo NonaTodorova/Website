@@ -76,17 +76,17 @@ var card = "card";
      // }
      var calories = Math.round(jsondata.hits[i].recipe.calories);
      //
-     // var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
-     // var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
+   //var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
+      var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
      //
      // var carbLabel = jsondata.hits[i].recipe.totalNutrients.CHOCDF.label;
      //
-     //  var carb_quant = jsondata.hits[i].recipe.totalNutrients.CHOCDF.quantity;
+      var carb_quant = jsondata.hits[i].recipe.totalNutrients.CHOCDF.quantity;
      //
      //  var prot = jsondata.hits[i].recipe.totalNutrients.PROCNT.label;
      //
-     //  var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
-
+     var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
+console.log(fat_quant,carb_quant,prot_quant);
 
      output += '<div class= "card" >  '
       + '<img class = "card-img-top"   src=  "'+image+'"  > '
@@ -97,6 +97,7 @@ var card = "card";
       + '<div class="card-header">  Calories: '+calories+' </div>'
       + '  <ul class="list-group list-group-flush">'
       + '  <li class="list-group-item"> Servings: '+servings+' </li>'
+        + '  <li class="list-group-item"> Number of Ingredients: '+ingr.length+' </li>'
         + '  <li class="list-group-item"> Number of Ingredients: '+ingr.length+' </li>'
 
       +  '</div>'
