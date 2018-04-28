@@ -77,16 +77,15 @@ var card = "card";
      var calories = Math.round(jsondata.hits[i].recipe.calories);
      //
    //var fatLabel = jsondata.hits[i].recipe.totalNutrients.FAT.label;
-      var fat_quant = jsondata.hits[i].recipe.totalNutrients.FAT.quantity;
+      var fat_quant = Math.round(jsondata.hits[i].recipe.totalNutrients.FAT.quantity);
      //
      // var carbLabel = jsondata.hits[i].recipe.totalNutrients.CHOCDF.label;
      //
-      var carb_quant = jsondata.hits[i].recipe.totalNutrients.CHOCDF.quantity;
+      var carb_quant = Math.round(jsondata.hits[i].recipe.totalNutrients.CHOCDF.quantity);
      //
      //  var prot = jsondata.hits[i].recipe.totalNutrients.PROCNT.label;
      //
-     var prot_quant = jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity;
-console.log(fat_quant,carb_quant,prot_quant);
+     var prot_quant = Math.round(jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity);
 
      output += '<div class= "card" >  '
       + '<img class = "card-img-top"   src=  "'+image+'"  > '
@@ -98,7 +97,7 @@ console.log(fat_quant,carb_quant,prot_quant);
       + '  <ul class="list-group list-group-flush">'
       + '  <li class="list-group-item"> Servings: '+servings+' </li>'
         + '  <li class="list-group-item"> Number of Ingredients: '+ingr.length+' </li>'
-        + '  <li class="list-group-item"> Number of Ingredients: '+ingr.length+' </li>'
+
 
       +  '</div>'
       + '</div>';
