@@ -38,6 +38,7 @@ Function to get results from the recipes API
   $.getJSON(url,function(jsondata){
 //console.log(jsondata);
 getResultsForRecipes(jsondata);
+//Check to see the JSON response in the console to then mine the data that is returned
 console.log(jsondata);
   // var string = JSON.stringify(jsondata,null,4)
 
@@ -88,7 +89,9 @@ var card = "card";
      var prot_quant = Math.round(jsondata.hits[i].recipe.totalNutrients.PROCNT.quantity);
 
      output += '<div class= "card" >  '
-    // + '<img class = "card-img-top"   src=  "'+image+'"  > '
+  + '<div class = "card-body" > '
+     + '<img class = "card-img-top"   src=  "'+image+'"  > '
+     +  '</div>'
 
       + '<div class = "card-body" > '
       + '<p class = "card-text" > '+label+' </p> '
